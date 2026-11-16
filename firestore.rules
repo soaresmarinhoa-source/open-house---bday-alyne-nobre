@@ -1,4 +1,4 @@
-// Regras do Firestore para o Open House & Bday Alyne Nobre
+// Regras do Firestore para o Open House & Bday Amanda Marinho
 // Publicar com: firebase deploy --only firestore:rules
 rules_version = '2';
 service cloud.firestore {
