@@ -216,7 +216,7 @@ export const RsvpSection: React.FC<RsvpSectionProps> = ({ settings, guests }) =>
           particleCount: 140,
           spread: 80,
           origin: { y: 0.6 },
-          colors: ['#315B8A', '#F2B84B', '#8A9A86', '#1B2F4E'],
+          colors: ['#315B8A', '#8A9A86', '#8A9A86', '#1B2F4E'],
         });
       }
 
@@ -255,11 +255,11 @@ export const RsvpSection: React.FC<RsvpSectionProps> = ({ settings, guests }) =>
   );
 
   return (
-    <section id="rsvp" className="py-20 sm:py-28 bg-[#FBF4E8] relative">
+    <section id="rsvp" className="py-20 sm:py-28 bg-[#F2F6EE] relative">
       <div className="max-w-3xl mx-auto px-4 sm:px-6">
         {/* Section Header */}
         <div className="text-center mb-10 sm:mb-12">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#F3E3CB] text-[#315B8A] font-mono text-xs font-semibold tracking-widest uppercase mb-4">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#E3EBDD] text-[#315B8A] font-mono text-xs font-semibold tracking-widest uppercase mb-4">
             <Sparkles className="w-3.5 h-3.5" />
             <span>Vossa Ilustríssima Presença</span>
           </div>
@@ -275,7 +275,7 @@ export const RsvpSection: React.FC<RsvpSectionProps> = ({ settings, guests }) =>
 
           {/* Real Confirmed Attendees Counter */}
           {effectiveConfirmedCount > 0 && (
-            <div className="mt-6 inline-flex items-center gap-2 px-4 py-2 rounded-2xl bg-white border border-[#E8D4B8] shadow-2xs text-xs sm:text-sm text-[#1B2F4E]">
+            <div className="mt-6 inline-flex items-center gap-2 px-4 py-2 rounded-2xl bg-white border border-[#D5E1CB] shadow-2xs text-xs sm:text-sm text-[#1B2F4E]">
               <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse" />
               <span>
                 <strong className="font-semibold text-emerald-700">{effectiveConfirmedCount}</strong>{' '}
@@ -286,7 +286,7 @@ export const RsvpSection: React.FC<RsvpSectionProps> = ({ settings, guests }) =>
         </div>
 
         {/* Main Card */}
-        <div className="bg-white rounded-3xl border border-[#E8D4B8] p-6 sm:p-10 shadow-xs">
+        <div className="bg-white rounded-3xl border border-[#D5E1CB] p-6 sm:p-10 shadow-xs">
           {submitted ? (
             /* Success State */
             <div className="text-center py-6 sm:py-8 space-y-5">
@@ -294,7 +294,7 @@ export const RsvpSection: React.FC<RsvpSectionProps> = ({ settings, guests }) =>
                 className={`w-16 h-16 rounded-full flex items-center justify-center mx-auto ${
                   submitted === 'confirmed'
                     ? 'bg-emerald-100 text-emerald-700'
-                    : 'bg-[#F6EBD9] text-[#4B5A72]'
+                    : 'bg-[#EAF1E4] text-[#4B5A72]'
                 }`}
               >
                 {submitted === 'confirmed' ? (
@@ -322,7 +322,7 @@ export const RsvpSection: React.FC<RsvpSectionProps> = ({ settings, guests }) =>
               </div>
 
               {submitted === 'confirmed' && submittedData && submittedData.attendees > 0 && (
-                <div className="p-4 rounded-2xl bg-[#FBF4E8] border border-[#E8D4B8] text-xs text-left max-w-md mx-auto space-y-1.5">
+                <div className="p-4 rounded-2xl bg-[#F2F6EE] border border-[#D5E1CB] text-xs text-left max-w-md mx-auto space-y-1.5">
                   <div className="flex justify-between text-[#4B5A72]">
                     <span>Total no seu grupo:</span>
                     <strong className="text-[#1B2F4E]">
@@ -385,7 +385,7 @@ export const RsvpSection: React.FC<RsvpSectionProps> = ({ settings, guests }) =>
                   onChange={(e) => setName(e.target.value)}
                   placeholder="Ex: Gabriela Ribeiro"
                   maxLength={80}
-                  className="w-full h-12 px-4 rounded-xl border border-[#E8D4B8] bg-[#FBF4E8] text-sm text-[#1B2F4E] focus:bg-white focus:border-[#315B8A] focus:ring-2 focus:ring-[#315B8A]/15 outline-none transition-all"
+                  className="w-full h-12 px-4 rounded-xl border border-[#D5E1CB] bg-[#F2F6EE] text-sm text-[#1B2F4E] focus:bg-white focus:border-[#315B8A] focus:ring-2 focus:ring-[#315B8A]/15 outline-none transition-all"
                 />
               </div>
 
@@ -401,7 +401,7 @@ export const RsvpSection: React.FC<RsvpSectionProps> = ({ settings, guests }) =>
                   onChange={(e) => setWhatsapp(e.target.value)}
                   placeholder="Ex: (11) 98765-4321"
                   maxLength={25}
-                  className="w-full h-12 px-4 rounded-xl border border-[#E8D4B8] bg-[#FBF4E8] text-sm text-[#1B2F4E] focus:bg-white focus:border-[#315B8A] focus:ring-2 focus:ring-[#315B8A]/15 outline-none transition-all font-mono"
+                  className="w-full h-12 px-4 rounded-xl border border-[#D5E1CB] bg-[#F2F6EE] text-sm text-[#1B2F4E] focus:bg-white focus:border-[#315B8A] focus:ring-2 focus:ring-[#315B8A]/15 outline-none transition-all font-mono"
                 />
                 <span className="text-[11px] text-[#6F7F97] mt-1 block">
                   Usado para identificarmos seu convite e alinharmos avisos sobre o evento.
@@ -419,12 +419,12 @@ export const RsvpSection: React.FC<RsvpSectionProps> = ({ settings, guests }) =>
                 {matchedGuest && !isSearchingGuest && (
                   <div className={`mt-3 p-4 rounded-2xl border transition-all ${
                     matchedGuest.maxCompanions === 0
-                      ? 'bg-[#FBF4E8] border-[#E8D4B8] text-[#1B2F4E]'
+                      ? 'bg-[#F2F6EE] border-[#D5E1CB] text-[#1B2F4E]'
                       : 'bg-[#F0F7F1] border-emerald-200 text-emerald-950'
                   }`}>
                     <div className="flex items-start gap-3">
                       <div className={`w-8 h-8 rounded-xl flex items-center justify-center shrink-0 ${
-                        matchedGuest.maxCompanions === 0 ? 'bg-[#F3E3CB] text-[#315B8A]' : 'bg-emerald-100 text-emerald-700'
+                        matchedGuest.maxCompanions === 0 ? 'bg-[#E3EBDD] text-[#315B8A]' : 'bg-emerald-100 text-emerald-700'
                       }`}>
                         {matchedGuest.maxCompanions === 0 ? <User className="w-4 h-4" /> : <Users className="w-4 h-4" />}
                       </div>
@@ -435,7 +435,7 @@ export const RsvpSection: React.FC<RsvpSectionProps> = ({ settings, guests }) =>
                           </span>
                           <span className={`px-2 py-0.5 rounded-full text-[10px] font-mono font-semibold uppercase tracking-wider ${
                             matchedGuest.maxCompanions === 0
-                              ? 'bg-[#F3E3CB] text-[#315B8A]'
+                              ? 'bg-[#E3EBDD] text-[#315B8A]'
                               : 'bg-emerald-200/70 text-emerald-800'
                           }`}>
                             {matchedGuest.maxCompanions === 0
@@ -520,7 +520,7 @@ export const RsvpSection: React.FC<RsvpSectionProps> = ({ settings, guests }) =>
                     className={`h-13 px-4 rounded-xl border text-xs sm:text-sm font-semibold flex items-center justify-center gap-2.5 transition-all cursor-pointer ${
                       status === 'confirmed'
                         ? 'border-emerald-600 bg-emerald-50/70 text-emerald-800 shadow-xs ring-2 ring-emerald-500/20'
-                        : 'border-[#E8D4B8] bg-[#FBF4E8] text-[#4B5A72] hover:bg-white'
+                        : 'border-[#D5E1CB] bg-[#F2F6EE] text-[#4B5A72] hover:bg-white'
                     }`}
                   >
                     <CheckCircle2
@@ -535,7 +535,7 @@ export const RsvpSection: React.FC<RsvpSectionProps> = ({ settings, guests }) =>
                     className={`h-13 px-4 rounded-xl border text-xs sm:text-sm font-semibold flex items-center justify-center gap-2.5 transition-all cursor-pointer ${
                       status === 'declined'
                         ? 'border-stone-400 bg-stone-100 text-stone-800 shadow-xs ring-2 ring-stone-400/20'
-                        : 'border-[#E8D4B8] bg-[#FBF4E8] text-[#4B5A72] hover:bg-white'
+                        : 'border-[#D5E1CB] bg-[#F2F6EE] text-[#4B5A72] hover:bg-white'
                     }`}
                   >
                     <XCircle
@@ -548,12 +548,12 @@ export const RsvpSection: React.FC<RsvpSectionProps> = ({ settings, guests }) =>
 
               {/* 4. Se Confirmado: Regra de Acompanhantes */}
               {status === 'confirmed' && (
-                <div className="space-y-4 pt-2 border-t border-[#F7E6D0]">
+                <div className="space-y-4 pt-2 border-t border-[#E6EEDF]">
                   {effectiveMaxCompanions === 0 ? (
                     /* Convite Individual — Apenas o próprio convidado */
-                    <div className="p-4 rounded-2xl bg-[#F6EBD9]/80 border border-[#E8D4B8] flex items-center justify-between">
+                    <div className="p-4 rounded-2xl bg-[#EAF1E4]/80 border border-[#D5E1CB] flex items-center justify-between">
                       <div className="flex items-center gap-3">
-                        <div className="w-9 h-9 rounded-xl bg-white border border-[#E8D4B8] flex items-center justify-center text-[#315B8A]">
+                        <div className="w-9 h-9 rounded-xl bg-white border border-[#D5E1CB] flex items-center justify-center text-[#315B8A]">
                           <UserCheck className="w-5 h-5" />
                         </div>
                         <div>
@@ -567,7 +567,7 @@ export const RsvpSection: React.FC<RsvpSectionProps> = ({ settings, guests }) =>
                           </span>
                         </div>
                       </div>
-                      <span className="px-3 py-1 rounded-full bg-white border border-[#E8D4B8] text-xs font-bold text-[#315B8A] shrink-0">
+                      <span className="px-3 py-1 rounded-full bg-white border border-[#D5E1CB] text-xs font-bold text-[#315B8A] shrink-0">
                         1 pessoa
                       </span>
                     </div>
@@ -592,7 +592,7 @@ export const RsvpSection: React.FC<RsvpSectionProps> = ({ settings, guests }) =>
                             className={`h-10 px-4 rounded-xl text-xs font-semibold border transition-all cursor-pointer ${
                               attendeesCount === num
                                 ? 'bg-[#315B8A] border-[#315B8A] text-white shadow-xs'
-                                : 'bg-[#FBF4E8] border-[#E8D4B8] text-[#4B5A72] hover:bg-white'
+                                : 'bg-[#F2F6EE] border-[#D5E1CB] text-[#4B5A72] hover:bg-white'
                             }`}
                           >
                             {num === 1
@@ -610,7 +610,7 @@ export const RsvpSection: React.FC<RsvpSectionProps> = ({ settings, guests }) =>
 
                       {/* Dynamic inputs for companion names */}
                       {attendeesCount > 1 && (
-                        <div className="space-y-3 pt-4 mt-2 border-t border-[#F7E6D0]">
+                        <div className="space-y-3 pt-4 mt-2 border-t border-[#E6EEDF]">
                           <div className="flex items-center justify-between">
                             <label className="block text-xs font-mono font-semibold uppercase tracking-wider text-[#4B5A72]">
                               Nome dos Acompanhantes *
@@ -628,7 +628,7 @@ export const RsvpSection: React.FC<RsvpSectionProps> = ({ settings, guests }) =>
                                 onChange={(e) => handleCompanionNameChange(idx, e.target.value)}
                                 placeholder={`Nome completo do ${idx + 1}º acompanhante`}
                                 maxLength={80}
-                                className="w-full h-11 px-3.5 rounded-xl border border-[#E8D4B8] bg-[#FBF4E8] text-xs text-[#1B2F4E] focus:bg-white focus:border-[#315B8A] outline-none transition-all"
+                                className="w-full h-11 px-3.5 rounded-xl border border-[#D5E1CB] bg-[#F2F6EE] text-xs text-[#1B2F4E] focus:bg-white focus:border-[#315B8A] outline-none transition-all"
                               />
                             </div>
                           ))}
@@ -650,7 +650,7 @@ export const RsvpSection: React.FC<RsvpSectionProps> = ({ settings, guests }) =>
                   onChange={(e) => setNotes(e.target.value)}
                   placeholder="Ex: Não como carne de porco / Mal posso esperar pra conhecer o apê novo e comemorar com você!"
                   maxLength={500}
-                  className="w-full p-3.5 rounded-xl border border-[#E8D4B8] bg-[#FBF4E8] text-xs text-[#1B2F4E] focus:bg-white focus:border-[#315B8A] outline-none transition-all resize-none"
+                  className="w-full p-3.5 rounded-xl border border-[#D5E1CB] bg-[#F2F6EE] text-xs text-[#1B2F4E] focus:bg-white focus:border-[#315B8A] outline-none transition-all resize-none"
                 />
                 <div className="text-right text-[10px] text-[#6F7F97] mt-1">
                   {notes.length}/500 caracteres

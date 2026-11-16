@@ -18,7 +18,7 @@ export const LocationDetails: React.FC<LocationDetailsProps> = ({ settings }) =>
   };
 
   return (
-    <section id="local" className="py-16 sm:py-20 bg-[#F6EBD9] border-t border-[#E8D4B8]">
+    <section id="local" className="py-16 sm:py-20 bg-[#EAF1E4] border-t border-[#D5E1CB]">
       <div className="max-w-4xl mx-auto px-4 sm:px-6">
         
         <div className="text-center mb-10">
@@ -35,7 +35,7 @@ export const LocationDetails: React.FC<LocationDetailsProps> = ({ settings }) =>
           </p>
         </div>
 
-        <div className="bg-[#FBF4E8] border border-[#E8D4B8] rounded-3xl p-6 sm:p-8 shadow-xs">
+        <div className="bg-[#F2F6EE] border border-[#D5E1CB] rounded-3xl p-6 sm:p-8 shadow-xs">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             
             {/* Left Column: Details */}
@@ -52,7 +52,7 @@ export const LocationDetails: React.FC<LocationDetailsProps> = ({ settings }) =>
                 </p>
               </div>
 
-              <div className="pt-3 border-t border-[#F7E6D0] space-y-2 text-sm text-[#3E5070]">
+              <div className="pt-3 border-t border-[#E6EEDF] space-y-2 text-sm text-[#3E5070]">
                 <div className="flex items-center gap-2.5">
                   <Calendar className="w-4 h-4 text-[#315B8A] shrink-0" />
                   <span>Data: <strong>{settings.eventDate}</strong></span>
@@ -64,7 +64,7 @@ export const LocationDetails: React.FC<LocationDetailsProps> = ({ settings }) =>
               </div>
 
               {settings.locationNotes && (
-                <div className="p-3.5 rounded-xl bg-[#F6EBD9] border border-[#E8D4B8] text-xs text-[#4B5A72] flex gap-2.5">
+                <div className="p-3.5 rounded-xl bg-[#EAF1E4] border border-[#D5E1CB] text-xs text-[#4B5A72] flex gap-2.5">
                   <Info className="w-4 h-4 text-[#315B8A] shrink-0 mt-0.5" />
                   <span>{settings.locationNotes}</span>
                 </div>
@@ -74,7 +74,7 @@ export const LocationDetails: React.FC<LocationDetailsProps> = ({ settings }) =>
               <div className="flex flex-wrap items-center gap-3 pt-2">
                 <button
                   onClick={handleCopyAddress}
-                  className="h-10 px-4 rounded-full border border-[#E8D4B8] bg-white hover:bg-[#FBF4E8] text-xs font-semibold text-[#1B2F4E] flex items-center gap-2 transition-colors cursor-pointer"
+                  className="h-10 px-4 rounded-full border border-[#D5E1CB] bg-white hover:bg-[#F2F6EE] text-xs font-semibold text-[#1B2F4E] flex items-center gap-2 transition-colors cursor-pointer"
                 >
                   {copied ? (
                     <>
@@ -102,7 +102,7 @@ export const LocationDetails: React.FC<LocationDetailsProps> = ({ settings }) =>
             </div>
 
             {/* Right Column: Visual Map Card */}
-            <div className="h-64 sm:h-72 rounded-2xl bg-[#F3E3CB] border border-[#E8D4B8] overflow-hidden relative flex flex-col items-center justify-center p-6 text-center">
+            <div className="h-64 sm:h-72 rounded-2xl bg-[#E3EBDD] border border-[#D5E1CB] overflow-hidden relative flex flex-col items-center justify-center p-6 text-center">
               <div className="w-14 h-14 rounded-full bg-white shadow-md flex items-center justify-center text-[#315B8A] mb-3">
                 <MapPin className="w-7 h-7" />
               </div>

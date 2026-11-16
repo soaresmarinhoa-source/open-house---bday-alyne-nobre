@@ -92,7 +92,7 @@ export const HouseGallery: React.FC<HouseGalleryProps> = ({ settings }) => {
   }, [activeItem]);
 
   return (
-    <section id="galeria" className="py-16 sm:py-24 bg-[#FBF4E8] overflow-hidden">
+    <section id="galeria" className="py-16 sm:py-24 bg-[#F2F6EE] overflow-hidden">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
@@ -102,7 +102,7 @@ export const HouseGallery: React.FC<HouseGalleryProps> = ({ settings }) => {
           </div>
 
           <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-medium text-[#1B2F4E] mb-4">
-            Um <span className="bg-gradient-to-t from-[#F2B84B] to-[#F2B84B] bg-[length:100%_40%] bg-no-repeat bg-bottom">spoiler</span> do nosso novo cantinho
+            Um <span className="bg-gradient-to-t from-[#8A9A86] to-[#8A9A86] bg-[length:100%_40%] bg-no-repeat bg-bottom">spoiler</span> do nosso novo cantinho
           </h2>
 
           <p className="text-base text-[#4B5A72] leading-relaxed">
@@ -128,11 +128,11 @@ export const HouseGallery: React.FC<HouseGalleryProps> = ({ settings }) => {
                 {/* Decorative yellow washi tape on top of polaroid */}
                 <span
                   aria-hidden="true"
-                  className={`absolute -top-3 left-1/2 -translate-x-1/2 w-16 h-5 bg-[#F2B84B]/70 shadow-2xs pointer-events-none ${tapeRot}`}
+                  className={`absolute -top-3 left-1/2 -translate-x-1/2 w-16 h-5 bg-[#8A9A86]/70 shadow-2xs pointer-events-none ${tapeRot}`}
                 />
 
                 {/* Media container */}
-                <div className="relative aspect-[4/5] overflow-hidden bg-[#F6EBD9]">
+                <div className="relative aspect-[4/5] overflow-hidden bg-[#EAF1E4]">
                   {isVideo ? (
                     <div className="relative w-full h-full bg-black/10">
                       {item.thumbnailUrl ? (
@@ -161,7 +161,7 @@ export const HouseGallery: React.FC<HouseGalleryProps> = ({ settings }) => {
 
                       {/* Video badge in corner */}
                       <div className="absolute top-2 left-2 bg-[#1B2F4E]/80 backdrop-blur-xs px-2 py-0.5 rounded-md text-[10px] text-white font-mono flex items-center gap-1">
-                        <Film className="w-3 h-3 text-[#F2B84B]" />
+                        <Film className="w-3 h-3 text-[#8A9A86]" />
                         <span>VÍDEO</span>
                       </div>
                     </div>

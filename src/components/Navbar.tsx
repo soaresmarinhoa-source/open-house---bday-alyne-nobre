@@ -18,7 +18,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenAdmin, isAdmin }) => {
   };
 
   return (
-    <header className="sticky top-0 z-40 bg-[#FBF4E8]/90 backdrop-blur-md border-b border-[#E8D4B8]">
+    <header className="sticky top-0 z-40 bg-[#F2F6EE]/90 backdrop-blur-md border-b border-[#D5E1CB]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
         {/* Zone 1: Single text wordmark with blue dot */}
         <a
@@ -37,31 +37,31 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenAdmin, isAdmin }) => {
         <nav className="hidden md:flex items-center gap-7 text-sm font-medium text-[#4B5A72]">
           <button
             onClick={() => scrollTo('evento')}
-            className="hover:text-[#1B2F4E] hover:underline hover:decoration-[#F2B84B] hover:underline-offset-4 hover:decoration-2 transition-colors cursor-pointer"
+            className="hover:text-[#1B2F4E] hover:underline hover:decoration-[#8A9A86] hover:underline-offset-4 hover:decoration-2 transition-colors cursor-pointer"
           >
             O Evento
           </button>
           <button
             onClick={() => scrollTo('presentes')}
-            className="hover:text-[#1B2F4E] hover:underline hover:decoration-[#F2B84B] hover:underline-offset-4 hover:decoration-2 transition-colors cursor-pointer"
+            className="hover:text-[#1B2F4E] hover:underline hover:decoration-[#8A9A86] hover:underline-offset-4 hover:decoration-2 transition-colors cursor-pointer"
           >
             Lista de Presentes
           </button>
           <button
             onClick={() => scrollTo('rsvp')}
-            className="hover:text-[#1B2F4E] hover:underline hover:decoration-[#F2B84B] hover:underline-offset-4 hover:decoration-2 transition-colors cursor-pointer"
+            className="hover:text-[#1B2F4E] hover:underline hover:decoration-[#8A9A86] hover:underline-offset-4 hover:decoration-2 transition-colors cursor-pointer"
           >
             Confirmar Presença
           </button>
           <button
             onClick={() => scrollTo('galeria')}
-            className="hover:text-[#1B2F4E] hover:underline hover:decoration-[#F2B84B] hover:underline-offset-4 hover:decoration-2 transition-colors cursor-pointer"
+            className="hover:text-[#1B2F4E] hover:underline hover:decoration-[#8A9A86] hover:underline-offset-4 hover:decoration-2 transition-colors cursor-pointer"
           >
             Novo Apê
           </button>
           <button
             onClick={() => scrollTo('local')}
-            className="hover:text-[#1B2F4E] hover:underline hover:decoration-[#F2B84B] hover:underline-offset-4 hover:decoration-2 transition-colors cursor-pointer"
+            className="hover:text-[#1B2F4E] hover:underline hover:decoration-[#8A9A86] hover:underline-offset-4 hover:decoration-2 transition-colors cursor-pointer"
           >
             Local
           </button>
@@ -82,8 +82,8 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenAdmin, isAdmin }) => {
             title={isAdmin ? "Painel da Anfitriã (Conectado)" : "Área da Anfitriã (Admin)"}
             className={`h-10 px-3 inline-flex items-center justify-center gap-1.5 rounded-full border text-xs font-medium transition-colors cursor-pointer ${
               isAdmin
-                ? 'bg-[#E7EEF6] border-[#315B8A]/30 text-[#315B8A] hover:bg-[#F3E3CB]'
-                : 'border-[#E8D4B8] text-[#4B5A72] hover:text-[#1B2F4E] hover:bg-[#F6EBD9]'
+                ? 'bg-[#E7EEF6] border-[#315B8A]/30 text-[#315B8A] hover:bg-[#E3EBDD]'
+                : 'border-[#D5E1CB] text-[#4B5A72] hover:text-[#1B2F4E] hover:bg-[#EAF1E4]'
             }`}
           >
             <Lock className="w-3.5 h-3.5" />
@@ -94,7 +94,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenAdmin, isAdmin }) => {
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Abrir menu"
-            className="md:hidden h-10 w-10 inline-flex items-center justify-center rounded-lg text-[#1B2F4E] hover:bg-[#F6EBD9] transition-colors cursor-pointer"
+            className="md:hidden h-10 w-10 inline-flex items-center justify-center rounded-lg text-[#1B2F4E] hover:bg-[#EAF1E4] transition-colors cursor-pointer"
           >
             {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
           </button>
@@ -103,31 +103,31 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenAdmin, isAdmin }) => {
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-[#FBF4E8] border-b border-[#E8D4B8] px-4 pt-3 pb-6 space-y-3">
+        <div className="md:hidden bg-[#F2F6EE] border-b border-[#D5E1CB] px-4 pt-3 pb-6 space-y-3">
           <button
             onClick={() => scrollTo('evento')}
-            className="w-full text-left py-2.5 text-base font-medium text-[#1B2F4E] flex items-center gap-3 border-b border-[#F7E6D0]"
+            className="w-full text-left py-2.5 text-base font-medium text-[#1B2F4E] flex items-center gap-3 border-b border-[#E6EEDF]"
           >
             <Home className="w-4 h-4 text-[#315B8A]" />
             O Evento
           </button>
           <button
             onClick={() => scrollTo('presentes')}
-            className="w-full text-left py-2.5 text-base font-medium text-[#1B2F4E] flex items-center gap-3 border-b border-[#F7E6D0]"
+            className="w-full text-left py-2.5 text-base font-medium text-[#1B2F4E] flex items-center gap-3 border-b border-[#E6EEDF]"
           >
             <Gift className="w-4 h-4 text-[#315B8A]" />
             Lista de Presentes
           </button>
           <button
             onClick={() => scrollTo('rsvp')}
-            className="w-full text-left py-2.5 text-base font-medium text-[#1B2F4E] flex items-center gap-3 border-b border-[#F7E6D0]"
+            className="w-full text-left py-2.5 text-base font-medium text-[#1B2F4E] flex items-center gap-3 border-b border-[#E6EEDF]"
           >
             <CalendarCheck className="w-4 h-4 text-[#315B8A]" />
             Confirmar Presença (RSVP)
           </button>
           <button
             onClick={() => scrollTo('galeria')}
-            className="w-full text-left py-2.5 text-base font-medium text-[#1B2F4E] flex items-center gap-3 border-b border-[#F7E6D0]"
+            className="w-full text-left py-2.5 text-base font-medium text-[#1B2F4E] flex items-center gap-3 border-b border-[#E6EEDF]"
           >
             <Home className="w-4 h-4 text-[#315B8A]" />
             Galeria do Apê
@@ -144,7 +144,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenAdmin, isAdmin }) => {
               setMobileMenuOpen(false);
               onOpenAdmin();
             }}
-            className="w-full text-left py-2.5 text-base font-medium text-[#315B8A] flex items-center gap-3 border-t border-[#F7E6D0] pt-3"
+            className="w-full text-left py-2.5 text-base font-medium text-[#315B8A] flex items-center gap-3 border-t border-[#E6EEDF] pt-3"
           >
             <Lock className="w-4 h-4 text-[#315B8A]" />
             {isAdmin ? 'Painel da Anfitriã' : 'Área da Anfitriã (Admin)'}

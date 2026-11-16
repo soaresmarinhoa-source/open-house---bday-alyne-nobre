@@ -10,7 +10,7 @@ interface FooterProps {
 
 export const Footer: React.FC<FooterProps> = ({ settings, onOpenAdmin, isAdmin }) => {
   return (
-    <footer className="pt-12 pb-24 sm:pb-12 bg-[#FBF4E8] border-t border-[#E8D4B8] text-[#5B6B82] text-xs">
+    <footer className="pt-12 pb-24 sm:pb-12 bg-[#F2F6EE] border-t border-[#D5E1CB] text-[#5B6B82] text-xs">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col gap-4">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
           {/* Left: Brand & Concept */}
@@ -18,9 +18,9 @@ export const Footer: React.FC<FooterProps> = ({ settings, onOpenAdmin, isAdmin }
             <span className="font-serif text-base font-medium text-[#1B2F4E]">
               {settings.hostName}
             </span>
-            <span className="hidden sm:inline text-[#DCC6A6]">·</span>
+            <span className="hidden sm:inline text-[#CBD9C1]">·</span>
             <span>Bday 2026</span>
-            <span className="hidden sm:inline text-[#DCC6A6]">·</span>
+            <span className="hidden sm:inline text-[#CBD9C1]">·</span>
             <a
               href={`https://www.instagram.com/${settings.instagramHandle}/`}
               target="_blank"
@@ -37,7 +37,7 @@ export const Footer: React.FC<FooterProps> = ({ settings, onOpenAdmin, isAdmin }
             <span className="flex items-center gap-1">
               Feito com <Heart className="w-3.5 h-3.5 text-[#315B8A] fill-[#315B8A]" /> para celebrar uma nova fase
             </span>
-            <span className="text-[#DCC6A6]">·</span>
+            <span className="text-[#CBD9C1]">·</span>
             <button
               onClick={onOpenAdmin}
               className="hover:text-[#1B2F4E] flex items-center gap-1 transition-colors cursor-pointer"

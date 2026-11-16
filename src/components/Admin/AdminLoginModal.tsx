@@ -69,12 +69,12 @@ export const AdminLoginModal: React.FC<AdminLoginModalProps> = ({
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-xs">
-      <div className="relative w-full max-w-md bg-[#FAF8F5] border border-[#EADBCE] rounded-3xl p-6 sm:p-8 shadow-2xl">
+      <div className="relative w-full max-w-md bg-[#F7F9F4] border border-[#DDE7D5] rounded-3xl p-6 sm:p-8 shadow-2xl">
         <button
           type="button"
           aria-label="Fechar"
           onClick={onClose}
-          className="absolute top-5 right-5 h-9 w-9 rounded-full bg-[#F4EFEB] text-[#68625B] hover:text-[#2D2A26] flex items-center justify-center transition-colors cursor-pointer"
+          className="absolute top-5 right-5 h-9 w-9 rounded-full bg-[#EEF2EA] text-[#68625B] hover:text-[#2D2A26] flex items-center justify-center transition-colors cursor-pointer"
         >
           <X className="w-5 h-5" />
         </button>
@@ -104,7 +104,7 @@ export const AdminLoginModal: React.FC<AdminLoginModalProps> = ({
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="seu@email.com"
-                className="w-full h-11 pl-10 pr-4 rounded-xl border border-[#EADBCE] bg-white text-sm text-[#2D2A26] focus:border-[#315B8A] focus:ring-2 focus:ring-[#315B8A]/15 outline-none transition-all"
+                className="w-full h-11 pl-10 pr-4 rounded-xl border border-[#DDE7D5] bg-white text-sm text-[#2D2A26] focus:border-[#315B8A] focus:ring-2 focus:ring-[#315B8A]/15 outline-none transition-all"
               />
             </div>
           </div>
@@ -120,7 +120,7 @@ export const AdminLoginModal: React.FC<AdminLoginModalProps> = ({
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 placeholder="Digite sua senha"
-                className="w-full h-11 pl-10 pr-4 rounded-xl border border-[#EADBCE] bg-white text-sm text-[#2D2A26] focus:border-[#315B8A] focus:ring-2 focus:ring-[#315B8A]/15 outline-none transition-all"
+                className="w-full h-11 pl-10 pr-4 rounded-xl border border-[#DDE7D5] bg-white text-sm text-[#2D2A26] focus:border-[#315B8A] focus:ring-2 focus:ring-[#315B8A]/15 outline-none transition-all"
               />
             </div>
           </div>
@@ -141,7 +141,7 @@ export const AdminLoginModal: React.FC<AdminLoginModalProps> = ({
           </button>
         </form>
 
-        <div className="mt-5 pt-4 border-t border-[#EADBCE] text-center text-xs text-[#68625B] flex items-center justify-center gap-2">
+        <div className="mt-5 pt-4 border-t border-[#DDE7D5] text-center text-xs text-[#68625B] flex items-center justify-center gap-2">
           <Lock className="w-3.5 h-3.5 text-[#315B8A]" />
           <span>Acesso protegido com autenticação do Firebase.</span>
         </div>

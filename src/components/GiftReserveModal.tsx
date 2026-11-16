@@ -171,7 +171,7 @@ export const GiftReserveModal: React.FC<GiftReserveModalProps> = ({
         particleCount: 120,
         spread: 80,
         origin: { y: 0.5 },
-        colors: ['#315B8A', '#F2B84B', '#8A9A86', '#1B2F4E'],
+        colors: ['#315B8A', '#8A9A86', '#8A9A86', '#1B2F4E'],
       });
 
       setIsReservedSuccess(true);
@@ -186,7 +186,7 @@ export const GiftReserveModal: React.FC<GiftReserveModalProps> = ({
   const renderPurchaseLink = (description: string) => (
     <>
       {gift.purchaseUrl && (
-        <div className="bg-[#FFFFFF] border border-[#E8D4B8] rounded-2xl p-4 mb-4 text-left">
+        <div className="bg-[#FFFFFF] border border-[#D5E1CB] rounded-2xl p-4 mb-4 text-left">
           <div className="text-xs font-mono font-semibold uppercase tracking-wider text-[#244568] mb-1">
             Comprar na loja
           </div>
@@ -225,7 +225,7 @@ export const GiftReserveModal: React.FC<GiftReserveModalProps> = ({
             </div>
           </div>
 
-          <div className="p-3.5 rounded-xl bg-[#FBF4E8] border border-[#F7E6D0] text-xs text-[#1B2F4E] space-y-1.5 mt-3">
+          <div className="p-3.5 rounded-xl bg-[#F2F6EE] border border-[#E6EEDF] text-xs text-[#1B2F4E] space-y-1.5 mt-3">
             {settings.shippingRecipientName && (
               <div className="flex items-start gap-1.5">
                 <span className="text-[#5B6B82] font-medium shrink-0">Destinatário:</span>
@@ -258,7 +258,7 @@ export const GiftReserveModal: React.FC<GiftReserveModalProps> = ({
               </div>
             )}
             {settings.shippingNotes && (
-              <div className="pt-1 text-[11px] text-[#5B6B82] italic border-t border-[#F7E6D0] mt-1.5">
+              <div className="pt-1 text-[11px] text-[#5B6B82] italic border-t border-[#E6EEDF] mt-1.5">
                 <strong>Instruções de entrega:</strong> {settings.shippingNotes}
               </div>
             )}
@@ -267,7 +267,7 @@ export const GiftReserveModal: React.FC<GiftReserveModalProps> = ({
           <button
             type="button"
             onClick={handleCopyShippingAddress}
-            className="w-full mt-3 h-11 px-4 rounded-xl bg-[#FBF4E8] hover:bg-[#F7E6D0] border border-[#E8D4B8] text-[#1B2F4E] text-xs font-semibold flex items-center justify-center gap-2 transition-colors cursor-pointer active:scale-[0.99]"
+            className="w-full mt-3 h-11 px-4 rounded-xl bg-[#F2F6EE] hover:bg-[#E6EEDF] border border-[#D5E1CB] text-[#1B2F4E] text-xs font-semibold flex items-center justify-center gap-2 transition-colors cursor-pointer active:scale-[0.99]"
           >
             {shippingCopied ? (
               <>
@@ -290,12 +290,12 @@ export const GiftReserveModal: React.FC<GiftReserveModalProps> = ({
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-xs overflow-y-auto">
-      <div className="relative w-full max-w-lg bg-[#FBF4E8] border border-[#E8D4B8] rounded-3xl p-6 sm:p-8 shadow-2xl my-8">
+      <div className="relative w-full max-w-lg bg-[#F2F6EE] border border-[#D5E1CB] rounded-3xl p-6 sm:p-8 shadow-2xl my-8">
         <button
           type="button"
           aria-label="Fechar"
           onClick={onClose}
-          className="absolute top-5 right-5 h-9 w-9 rounded-full bg-[#F6EBD9] text-[#4B5A72] hover:text-[#1B2F4E] hover:bg-[#E8D4B8] flex items-center justify-center transition-colors cursor-pointer"
+          className="absolute top-5 right-5 h-9 w-9 rounded-full bg-[#EAF1E4] text-[#4B5A72] hover:text-[#1B2F4E] hover:bg-[#D5E1CB] flex items-center justify-center transition-colors cursor-pointer"
         >
           <X className="w-5 h-5" />
         </button>
@@ -314,13 +314,13 @@ export const GiftReserveModal: React.FC<GiftReserveModalProps> = ({
             </p>
 
             {(gift.type === 'pix' || gift.type === 'shares' || gift.pixKey) && (
-              <div className="bg-[#FFFFFF] border border-[#E8D4B8] rounded-2xl p-5 mb-6 text-left space-y-4">
+              <div className="bg-[#FFFFFF] border border-[#D5E1CB] rounded-2xl p-5 mb-6 text-left space-y-4">
                 <div className="flex items-center justify-between">
                   <div className="text-xs font-mono font-semibold uppercase tracking-wider text-[#244568]">
                     Próximo passo: Pagamento via Pix
                   </div>
                   {activeBankName && (
-                    <span className="text-[11px] font-semibold text-[#4B5A72] bg-[#FBF4E8] border border-[#E8D4B8] px-2 py-0.5 rounded-md">
+                    <span className="text-[11px] font-semibold text-[#4B5A72] bg-[#F2F6EE] border border-[#D5E1CB] px-2 py-0.5 rounded-md">
                       {activeBankName}
                     </span>
                   )}
@@ -375,7 +375,7 @@ export const GiftReserveModal: React.FC<GiftReserveModalProps> = ({
                   <label className="block text-[11px] font-mono font-semibold uppercase tracking-wider text-[#5B6B82] mb-1">
                     Chave Pix ({activePixKeyType}):
                   </label>
-                  <div className="flex items-center justify-between p-3 rounded-xl bg-[#FBF4E8] border border-[#F7E6D0] text-xs font-mono text-[#1B2F4E] gap-2">
+                  <div className="flex items-center justify-between p-3 rounded-xl bg-[#F2F6EE] border border-[#E6EEDF] text-xs font-mono text-[#1B2F4E] gap-2">
                     <span className="truncate select-all">{activePixKey}</span>
                     <button
                       type="button"
@@ -398,7 +398,7 @@ export const GiftReserveModal: React.FC<GiftReserveModalProps> = ({
                 </div>
 
                 {/* Account Holder Verification */}
-                <div className="p-3 rounded-xl bg-[#F6EBD9] text-xs text-[#3E5070] flex items-center gap-2.5">
+                <div className="p-3 rounded-xl bg-[#EAF1E4] text-xs text-[#3E5070] flex items-center gap-2.5">
                   <ShieldCheck className="w-4 h-4 text-emerald-700 shrink-0" />
                   <span>
                     Favorecida: <strong>{activeReceiverName}</strong>
@@ -408,7 +408,7 @@ export const GiftReserveModal: React.FC<GiftReserveModalProps> = ({
 
                 {/* QR Code Section */}
                 <div className="text-center pt-2">
-                  <div className="inline-block p-3 bg-white rounded-2xl border border-[#E8D4B8] shadow-xs">
+                  <div className="inline-block p-3 bg-white rounded-2xl border border-[#D5E1CB] shadow-xs">
                     {qrCodeUrl ? (
                       <img
                         src={qrCodeUrl}
@@ -457,14 +457,14 @@ export const GiftReserveModal: React.FC<GiftReserveModalProps> = ({
                       loop
                       muted
                       playsInline
-                      className="w-20 h-20 rounded-2xl object-cover border border-[#E8D4B8] shrink-0"
+                      className="w-20 h-20 rounded-2xl object-cover border border-[#D5E1CB] shrink-0"
                     />
                   ) : (
                     <img
                       src={normalizedMeme}
                       alt={gift.name}
                       referrerPolicy="no-referrer"
-                      className="w-20 h-20 rounded-2xl object-cover border border-[#E8D4B8] shrink-0"
+                      className="w-20 h-20 rounded-2xl object-cover border border-[#D5E1CB] shrink-0"
                       onError={(e) => {
                         if (gift.imageUrl && (e.currentTarget as HTMLImageElement).src !== gift.imageUrl) {
                           (e.currentTarget as HTMLImageElement).src = gift.imageUrl;
@@ -480,13 +480,13 @@ export const GiftReserveModal: React.FC<GiftReserveModalProps> = ({
                       src={gift.imageUrl}
                       alt={gift.name}
                       referrerPolicy="no-referrer"
-                      className="w-20 h-20 rounded-2xl object-cover border border-[#E8D4B8] shrink-0"
+                      className="w-20 h-20 rounded-2xl object-cover border border-[#D5E1CB] shrink-0"
                     />
                   );
                 }
 
                 return (
-                  <div className="w-20 h-20 rounded-2xl bg-[#F7E6D0] flex items-center justify-center shrink-0 text-[#315B8A]">
+                  <div className="w-20 h-20 rounded-2xl bg-[#E6EEDF] flex items-center justify-center shrink-0 text-[#315B8A]">
                     <ShoppingBag className="w-8 h-8" />
                   </div>
                 );
@@ -540,7 +540,7 @@ export const GiftReserveModal: React.FC<GiftReserveModalProps> = ({
                   const isVideo = getMemeKind(rawMeme) === 'video';
                   return (
                     <div className="mt-3">
-                      <div className="inline-block rounded-xl overflow-hidden border border-[#E8D4B8] bg-black/5 max-h-36 max-w-[200px]">
+                      <div className="inline-block rounded-xl overflow-hidden border border-[#D5E1CB] bg-black/5 max-h-36 max-w-[200px]">
                         {isVideo ? (
                           <video
                             src={normalizeMemeUrl(rawMeme)}
@@ -575,7 +575,7 @@ export const GiftReserveModal: React.FC<GiftReserveModalProps> = ({
 
             {isSoldOut ? (
               <div className="text-center py-2">
-                <div className="p-4 rounded-2xl bg-[#E7EEF6] border border-[#E8D4B8] text-[#244568] font-medium text-sm mb-4">
+                <div className="p-4 rounded-2xl bg-[#E7EEF6] border border-[#D5E1CB] text-[#244568] font-medium text-sm mb-4">
                   🎉 Esse presente já está garantido! Todas as cotas foram reservadas por amigos incríveis.
                 </div>
 
@@ -593,7 +593,7 @@ export const GiftReserveModal: React.FC<GiftReserveModalProps> = ({
                 <button
                   type="button"
                   onClick={onClose}
-                  className="px-6 py-2.5 rounded-xl border border-[#E8D4B8] text-xs font-semibold text-[#4B5A72] hover:text-[#1B2F4E] cursor-pointer"
+                  className="px-6 py-2.5 rounded-xl border border-[#D5E1CB] text-xs font-semibold text-[#4B5A72] hover:text-[#1B2F4E] cursor-pointer"
                 >
                   Escolher outro presente
                 </button>
@@ -606,11 +606,11 @@ export const GiftReserveModal: React.FC<GiftReserveModalProps> = ({
                       Quantas cotas você gostaria de presentear?
                     </label>
                     <div className="flex items-center gap-3">
-                      <div className="flex items-center border border-[#E8D4B8] rounded-xl bg-white overflow-hidden">
+                      <div className="flex items-center border border-[#D5E1CB] rounded-xl bg-white overflow-hidden">
                         <button
                           type="button"
                           onClick={() => setQuantity(Math.max(1, quantity - 1))}
-                          className="h-11 w-11 flex items-center justify-center text-lg font-bold text-[#4B5A72] hover:bg-[#FBF4E8] transition-colors cursor-pointer"
+                          className="h-11 w-11 flex items-center justify-center text-lg font-bold text-[#4B5A72] hover:bg-[#F2F6EE] transition-colors cursor-pointer"
                         >
                           -
                         </button>
@@ -620,7 +620,7 @@ export const GiftReserveModal: React.FC<GiftReserveModalProps> = ({
                         <button
                           type="button"
                           onClick={() => setQuantity(Math.min(maxAvailable, quantity + 1))}
-                          className="h-11 w-11 flex items-center justify-center text-lg font-bold text-[#4B5A72] hover:bg-[#FBF4E8] transition-colors cursor-pointer"
+                          className="h-11 w-11 flex items-center justify-center text-lg font-bold text-[#4B5A72] hover:bg-[#F2F6EE] transition-colors cursor-pointer"
                         >
                           +
                         </button>
@@ -646,7 +646,7 @@ export const GiftReserveModal: React.FC<GiftReserveModalProps> = ({
                     value={guestName}
                     onChange={(e) => setGuestName(e.target.value)}
                     placeholder="Como você quer aparecer na lista da Alyne?"
-                    className="w-full h-11 px-4 rounded-xl border border-[#E8D4B8] bg-white focus:border-[#315B8A] focus:ring-2 focus:ring-[#315B8A]/15 outline-none transition-all text-sm text-[#1B2F4E]"
+                    className="w-full h-11 px-4 rounded-xl border border-[#D5E1CB] bg-white focus:border-[#315B8A] focus:ring-2 focus:ring-[#315B8A]/15 outline-none transition-all text-sm text-[#1B2F4E]"
                   />
                 </div>
 
@@ -661,7 +661,7 @@ export const GiftReserveModal: React.FC<GiftReserveModalProps> = ({
                     value={guestWhatsapp}
                     onChange={(e) => setGuestWhatsapp(e.target.value)}
                     placeholder="(11) 99999-9999"
-                    className="w-full h-11 px-4 rounded-xl border border-[#E8D4B8] bg-white focus:border-[#315B8A] focus:ring-2 focus:ring-[#315B8A]/15 outline-none transition-all text-sm text-[#1B2F4E]"
+                    className="w-full h-11 px-4 rounded-xl border border-[#D5E1CB] bg-white focus:border-[#315B8A] focus:ring-2 focus:ring-[#315B8A]/15 outline-none transition-all text-sm text-[#1B2F4E]"
                   />
                 </div>
 
@@ -675,7 +675,7 @@ export const GiftReserveModal: React.FC<GiftReserveModalProps> = ({
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
                     placeholder="Escreva o que quiser — vou adorar ler!"
-                    className="w-full p-3 rounded-xl border border-[#E8D4B8] bg-white focus:border-[#315B8A] focus:ring-2 focus:ring-[#315B8A]/15 outline-none transition-all text-sm text-[#1B2F4E] resize-none"
+                    className="w-full p-3 rounded-xl border border-[#D5E1CB] bg-white focus:border-[#315B8A] focus:ring-2 focus:ring-[#315B8A]/15 outline-none transition-all text-sm text-[#1B2F4E] resize-none"
                   />
                 </div>
 

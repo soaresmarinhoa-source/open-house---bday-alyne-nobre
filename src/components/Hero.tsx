@@ -85,18 +85,18 @@ export const Hero: React.FC<HeroProps> = ({ settings, onScrollTo }) => {
   return (
     <section id="topo" className="relative pt-8 pb-16 sm:pt-14 sm:pb-24 overflow-hidden">
       {/* 2.1 Two blurred background blobs: yellow-sun soft and blue soft */}
-      <div className="absolute top-0 right-1/4 w-96 h-96 bg-[#F2B84B]/25 rounded-full blur-3xl -z-10 pointer-events-none" />
+      <div className="absolute top-0 right-1/4 w-96 h-96 bg-[#8A9A86]/25 rounded-full blur-3xl -z-10 pointer-events-none" />
       <div className="absolute top-1/3 left-0 w-80 h-80 bg-[#315B8A]/10 rounded-full blur-3xl -z-10 pointer-events-none" />
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
           <div className="lg:col-span-7 flex flex-col justify-center">
-            {/* 2.2 Kicker in DM Mono, uppercase, tracking-widest, color #315B8A with #F2B84B dots */}
+            {/* 2.2 Kicker in DM Mono, uppercase, tracking-widest, color #315B8A with #8A9A86 dots */}
             <div className="flex items-center gap-2 text-xs sm:text-sm font-mono font-semibold tracking-widest uppercase text-[#315B8A] mb-4">
               <span>Bday 2026</span>
-              <span aria-hidden="true" className="text-[#F2B84B]">·</span>
+              <span aria-hidden="true" className="text-[#8A9A86]">·</span>
               <span>Aniversário</span>
-              <span aria-hidden="true" className="text-[#F2B84B]">·</span>
+              <span aria-hidden="true" className="text-[#8A9A86]">·</span>
               <span>Chá de Casa Nova</span>
             </div>
 
@@ -109,17 +109,17 @@ export const Hero: React.FC<HeroProps> = ({ settings, onScrollTo }) => {
               {heroSubheading}
             </p>
 
-            <div className="flex flex-wrap items-center gap-y-3 gap-x-5 py-4 border-y border-[#E8D4B8] text-sm text-[#2F4468] mb-8">
+            <div className="flex flex-wrap items-center gap-y-3 gap-x-5 py-4 border-y border-[#D5E1CB] text-sm text-[#2F4468] mb-8">
               <div className="flex items-center gap-2">
                 <Calendar className="w-4 h-4 text-[#315B8A] shrink-0" />
                 <span className="capitalize font-medium">{formattedDate}</span>
               </div>
-              <span className="hidden sm:inline text-[#DCC6A6]" aria-hidden="true">/</span>
+              <span className="hidden sm:inline text-[#CBD9C1]" aria-hidden="true">/</span>
               <div className="flex items-center gap-2">
                 <Clock className="w-4 h-4 text-[#315B8A] shrink-0" />
                 <span>A partir das <strong>{settings.eventTime}</strong></span>
               </div>
-              <span className="hidden sm:inline text-[#DCC6A6]" aria-hidden="true">/</span>
+              <span className="hidden sm:inline text-[#CBD9C1]" aria-hidden="true">/</span>
               <div className="flex items-center gap-2">
                 <MapPin className="w-4 h-4 text-[#315B8A] shrink-0" />
                 <span>{settings.locationName}</span>
@@ -144,25 +144,25 @@ export const Hero: React.FC<HeroProps> = ({ settings, onScrollTo }) => {
                 </p>
               ) : (
                 <div className="grid grid-cols-4 gap-2 sm:gap-3 text-center">
-                  <div className="bg-[#FBF4E8] rounded-xl py-2 px-1 border border-[#E8D4B8]">
+                  <div className="bg-[#F2F6EE] rounded-xl py-2 px-1 border border-[#D5E1CB]">
                     <span className="block font-serif text-2xl sm:text-3xl font-semibold text-[#1B2F4E] tabular-nums">
                       {String(timeLeft.days).padStart(2, '0')}
                     </span>
                     <span className="text-[11px] font-mono font-medium text-[#5B6B82] uppercase">dias</span>
                   </div>
-                  <div className="bg-[#FBF4E8] rounded-xl py-2 px-1 border border-[#E8D4B8]">
+                  <div className="bg-[#F2F6EE] rounded-xl py-2 px-1 border border-[#D5E1CB]">
                     <span className="block font-serif text-2xl sm:text-3xl font-semibold text-[#1B2F4E] tabular-nums">
                       {String(timeLeft.hours).padStart(2, '0')}
                     </span>
                     <span className="text-[11px] font-mono font-medium text-[#5B6B82] uppercase">horas</span>
                   </div>
-                  <div className="bg-[#FBF4E8] rounded-xl py-2 px-1 border border-[#E8D4B8]">
+                  <div className="bg-[#F2F6EE] rounded-xl py-2 px-1 border border-[#D5E1CB]">
                     <span className="block font-serif text-2xl sm:text-3xl font-semibold text-[#1B2F4E] tabular-nums">
                       {String(timeLeft.minutes).padStart(2, '0')}
                     </span>
                     <span className="text-[11px] font-mono font-medium text-[#5B6B82] uppercase">min</span>
                   </div>
-                  <div className="bg-[#FBF4E8] rounded-xl py-2 px-1 border border-[#E8D4B8]">
+                  <div className="bg-[#F2F6EE] rounded-xl py-2 px-1 border border-[#D5E1CB]">
                     <span className="block font-serif text-2xl sm:text-3xl font-semibold text-[#315B8A] tabular-nums">
                       {String(timeLeft.seconds).padStart(2, '0')}
                     </span>
@@ -208,7 +208,7 @@ export const Hero: React.FC<HeroProps> = ({ settings, onScrollTo }) => {
               />
 
               {/* Arch container */}
-              <div className="relative rounded-t-[999px] rounded-b-3xl overflow-hidden shadow-xl aspect-[4/5] bg-[#F6EBD9]">
+              <div className="relative rounded-t-[999px] rounded-b-3xl overflow-hidden shadow-xl aspect-[4/5] bg-[#EAF1E4]">
                 <img
                   src={settings.mainImageUrl || 'default'}
                   alt="Amanda Marinho no apê novo"
@@ -222,7 +222,7 @@ export const Hero: React.FC<HeroProps> = ({ settings, onScrollTo }) => {
                   <div className="font-serif text-2xl font-light tracking-wide text-white">
                     {settings.hostName}
                   </div>
-                  <p className="text-xs text-[#FBF4E8]/90 mt-1 font-sans">
+                  <p className="text-xs text-[#F2F6EE]/90 mt-1 font-sans">
                     {heroQuote}
                   </p>
                 </div>
@@ -244,7 +244,7 @@ export const Hero: React.FC<HeroProps> = ({ settings, onScrollTo }) => {
                       d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0"
                       fill="none"
                     />
-                    <circle cx="50" cy="50" r="48" fill="#F2B84B" stroke="#1B2F4E" strokeWidth="1.5" />
+                    <circle cx="50" cy="50" r="48" fill="#8A9A86" stroke="#1B2F4E" strokeWidth="1.5" />
                     <text className="font-mono text-[7px] uppercase font-bold tracking-widest fill-[#1B2F4E]">
                       <textPath href="#hero-seal-path" startOffset="0%">
                         {rotatingBadgeText}
@@ -258,19 +258,19 @@ export const Hero: React.FC<HeroProps> = ({ settings, onScrollTo }) => {
                 </div>
               </div>
 
-              {/* 2.7 Instagram link: bg #1B2F4E, white text, icon #F2B84B, rotate 2deg */}
+              {/* 2.7 Instagram link: bg #1B2F4E, white text, icon #8A9A86, rotate 2deg */}
               <a
                 href={`https://www.instagram.com/${settings.instagramHandle}/`}
                 target="_blank"
                 rel="noreferrer noopener"
                 className="absolute -bottom-4 right-4 bg-[#1B2F4E] text-white py-2.5 px-4 rounded-xl shadow-md text-xs font-semibold flex items-center gap-2 transition-all active:scale-[0.98] rotate-2 hover:rotate-0"
               >
-                <Instagram className="w-4 h-4 text-[#F2B84B]" />
+                <Instagram className="w-4 h-4 text-[#8A9A86]" />
                 <span>@{settings.instagramHandle}</span>
               </a>
 
-              {/* 2.6 Location label: moodboard tape style, bg #F2B84B, text #1B2F4E, rotate -3deg */}
-              <div className="absolute -top-3 -left-3 bg-[#F2B84B] text-[#1B2F4E] px-3.5 py-1.5 rounded-sm text-xs font-medium shadow-sm -rotate-3">
+              {/* 2.6 Location label: moodboard tape style, bg #8A9A86, text #1B2F4E, rotate -3deg */}
+              <div className="absolute -top-3 -left-3 bg-[#8A9A86] text-[#1B2F4E] px-3.5 py-1.5 rounded-sm text-xs font-medium shadow-sm -rotate-3">
                 {settings.locationName || 'Apê 82'} • {settings.locationCity || 'Casa Nova'}
               </div>
             </div>

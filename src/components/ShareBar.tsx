@@ -52,7 +52,7 @@ export const ShareBar: React.FC<ShareBarProps> = ({ settings }) => {
   };
 
   return (
-    <section className="py-12 bg-[#FBF4E8] border-t border-[#E8D4B8]">
+    <section className="py-12 bg-[#F2F6EE] border-t border-[#D5E1CB]">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
         
         <h3 className="font-serif text-2xl font-medium text-[#1B2F4E] mb-2">
@@ -81,7 +81,7 @@ export const ShareBar: React.FC<ShareBarProps> = ({ settings }) => {
 
           <button
             onClick={handleCopyLink}
-            className="h-11 px-4 rounded-full border border-[#E8D4B8] bg-white hover:bg-[#F6EBD9] text-[#1B2F4E] text-xs font-semibold flex items-center gap-2 transition-colors cursor-pointer"
+            className="h-11 px-4 rounded-full border border-[#D5E1CB] bg-white hover:bg-[#EAF1E4] text-[#1B2F4E] text-xs font-semibold flex items-center gap-2 transition-colors cursor-pointer"
           >
             {copied ? (
               <>

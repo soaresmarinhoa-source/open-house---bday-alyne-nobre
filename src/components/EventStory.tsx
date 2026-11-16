@@ -3,7 +3,7 @@ import { Heart, Wine, PartyPopper } from 'lucide-react';
 
 export const EventStory: React.FC = () => {
   return (
-    <section id="evento" className="py-16 sm:py-20 bg-[#F6EBD9] border-y border-[#E8D4B8]">
+    <section id="evento" className="py-16 sm:py-20 bg-[#EAF1E4] border-y border-[#D5E1CB]">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
         
         <h2 className="font-serif text-3xl sm:text-4xl font-medium text-[#1B2F4E] mb-6 text-balance">
@@ -27,8 +27,8 @@ export const EventStory: React.FC = () => {
 
         {/* 3 Pillars of the celebration */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
-          <div className="bg-[#FBF4E8] p-6 rounded-2xl border border-[#E8D4B8]">
-            <div className="w-10 h-10 rounded-xl bg-[#F7E6D0] text-[#315B8A] flex items-center justify-center mb-4">
+          <div className="bg-[#F2F6EE] p-6 rounded-2xl border border-[#D5E1CB]">
+            <div className="w-10 h-10 rounded-xl bg-[#E6EEDF] text-[#315B8A] flex items-center justify-center mb-4">
               <PartyPopper className="w-5 h-5" />
             </div>
             <h3 className="font-serif text-lg font-semibold text-[#1B2F4E] mb-2">1. Meu Aniversário</h3>
@@ -37,8 +37,8 @@ export const EventStory: React.FC = () => {
             </p>
           </div>
 
-          <div className="bg-[#FBF4E8] p-6 rounded-2xl border border-[#E8D4B8]">
-            <div className="w-10 h-10 rounded-xl bg-[#F7E6D0] text-[#315B8A] flex items-center justify-center mb-4">
+          <div className="bg-[#F2F6EE] p-6 rounded-2xl border border-[#D5E1CB]">
+            <div className="w-10 h-10 rounded-xl bg-[#E6EEDF] text-[#315B8A] flex items-center justify-center mb-4">
               <Heart className="w-5 h-5" />
             </div>
             <h3 className="font-serif text-lg font-semibold text-[#1B2F4E] mb-2">2. Chá de Casa Nova</h3>
@@ -47,8 +47,8 @@ export const EventStory: React.FC = () => {
             </p>
           </div>
 
-          <div className="bg-[#FBF4E8] p-6 rounded-2xl border border-[#E8D4B8]">
-            <div className="w-10 h-10 rounded-xl bg-[#F7E6D0] text-[#315B8A] flex items-center justify-center mb-4">
+          <div className="bg-[#F2F6EE] p-6 rounded-2xl border border-[#D5E1CB]">
+            <div className="w-10 h-10 rounded-xl bg-[#E6EEDF] text-[#315B8A] flex items-center justify-center mb-4">
               <Wine className="w-5 h-5" />
             </div>
             <h3 className="font-serif text-lg font-semibold text-[#1B2F4E] mb-2">3. Celebrando Conquistas</h3>

@@ -164,7 +164,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#FBF4E8] text-[#1B2F4E] flex flex-col font-sans">
+    <div className="min-h-screen bg-[#F2F6EE] text-[#1B2F4E] flex flex-col font-sans">
       {/* Top Bar Navigation */}
       <Navbar onOpenAdmin={handleOpenAdmin} isAdmin={isAdminLoggedIn} />
 

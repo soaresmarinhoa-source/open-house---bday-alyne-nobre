@@ -5,10 +5,10 @@
   --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
   --font-mono: 'DM Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
   --font-hand: 'Caveat', 'Segoe Script', cursive;
-  --color-sun: #F2B84B;
+  --color-sage: #8A9A86;
   --color-blue: #315B8A;
   --color-ink: #1B2F4E;
-  --color-cream: #FBF4E8;
+  --color-cream: #F2F6EE;
 }
 
 html {
@@ -17,7 +17,7 @@ html {
 
 body {
   font-family: var(--font-sans);
-  background-color: #FBF4E8;
+  background-color: #F2F6EE;
   color: #1B2F4E;
 }
 
@@ -53,10 +53,10 @@ body {
   height: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #FBF4E8;
+  background: #F2F6EE;
 }
 ::-webkit-scrollbar-thumb {
-  background: #E8D4B8;
+  background: #D5E1CB;
   border-radius: 9999px;
 }
 ::-webkit-scrollbar-thumb:hover {
@@ -64,7 +64,7 @@ body {
 }
 
 ::selection {
-  background-color: rgba(242, 184, 75, 0.4);
+  background-color: rgba(138, 154, 134, 0.35);
   color: #1B2F4E;
 }
 

@@ -36,7 +36,7 @@ export const WaveDivider: React.FC<WaveDividerProps> = ({
         {/* Yellow-sun thinner wave line offset underneath */}
         <path
           d="M0 19 C100 9 200 29 300 19 C400 9 500 29 600 19 C700 9 800 29 900 19 C1000 9 1100 29 1200 19"
-          stroke="#F2B84B"
+          stroke="#8A9A86"
           strokeWidth="2"
           strokeLinecap="round"
           strokeOpacity="0.9"
