@@ -782,7 +782,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
       {/* Top Header */}
       <header className="sticky top-0 z-30 bg-white border-b border-[#EADBCE] px-4 sm:px-6 h-16 flex items-center justify-between shadow-2xs">
         <div className="flex items-center gap-3">
-          <div className="w-8 h-8 rounded-lg bg-[#F0E6DE] text-[#C86D51] flex items-center justify-center font-serif font-bold text-sm">
+          <div className="w-8 h-8 rounded-lg bg-[#E7EEF6] text-[#315B8A] flex items-center justify-center font-serif font-bold text-sm">
             AN
           </div>
           <div>
@@ -820,7 +820,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
             onClick={() => setActiveTab('overview')}
             className={`h-9 px-4 rounded-lg text-xs font-semibold whitespace-nowrap transition-colors cursor-pointer ${
               activeTab === 'overview'
-                ? 'bg-[#C86D51] text-white shadow-xs'
+                ? 'bg-[#315B8A] text-white shadow-xs'
                 : 'text-[#68625B] hover:text-[#2D2A26] hover:bg-[#F4EFEB]'
             }`}
           >
@@ -831,7 +831,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
             onClick={() => setActiveTab('gifts')}
             className={`h-9 px-4 rounded-lg text-xs font-semibold whitespace-nowrap transition-colors cursor-pointer ${
               activeTab === 'gifts'
-                ? 'bg-[#C86D51] text-white shadow-xs'
+                ? 'bg-[#315B8A] text-white shadow-xs'
                 : 'text-[#68625B] hover:text-[#2D2A26] hover:bg-[#F4EFEB]'
             }`}
           >
@@ -842,7 +842,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
             onClick={() => setActiveTab('whoGaveWhat')}
             className={`h-9 px-4 rounded-lg text-xs font-semibold whitespace-nowrap transition-colors cursor-pointer ${
               activeTab === 'whoGaveWhat'
-                ? 'bg-[#C86D51] text-white shadow-xs'
+                ? 'bg-[#315B8A] text-white shadow-xs'
                 : 'text-[#68625B] hover:text-[#2D2A26] hover:bg-[#F4EFEB]'
             }`}
           >
@@ -861,7 +861,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
             onClick={() => setActiveTab('guests')}
             className={`h-9 px-4 rounded-lg text-xs font-semibold whitespace-nowrap transition-colors cursor-pointer ${
               activeTab === 'guests'
-                ? 'bg-[#C86D51] text-white shadow-xs'
+                ? 'bg-[#315B8A] text-white shadow-xs'
                 : 'text-[#68625B] hover:text-[#2D2A26] hover:bg-[#F4EFEB]'
             }`}
           >
@@ -872,7 +872,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
             onClick={() => setActiveTab('whatsapp')}
             className={`h-9 px-4 rounded-lg text-xs font-semibold whitespace-nowrap transition-colors cursor-pointer flex items-center gap-1.5 ${
               activeTab === 'whatsapp'
-                ? 'bg-[#C86D51] text-white shadow-xs'
+                ? 'bg-[#315B8A] text-white shadow-xs'
                 : 'text-[#68625B] hover:text-[#2D2A26] hover:bg-[#F4EFEB]'
             }`}
           >
@@ -884,7 +884,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
             onClick={() => setActiveTab('gallery')}
             className={`h-9 px-4 rounded-lg text-xs font-semibold whitespace-nowrap transition-colors cursor-pointer flex items-center gap-1.5 ${
               activeTab === 'gallery'
-                ? 'bg-[#C86D51] text-white shadow-xs'
+                ? 'bg-[#315B8A] text-white shadow-xs'
                 : 'text-[#68625B] hover:text-[#2D2A26] hover:bg-[#F4EFEB]'
             }`}
           >
@@ -895,7 +895,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
             onClick={() => setActiveTab('settings')}
             className={`h-9 px-4 rounded-lg text-xs font-semibold whitespace-nowrap transition-colors cursor-pointer ${
               activeTab === 'settings'
-                ? 'bg-[#C86D51] text-white shadow-xs'
+                ? 'bg-[#315B8A] text-white shadow-xs'
                 : 'text-[#68625B] hover:text-[#2D2A26] hover:bg-[#F4EFEB]'
             }`}
           >
@@ -974,7 +974,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                 <span className="font-serif text-2xl sm:text-3xl font-semibold text-[#2D2A26] tabular-nums mt-1 block">
                   {totalPeopleCount}
                 </span>
-                <span className="text-[11px] text-[#A95339]">
+                <span className="text-[11px] text-[#244568]">
                   {confirmedGuests.length} respostas positivas
                 </span>
               </div>
@@ -1007,7 +1007,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                 <span className="text-[11px] font-medium text-[#7D756C] block uppercase tracking-wider">
                   Esgotados
                 </span>
-                <span className="font-serif text-2xl sm:text-3xl font-semibold text-[#C86D51] tabular-nums mt-1 block">
+                <span className="font-serif text-2xl sm:text-3xl font-semibold text-[#315B8A] tabular-nums mt-1 block">
                   {soldOutGiftsCount}
                 </span>
                 <span className="text-[11px] text-[#7D756C]">
@@ -1022,7 +1022,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                 <span className="font-serif text-2xl sm:text-3xl font-semibold text-[#2D2A26] tabular-nums mt-1 block">
                   {totalReservedQuotas}
                 </span>
-                <span className="text-[11px] text-[#A95339]">
+                <span className="text-[11px] text-[#244568]">
                   {reservations.length} amigos presentearam
                 </span>
               </div>
@@ -1077,7 +1077,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   <button
                     onClick={handleOpenNewGiftModal}
-                    className="h-12 px-4 rounded-xl bg-[#C86D51] hover:bg-[#A95339] text-white text-xs font-semibold flex items-center justify-center gap-2 transition-colors cursor-pointer"
+                    className="h-12 px-4 rounded-xl bg-[#315B8A] hover:bg-[#244568] text-white text-xs font-semibold flex items-center justify-center gap-2 transition-colors cursor-pointer"
                   >
                     <Plus className="w-4 h-4" />
                     <span>+ Novo Presente</span>
@@ -1087,7 +1087,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                     onClick={() => setIsScraperModalOpen(true)}
                     className="h-12 px-4 rounded-xl border border-[#EADBCE] hover:bg-[#FAF8F5] text-[#2D2A26] text-xs font-semibold flex items-center justify-center gap-2 transition-colors cursor-pointer"
                   >
-                    <LinkIcon className="w-4 h-4 text-[#C86D51]" />
+                    <LinkIcon className="w-4 h-4 text-[#315B8A]" />
                     <span>Importar por Link</span>
                   </button>
 
@@ -1095,7 +1095,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                     onClick={handleOpenGiftCsvModal}
                     className="h-12 px-4 rounded-xl border border-[#EADBCE] hover:bg-[#FAF8F5] text-[#2D2A26] text-xs font-semibold flex items-center justify-center gap-2 transition-colors cursor-pointer"
                   >
-                    <FileSpreadsheet className="w-4 h-4 text-[#C86D51]" />
+                    <FileSpreadsheet className="w-4 h-4 text-[#315B8A]" />
                     <span>Importar CSV</span>
                   </button>
 
@@ -1119,7 +1119,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                     onClick={() => setActiveTab('whoGaveWhat')}
                     className="h-12 px-4 rounded-xl border border-[#EADBCE] hover:bg-[#FAF8F5] text-[#2D2A26] text-xs font-semibold flex items-center justify-center gap-2 transition-colors cursor-pointer"
                   >
-                    <Heart className="w-4 h-4 text-[#C86D51]" />
+                    <Heart className="w-4 h-4 text-[#315B8A]" />
                     <span>Ver Quem Me Presenteou</span>
                   </button>
                 </div>
@@ -1133,7 +1133,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                   </h3>
                   <button
                     onClick={() => setActiveTab('whoGaveWhat')}
-                    className="text-xs text-[#C86D51] hover:underline font-medium cursor-pointer"
+                    className="text-xs text-[#315B8A] hover:underline font-medium cursor-pointer"
                   >
                     Ver todas →
                   </button>
@@ -1148,7 +1148,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                     {reservations.slice(0, 4).map((r, i) => (
                       <div
                         key={r.id || i}
-                        className="flex items-center justify-between p-3 rounded-xl bg-[#FAF8F5] border border-[#F0E6DE]"
+                        className="flex items-center justify-between p-3 rounded-xl bg-[#FAF8F5] border border-[#E7EEF6]"
                       >
                         <div>
                           <strong className="text-xs font-semibold text-[#2D2A26] block">
@@ -1189,7 +1189,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                   onClick={() => setIsScraperModalOpen(true)}
                   className="h-10 px-3.5 rounded-xl border border-[#EADBCE] bg-white hover:bg-[#FAF8F5] text-xs font-semibold text-[#2D2A26] flex items-center gap-1.5 transition-colors cursor-pointer"
                 >
-                  <LinkIcon className="w-3.5 h-3.5 text-[#C86D51]" />
+                  <LinkIcon className="w-3.5 h-3.5 text-[#315B8A]" />
                   <span>Por Link</span>
                 </button>
 
@@ -1197,7 +1197,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                   onClick={handleOpenGiftCsvModal}
                   className="h-10 px-3.5 rounded-xl border border-[#EADBCE] bg-white hover:bg-[#FAF8F5] text-xs font-semibold text-[#2D2A26] flex items-center gap-1.5 transition-colors cursor-pointer"
                 >
-                  <FileSpreadsheet className="w-4 h-4 text-[#C86D51]" />
+                  <FileSpreadsheet className="w-4 h-4 text-[#315B8A]" />
                   <span>Importar CSV</span>
                 </button>
 
@@ -1205,13 +1205,13 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                   onClick={handleExportGiftsCsv}
                   className="h-10 px-3.5 rounded-xl border border-[#EADBCE] bg-white hover:bg-[#FAF8F5] text-xs font-semibold text-[#2D2A26] flex items-center gap-1.5 transition-colors cursor-pointer"
                 >
-                  <Download className="w-4 h-4 text-[#C86D51]" />
+                  <Download className="w-4 h-4 text-[#315B8A]" />
                   <span>Exportar CSV</span>
                 </button>
 
                 <button
                   onClick={handleOpenNewGiftModal}
-                  className="h-10 px-4 rounded-xl bg-[#C86D51] hover:bg-[#A95339] text-white text-xs font-semibold flex items-center gap-1.5 transition-colors shadow-xs cursor-pointer"
+                  className="h-10 px-4 rounded-xl bg-[#315B8A] hover:bg-[#244568] text-white text-xs font-semibold flex items-center gap-1.5 transition-colors shadow-xs cursor-pointer"
                 >
                   <Plus className="w-4 h-4" />
                   <span>Novo Presente</span>
@@ -1220,7 +1220,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                 <button
                   onClick={handleSeedDefaultGifts}
                   disabled={seedingGifts}
-                  className="h-10 px-3.5 rounded-xl border border-[#C86D51] bg-[#FAF8F5] hover:bg-[#F3E7DE] text-[#C86D51] text-xs font-semibold flex items-center gap-1.5 transition-colors cursor-pointer"
+                  className="h-10 px-3.5 rounded-xl border border-[#315B8A] bg-[#FAF8F5] hover:bg-[#F3E7DE] text-[#315B8A] text-xs font-semibold flex items-center gap-1.5 transition-colors cursor-pointer"
                 >
                   <Sparkles className="w-4 h-4" />
                   <span>{seedingGifts ? 'Semeando...' : 'Carregar Padrões'}</span>
@@ -1240,7 +1240,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                 <button
                   onClick={handleSeedDefaultGifts}
                   disabled={seedingGifts}
-                  className="h-11 px-6 rounded-xl bg-[#C86D51] hover:bg-[#A95339] text-white text-xs font-semibold uppercase tracking-wide cursor-pointer transition-colors shadow-xs"
+                  className="h-11 px-6 rounded-xl bg-[#315B8A] hover:bg-[#244568] text-white text-xs font-semibold uppercase tracking-wide cursor-pointer transition-colors shadow-xs"
                 >
                   {seedingGifts ? 'Carregando presentes...' : 'Carregar Lista Padrão de Presentes no Firestore'}
                 </button>
@@ -1290,7 +1290,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                       <th className="p-4 text-right">Ações</th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-[#F0E6DE]">
+                  <tbody className="divide-y divide-[#E7EEF6]">
                     {filteredGifts.map((gift) => (
                       <tr key={gift.id} className="hover:bg-[#FAF8F5]/60 transition-colors">
                         <td className="p-4">
@@ -1303,7 +1303,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                                 className="w-10 h-10 rounded-lg object-cover border border-[#EADBCE] shrink-0"
                               />
                             ) : (
-                              <div className="w-10 h-10 rounded-lg bg-[#F0E6DE] text-[#C86D51] flex items-center justify-center shrink-0">
+                              <div className="w-10 h-10 rounded-lg bg-[#E7EEF6] text-[#315B8A] flex items-center justify-center shrink-0">
                                 <GiftIcon className="w-4 h-4" />
                               </div>
                             )}
@@ -1325,7 +1325,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                         </td>
                         <td className="p-4 tabular-nums">
                           <div>
-                            <span className="font-semibold text-[#C86D51]">
+                            <span className="font-semibold text-[#315B8A]">
                               {gift.availableQuantity}
                             </span>{' '}
                             / {gift.totalQuantity} cotas
@@ -1349,7 +1349,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                                   <span
                                     key={r.id || i}
                                     title={`${r.guestName} (${r.guestWhatsapp || 'Sem tel'}) - ${r.quantity} cota(s)`}
-                                    className="inline-flex items-center text-[10px] font-medium bg-[#FBF0EB] text-[#A95339] border border-[#F0E6DE] px-1.5 py-0.5 rounded"
+                                    className="inline-flex items-center text-[10px] font-medium bg-[#E7EEF6] text-[#244568] border border-[#E7EEF6] px-1.5 py-0.5 rounded"
                                   >
                                     {r.guestName} ({r.quantity})
                                   </span>
@@ -1434,7 +1434,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                   onClick={handleExportReservationsCsv}
                   className="h-10 px-3.5 rounded-xl border border-[#EADBCE] bg-white hover:bg-[#FAF8F5] text-xs font-semibold text-[#2D2A26] flex items-center gap-1.5 transition-colors cursor-pointer shadow-2xs"
                 >
-                  <Download className="w-4 h-4 text-[#C86D51]" />
+                  <Download className="w-4 h-4 text-[#315B8A]" />
                   <span>Exportar Relatório CSV</span>
                 </button>
               </div>
@@ -1469,7 +1469,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                       <button
                         type="button"
                         onClick={() => handleAddGifterToGuests(g)}
-                        className="h-8 px-3 rounded-lg bg-[#C86D51] hover:bg-[#A95339] text-white text-[11px] font-semibold flex items-center gap-1.5 shrink-0 cursor-pointer"
+                        className="h-8 px-3 rounded-lg bg-[#315B8A] hover:bg-[#244568] text-white text-[11px] font-semibold flex items-center gap-1.5 shrink-0 cursor-pointer"
                       >
                         <UserPlus className="w-3.5 h-3.5" />
                         Adicionar à lista
@@ -1553,7 +1553,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
               ) : (
                 <div className="p-4 rounded-2xl bg-white border border-[#EADBCE] shadow-2xs flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs">
                   <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 rounded-lg bg-[#FAF8F5] text-[#C86D51] flex items-center justify-center shrink-0 border border-[#EADBCE]">
+                    <div className="w-8 h-8 rounded-lg bg-[#FAF8F5] text-[#315B8A] flex items-center justify-center shrink-0 border border-[#EADBCE]">
                       <Truck className="w-4 h-4" />
                     </div>
                     <div>
@@ -1583,7 +1583,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                         </>
                       ) : (
                         <>
-                          <Copy className="w-3.5 h-3.5 text-[#C86D51]" />
+                          <Copy className="w-3.5 h-3.5 text-[#315B8A]" />
                           <span>Copiar endereço</span>
                         </>
                       )}
@@ -1609,7 +1609,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                   value={resSearch}
                   onChange={(e) => setResSearch(e.target.value)}
                   placeholder="Buscar reserva por convidado, WhatsApp, presente ou rastreio..."
-                  className="w-full h-10 pl-9 pr-4 rounded-xl border border-[#EADBCE] bg-[#FAF8F5] text-xs text-[#2D2A26] focus:bg-white focus:outline-none focus:border-[#C86D51] transition-colors"
+                  className="w-full h-10 pl-9 pr-4 rounded-xl border border-[#EADBCE] bg-[#FAF8F5] text-xs text-[#2D2A26] focus:bg-white focus:outline-none focus:border-[#315B8A] transition-colors"
                 />
               </div>
 
@@ -1621,7 +1621,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                     setResTypeFilter(e.target.value as any);
                     setResStatusFilter('all');
                   }}
-                  className="h-10 px-3 rounded-xl border border-[#EADBCE] bg-white text-xs text-[#2D2A26] font-medium focus:outline-none focus:border-[#C86D51] cursor-pointer"
+                  className="h-10 px-3 rounded-xl border border-[#EADBCE] bg-white text-xs text-[#2D2A26] font-medium focus:outline-none focus:border-[#315B8A] cursor-pointer"
                 >
                   <option value="all">Todos os tipos ({reservations.length})</option>
                   <option value="pix">Somente Pix / Cotas ({pixReservations.length})</option>
@@ -1632,7 +1632,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                 <select
                   value={resStatusFilter}
                   onChange={(e) => setResStatusFilter(e.target.value)}
-                  className="h-10 px-3 rounded-xl border border-[#EADBCE] bg-white text-xs text-[#2D2A26] font-medium focus:outline-none focus:border-[#C86D51] cursor-pointer"
+                  className="h-10 px-3 rounded-xl border border-[#EADBCE] bg-white text-xs text-[#2D2A26] font-medium focus:outline-none focus:border-[#315B8A] cursor-pointer"
                 >
                   {resTypeFilter === 'all' && (
                     <>
@@ -1667,7 +1667,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                     onClick={() => setResViewMode('list')}
                     className={`h-9 px-3 rounded-lg text-xs font-semibold cursor-pointer transition-colors ${
                       resViewMode === 'list'
-                        ? 'bg-white text-[#C86D51] shadow-2xs'
+                        ? 'bg-white text-[#315B8A] shadow-2xs'
                         : 'text-[#68625B] hover:text-[#2D2A26]'
                     }`}
                   >
@@ -1678,7 +1678,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                     onClick={() => setResViewMode('byGift')}
                     className={`h-9 px-3 rounded-lg text-xs font-semibold cursor-pointer transition-colors ${
                       resViewMode === 'byGift'
-                        ? 'bg-white text-[#C86D51] shadow-2xs'
+                        ? 'bg-white text-[#315B8A] shadow-2xs'
                         : 'text-[#68625B] hover:text-[#2D2A26]'
                     }`}
                   >
@@ -1697,7 +1697,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
 
             {reservations.length === 0 ? (
               <div className="text-center py-16 bg-white rounded-3xl border border-[#EADBCE] p-8 shadow-2xs">
-                <Heart className="w-10 h-10 text-[#C86D51] mx-auto mb-2 opacity-50" />
+                <Heart className="w-10 h-10 text-[#315B8A] mx-auto mb-2 opacity-50" />
                 <p className="font-serif text-lg font-medium text-[#2D2A26]">
                   Nenhum presente reservado ainda
                 </p>
@@ -1772,7 +1772,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
 
                       return (
                         <div key={giftKey} className="bg-white rounded-2xl border border-[#EADBCE] p-5 shadow-2xs space-y-4">
-                          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-[#F0E6DE]">
+                          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-[#E7EEF6]">
                             <div className="flex items-center gap-3">
                               {associatedGift?.imageUrl ? (
                                 <img
@@ -1781,7 +1781,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                                   className="w-12 h-12 rounded-xl object-cover border border-[#EADBCE] shrink-0"
                                 />
                               ) : (
-                                <div className="w-12 h-12 rounded-xl bg-[#F0E6DE] text-[#C86D51] flex items-center justify-center shrink-0">
+                                <div className="w-12 h-12 rounded-xl bg-[#E7EEF6] text-[#315B8A] flex items-center justify-center shrink-0">
                                   <GiftIcon className="w-5 h-5" />
                                 </div>
                               )}
@@ -1805,7 +1805,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                                         href={purchaseUrl}
                                         target="_blank"
                                         rel="noreferrer noopener"
-                                        className="inline-flex items-center gap-1 text-[#C86D51] hover:underline font-semibold"
+                                        className="inline-flex items-center gap-1 text-[#315B8A] hover:underline font-semibold"
                                       >
                                         <span>Link da Loja</span>
                                         <ExternalLink className="w-3 h-3" />
@@ -1938,7 +1938,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                                         <button
                                           type="button"
                                           onClick={() => handleToggleReservationPaid(r)}
-                                          className="text-[11px] text-[#C86D51] hover:underline font-semibold cursor-pointer"
+                                          className="text-[11px] text-[#315B8A] hover:underline font-semibold cursor-pointer"
                                         >
                                           {r.paid ? 'Marcar Pendente' : 'Confirmar Pago'}
                                         </button>
@@ -2047,7 +2047,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                           </div>
 
                           {/* Gift Card */}
-                          <div className="p-3 rounded-xl bg-[#FAF8F5] border border-[#F0E6DE] text-xs flex items-center gap-3">
+                          <div className="p-3 rounded-xl bg-[#FAF8F5] border border-[#E7EEF6] text-xs flex items-center gap-3">
                             {associatedGift?.imageUrl ? (
                               <img
                                 src={associatedGift.imageUrl}
@@ -2055,7 +2055,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                                 className="w-12 h-12 rounded-lg object-cover border border-[#EADBCE] shrink-0"
                               />
                             ) : (
-                              <div className="w-12 h-12 rounded-lg bg-[#F0E6DE] text-[#C86D51] flex items-center justify-center shrink-0">
+                              <div className="w-12 h-12 rounded-lg bg-[#E7EEF6] text-[#315B8A] flex items-center justify-center shrink-0">
                                 <GiftIcon className="w-5 h-5" />
                               </div>
                             )}
@@ -2082,7 +2082,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                                   href={purchaseUrl}
                                   target="_blank"
                                   rel="noreferrer noopener"
-                                  className="inline-flex items-center gap-1 text-[11px] text-[#C86D51] hover:underline font-semibold mt-1"
+                                  className="inline-flex items-center gap-1 text-[11px] text-[#315B8A] hover:underline font-semibold mt-1"
                                 >
                                   <span>Link da Loja</span>
                                   <ExternalLink className="w-3 h-3" />
@@ -2093,7 +2093,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
 
                           {/* Mensagem do Convidado */}
                           {res.message && (
-                            <p className="text-xs italic text-[#5A544D] bg-[#FDFBF7] p-2.5 rounded-lg border border-[#F0E6DE]">
+                            <p className="text-xs italic text-[#5A544D] bg-[#FDFBF7] p-2.5 rounded-lg border border-[#E7EEF6]">
                               "{res.message}"
                             </p>
                           )}
@@ -2154,7 +2154,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                                         placeholder="Ex: QB123456789BR"
                                         value={trackingInput}
                                         onChange={(e) => setTrackingInput(e.target.value)}
-                                        className="w-full h-7 px-2 rounded-lg border border-[#EADBCE] bg-white text-xs font-mono focus:outline-none focus:border-[#C86D51]"
+                                        className="w-full h-7 px-2 rounded-lg border border-[#EADBCE] bg-white text-xs font-mono focus:outline-none focus:border-[#315B8A]"
                                       />
                                     </div>
                                     <div>
@@ -2167,7 +2167,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                                         placeholder="Ex: Chega até sexta..."
                                         value={orderNoteInput}
                                         onChange={(e) => setOrderNoteInput(e.target.value)}
-                                        className="w-full h-7 px-2 rounded-lg border border-[#EADBCE] bg-white text-xs focus:outline-none focus:border-[#C86D51]"
+                                        className="w-full h-7 px-2 rounded-lg border border-[#EADBCE] bg-white text-xs focus:outline-none focus:border-[#315B8A]"
                                       />
                                     </div>
                                     <div className="flex items-center justify-end gap-1.5 pt-0.5">
@@ -2182,7 +2182,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                                         type="button"
                                         disabled={savingTrackingId === res.id}
                                         onClick={() => handleSaveTracking(res.id)}
-                                        className="h-6 px-2.5 rounded-lg bg-[#C86D51] hover:bg-[#A95339] text-white text-[11px] font-semibold transition-colors cursor-pointer"
+                                        className="h-6 px-2.5 rounded-lg bg-[#315B8A] hover:bg-[#244568] text-white text-[11px] font-semibold transition-colors cursor-pointer"
                                       >
                                         {savingTrackingId === res.id ? 'Salvando...' : 'Salvar'}
                                       </button>
@@ -2193,7 +2193,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                                     <div className="space-y-0.5">
                                       {res.trackingCode ? (
                                         <div className="flex items-center gap-1.5 text-[11px]">
-                                          <Truck className="w-3 h-3 text-[#C86D51]" />
+                                          <Truck className="w-3 h-3 text-[#315B8A]" />
                                           <span className="font-mono font-medium text-[#2D2A26]">{res.trackingCode}</span>
                                         </div>
                                       ) : (
@@ -2208,7 +2208,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                                     <button
                                       type="button"
                                       onClick={() => handleStartEditingTracking(res)}
-                                      className="text-[11px] text-[#C86D51] hover:underline font-semibold cursor-pointer shrink-0"
+                                      className="text-[11px] text-[#315B8A] hover:underline font-semibold cursor-pointer shrink-0"
                                     >
                                       {res.trackingCode || res.orderNote ? 'Editar' : '+ Rastreio/Obs'}
                                     </button>
@@ -2220,7 +2220,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                         </div>
 
                         {/* Actions footer */}
-                        <div className="pt-2 border-t border-[#F0E6DE] space-y-2 mt-2">
+                        <div className="pt-2 border-t border-[#E7EEF6] space-y-2 mt-2">
                           <div className="flex items-center justify-between gap-2">
                             {!isLink ? (
                               <button
@@ -2305,7 +2305,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
               <div className="flex items-center gap-2 flex-wrap">
                 <button
                   onClick={handleOpenAddGuest}
-                  className="h-10 px-4 rounded-xl bg-[#C86D51] hover:bg-[#A95339] text-white text-xs font-semibold flex items-center gap-1.5 transition-colors cursor-pointer shadow-xs"
+                  className="h-10 px-4 rounded-xl bg-[#315B8A] hover:bg-[#244568] text-white text-xs font-semibold flex items-center gap-1.5 transition-colors cursor-pointer shadow-xs"
                 >
                   <UserPlus className="w-4 h-4" />
                   <span>+ Adicionar Convidado</span>
@@ -2315,7 +2315,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                   onClick={handleOpenCsvModal}
                   className="h-10 px-3.5 rounded-xl border border-[#EADBCE] bg-white hover:bg-[#FAF8F5] text-xs font-semibold text-[#2D2A26] flex items-center gap-1.5 transition-colors cursor-pointer"
                 >
-                  <FileSpreadsheet className="w-4 h-4 text-[#C86D51]" />
+                  <FileSpreadsheet className="w-4 h-4 text-[#315B8A]" />
                   <span>Importar CSV</span>
                 </button>
 
@@ -2421,7 +2421,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                       <th className="p-4 text-right">Ações</th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-[#F0E6DE]">
+                  <tbody className="divide-y divide-[#E7EEF6]">
                     {filteredGuests.length === 0 ? (
                       <tr>
                         <td colSpan={8} className="p-8 text-center text-xs text-[#7D756C]">
@@ -2441,7 +2441,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                             {guest.maxCompanions === 0 ? (
                               <span className="text-stone-600 fontmedium">Individual</span>
                             ) : (
-                              <span className="text-[#C86D51] font-medium">+ até {guest.maxCompanions} acomp.</span>
+                              <span className="text-[#315B8A] font-medium">+ até {guest.maxCompanions} acomp.</span>
                             )}
                           </td>
                           <td className="p-4 tabular-nums">
@@ -2675,7 +2675,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
               {/* Endereço de Envio dos Presentes */}
               <div className="p-5 rounded-2xl bg-[#FAF8F5] border border-[#EADBCE] space-y-4">
                 <div>
-                  <div className="text-xs font-semibold uppercase tracking-wider text-[#A95339] flex items-center gap-1.5">
+                  <div className="text-xs font-semibold uppercase tracking-wider text-[#244568] flex items-center gap-1.5">
                     <span>Endereço de Envio dos Presentes</span>
                   </div>
                   <p className="text-[11px] text-[#68625B] mt-0.5">
@@ -2797,8 +2797,8 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
               {/* Dados Bancários e Pix para Recebimento de Presentes */}
               <div className="p-5 rounded-2xl bg-[#FAF8F5] border border-[#EADBCE] space-y-4">
                 <div>
-                  <div className="text-xs font-semibold uppercase tracking-wider text-[#A95339] flex items-center gap-1.5">
-                    <QrCode className="w-4 h-4 text-[#C86D51]" />
+                  <div className="text-xs font-semibold uppercase tracking-wider text-[#244568] flex items-center gap-1.5">
+                    <QrCode className="w-4 h-4 text-[#315B8A]" />
                     <span>Dados Bancários e Pix Oficial para Presentes</span>
                   </div>
                   <p className="text-[11px] text-[#68625B] mt-0.5">
@@ -2907,7 +2907,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                   </label>
                   <div className="flex flex-col sm:flex-row items-center gap-4">
                     <label className="flex-1 w-full flex items-center justify-center gap-2 h-11 px-4 border-2 border-dashed border-[#EADBCE] rounded-xl cursor-pointer bg-white hover:bg-[#FAF8F5] text-xs font-semibold text-[#2D2A26] transition-colors">
-                      <Upload className="w-4 h-4 text-[#C86D51]" />
+                      <Upload className="w-4 h-4 text-[#315B8A]" />
                       <span>{settingsForm.pixQrCodeUrl ? 'Trocar Imagem do QR Code' : 'Enviar Print do QR Code do Banco'}</span>
                       <input
                         type="file"
@@ -2945,8 +2945,8 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
               {/* Armazenamento de Fotos e Vídeos (Cloudinary) */}
               <div className="p-5 rounded-2xl bg-[#FAF8F5] border border-[#EADBCE] space-y-4">
                 <div>
-                  <div className="text-xs font-semibold uppercase tracking-wider text-[#A95339] flex items-center gap-1.5">
-                    <Cloud className="w-4 h-4 text-[#C86D51]" />
+                  <div className="text-xs font-semibold uppercase tracking-wider text-[#244568] flex items-center gap-1.5">
+                    <Cloud className="w-4 h-4 text-[#315B8A]" />
                     <span>Armazenamento de Fotos e Vídeos (Cloudinary ☁️)</span>
                   </div>
                   <p className="text-[11px] text-[#68625B] mt-0.5">
@@ -2998,7 +2998,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                         setTestingCloudinarySettings(false);
                       }
                     }}
-                    className="h-9 px-3.5 rounded-xl border border-[#C86D51] text-[#C86D51] hover:bg-[#C86D51]/5 text-xs font-semibold disabled:opacity-40 disabled:cursor-not-allowed cursor-pointer transition-colors"
+                    className="h-9 px-3.5 rounded-xl border border-[#315B8A] text-[#315B8A] hover:bg-[#315B8A]/5 text-xs font-semibold disabled:opacity-40 disabled:cursor-not-allowed cursor-pointer transition-colors"
                   >
                     {testingCloudinarySettings ? 'Testando conexão...' : 'Testar Conexão com Cloudinary'}
                   </button>
@@ -3031,7 +3031,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
 
               <button
                 type="submit"
-                className="h-11 px-6 rounded-xl bg-[#C86D51] hover:bg-[#A95339] text-white text-xs font-semibold tracking-wide uppercase transition-colors shadow-xs cursor-pointer"
+                className="h-11 px-6 rounded-xl bg-[#315B8A] hover:bg-[#244568] text-white text-xs font-semibold tracking-wide uppercase transition-colors shadow-xs cursor-pointer"
               >
                 Salvar Alterações
               </button>
@@ -3084,7 +3084,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
             </button>
 
             <div className="mb-4">
-              <div className="w-10 h-10 rounded-xl bg-[#F0E6DE] text-[#C86D51] flex items-center justify-center mb-3">
+              <div className="w-10 h-10 rounded-xl bg-[#E7EEF6] text-[#315B8A] flex items-center justify-center mb-3">
                 <LinkIcon className="w-5 h-5" />
               </div>
               <h3 className="font-serif text-xl font-medium text-[#2D2A26]">
@@ -3113,7 +3113,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
               <button
                 type="submit"
                 disabled={scrapingLoading}
-                className="w-full h-11 rounded-xl bg-[#C86D51] hover:bg-[#A95339] disabled:opacity-50 text-white text-xs font-semibold tracking-wide uppercase transition-colors cursor-pointer"
+                className="w-full h-11 rounded-xl bg-[#315B8A] hover:bg-[#244568] disabled:opacity-50 text-white text-xs font-semibold tracking-wide uppercase transition-colors cursor-pointer"
               >
                 {scrapingLoading ? 'Buscando informações da loja...' : 'Importar Informações'}
               </button>
@@ -3137,7 +3137,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
             </button>
 
             <div className="mb-4">
-              <div className="w-10 h-10 rounded-xl bg-[#F0E6DE] text-[#C86D51] flex items-center justify-center mb-3">
+              <div className="w-10 h-10 rounded-xl bg-[#E7EEF6] text-[#315B8A] flex items-center justify-center mb-3">
                 <UserCheck className="w-5 h-5" />
               </div>
               <h3 className="font-serif text-xl font-medium text-[#2D2A26]">
@@ -3213,7 +3213,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
 
               <button
                 type="submit"
-                className="w-full h-11 rounded-xl bg-[#C86D51] hover:bg-[#A95339] text-white text-xs font-semibold tracking-wide uppercase transition-colors cursor-pointer"
+                className="w-full h-11 rounded-xl bg-[#315B8A] hover:bg-[#244568] text-white text-xs font-semibold tracking-wide uppercase transition-colors cursor-pointer"
               >
                 {editingGuestItem ? 'Salvar Alterações' : 'Adicionar à Lista'}
               </button>
@@ -3234,7 +3234,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
             </button>
 
             <div className="mb-4">
-              <div className="w-10 h-10 rounded-xl bg-[#F0E6DE] text-[#C86D51] flex items-center justify-center mb-3">
+              <div className="w-10 h-10 rounded-xl bg-[#E7EEF6] text-[#315B8A] flex items-center justify-center mb-3">
                 <ListPlus className="w-5 h-5" />
               </div>
               <h3 className="font-serif text-xl font-medium text-[#2D2A26]">
@@ -3278,7 +3278,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
 
               <button
                 type="submit"
-                className="w-full h-11 rounded-xl bg-[#C86D51] hover:bg-[#A95339] text-white text-xs font-semibold tracking-wide uppercase transition-colors cursor-pointer"
+                className="w-full h-11 rounded-xl bg-[#315B8A] hover:bg-[#244568] text-white text-xs font-semibold tracking-wide uppercase transition-colors cursor-pointer"
               >
                 Cadastrar Todos os Convidados
               </button>
@@ -3303,7 +3303,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
             </button>
 
             <div className="mb-5">
-              <div className="w-10 h-10 rounded-xl bg-[#F0E6DE] text-[#C86D51] flex items-center justify-center mb-3">
+              <div className="w-10 h-10 rounded-xl bg-[#E7EEF6] text-[#315B8A] flex items-center justify-center mb-3">
                 <FileSpreadsheet className="w-5 h-5" />
               </div>
               <h3 className="font-serif text-xl sm:text-2xl font-medium text-[#2D2A26]">
@@ -3323,7 +3323,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
               <button
                 type="button"
                 onClick={downloadSampleGuestsCsv}
-                className="h-8 px-3 rounded-lg border border-[#C86D51] text-[#C86D51] hover:bg-[#FBF0EB] font-semibold text-xs whitespace-nowrap cursor-pointer transition-colors"
+                className="h-8 px-3 rounded-lg border border-[#315B8A] text-[#315B8A] hover:bg-[#E7EEF6] font-semibold text-xs whitespace-nowrap cursor-pointer transition-colors"
               >
                 Baixar Modelo CSV
               </button>
@@ -3335,7 +3335,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                 Selecione o arquivo .CSV do seu computador
               </label>
               <label className="flex flex-col items-center justify-center w-full h-32 px-4 border-2 border-dashed border-[#EADBCE] rounded-2xl cursor-pointer bg-white hover:bg-[#FAF8F5] transition-colors">
-                <Upload className="w-6 h-6 text-[#C86D51] mb-2" />
+                <Upload className="w-6 h-6 text-[#315B8A] mb-2" />
                 <span className="text-xs font-medium text-[#2D2A26]">
                   {csvFileName ? `Arquivo: ${csvFileName}` : 'Clique para escolher o arquivo CSV ou arraste aqui'}
                 </span>
@@ -3363,7 +3363,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                   </span>
                 </div>
 
-                <div className="max-h-48 overflow-y-auto rounded-xl border border-[#EADBCE] bg-white text-xs divide-y divide-[#F0E6DE]">
+                <div className="max-h-48 overflow-y-auto rounded-xl border border-[#EADBCE] bg-white text-xs divide-y divide-[#E7EEF6]">
                   {csvParsedGuests.slice(0, 15).map((g, idx) => (
                     <div key={idx} className="p-2.5 flex items-center justify-between gap-2">
                       <div>
@@ -3403,7 +3403,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                         name="csvMode"
                         checked={csvImportMode === 'append'}
                         onChange={() => setCsvImportMode('append')}
-                        className="text-[#C86D51]"
+                        className="text-[#315B8A]"
                       />
                       <span>Adicionar à lista existente (mantém os convidados já cadastrados)</span>
                     </label>
@@ -3413,7 +3413,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                         name="csvMode"
                         checked={csvImportMode === 'replace'}
                         onChange={() => setCsvImportMode('replace')}
-                        className="text-[#C86D51]"
+                        className="text-[#315B8A]"
                       />
                       <span className="text-red-700">Substituir lista atual por esta nova lista</span>
                     </label>
@@ -3425,7 +3425,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                   type="button"
                   disabled={csvImporting}
                   onClick={handleConfirmCsvImport}
-                  className="w-full h-11 rounded-xl bg-[#C86D51] hover:bg-[#A95339] disabled:opacity-50 text-white text-xs font-semibold tracking-wide uppercase transition-colors cursor-pointer shadow-xs"
+                  className="w-full h-11 rounded-xl bg-[#315B8A] hover:bg-[#244568] disabled:opacity-50 text-white text-xs font-semibold tracking-wide uppercase transition-colors cursor-pointer shadow-xs"
                 >
                   {csvImporting
                     ? 'Importando convidados...'
@@ -3454,7 +3454,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
             </button>
 
             <div className="mb-5">
-              <div className="w-10 h-10 rounded-xl bg-[#F0E6DE] text-[#C86D51] flex items-center justify-center mb-3">
+              <div className="w-10 h-10 rounded-xl bg-[#E7EEF6] text-[#315B8A] flex items-center justify-center mb-3">
                 <FileSpreadsheet className="w-5 h-5" />
               </div>
               <h3 className="font-serif text-xl sm:text-2xl font-medium text-[#2D2A26]">
@@ -3474,7 +3474,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
               <button
                 type="button"
                 onClick={downloadSampleGiftsCsv}
-                className="h-8 px-3 rounded-lg border border-[#C86D51] text-[#C86D51] hover:bg-[#FBF0EB] font-semibold text-xs whitespace-nowrap cursor-pointer transition-colors"
+                className="h-8 px-3 rounded-lg border border-[#315B8A] text-[#315B8A] hover:bg-[#E7EEF6] font-semibold text-xs whitespace-nowrap cursor-pointer transition-colors"
               >
                 Baixar Modelo CSV
               </button>
@@ -3486,7 +3486,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                 Selecione o arquivo .CSV do seu computador
               </label>
               <label className="flex flex-col items-center justify-center w-full h-32 px-4 border-2 border-dashed border-[#EADBCE] rounded-2xl cursor-pointer bg-white hover:bg-[#FAF8F5] transition-colors">
-                <Upload className="w-6 h-6 text-[#C86D51] mb-2" />
+                <Upload className="w-6 h-6 text-[#315B8A] mb-2" />
                 <span className="text-xs font-medium text-[#2D2A26] text-center">
                   {giftCsvFileName ? `Arquivo selecionado: ${giftCsvFileName}` : 'Clique para escolher o arquivo CSV ou arraste aqui'}
                 </span>
@@ -3529,7 +3529,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                   </span>
                 </div>
 
-                <div className="max-h-56 overflow-y-auto rounded-xl border border-[#EADBCE] bg-white text-xs divide-y divide-[#F0E6DE]">
+                <div className="max-h-56 overflow-y-auto rounded-xl border border-[#EADBCE] bg-white text-xs divide-y divide-[#E7EEF6]">
                   <div className="grid grid-cols-12 gap-2 p-2.5 bg-[#FAF8F5] text-[10px] font-semibold text-[#7D756C] uppercase tracking-wider sticky top-0 border-b border-[#EADBCE]">
                     <div className="col-span-1 text-center">Foto</div>
                     <div className="col-span-4">Nome</div>
@@ -3548,7 +3548,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                             className="h-8 w-8 rounded-md object-cover border border-[#EADBCE]"
                           />
                         ) : (
-                          <span className="text-[9px] text-[#A95339]">Sem foto</span>
+                          <span className="text-[9px] text-[#244568]">Sem foto</span>
                         )}
                       </div>
                       <div className="col-span-4 truncate" title={g.name}>
@@ -3595,7 +3595,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                       type="checkbox"
                       checked={giftCsvSkipExisting}
                       onChange={(e) => setGiftCsvSkipExisting(e.target.checked)}
-                      className="w-4 h-4 rounded text-[#C86D51] accent-[#C86D51] cursor-pointer"
+                      className="w-4 h-4 rounded text-[#315B8A] accent-[#315B8A] cursor-pointer"
                     />
                     <span>
                       <strong className="block">Pular presentes que já existem (mesmo nome)</strong>
@@ -3625,7 +3625,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                     type="button"
                     disabled={giftCsvImporting || giftCsvParsedGifts.length === 0}
                     onClick={handleConfirmGiftCsvImport}
-                    className="h-11 px-6 rounded-xl bg-[#C86D51] hover:bg-[#A95339] disabled:opacity-50 text-white text-xs font-semibold tracking-wide uppercase transition-colors cursor-pointer shadow-xs flex items-center justify-center gap-2"
+                    className="h-11 px-6 rounded-xl bg-[#315B8A] hover:bg-[#244568] disabled:opacity-50 text-white text-xs font-semibold tracking-wide uppercase transition-colors cursor-pointer shadow-xs flex items-center justify-center gap-2"
                   >
                     {giftCsvImporting ? (
                       <>
@@ -4025,7 +4025,7 @@ const GiftFormModal: React.FC<GiftFormModalProps> = ({ gift, onClose, onSaved })
             <button
               type="submit"
               disabled={saving || imageUploading}
-              className="w-full h-11 rounded-xl bg-[#C86D51] hover:bg-[#A95339] disabled:opacity-50 text-white text-xs font-semibold tracking-wide uppercase transition-colors cursor-pointer"
+              className="w-full h-11 rounded-xl bg-[#315B8A] hover:bg-[#244568] disabled:opacity-50 text-white text-xs font-semibold tracking-wide uppercase transition-colors cursor-pointer"
             >
               {imageUploading ? 'Enviando imagem...' : saving ? 'Salvando...' : 'Salvar Presente'}
             </button>

@@ -25,7 +25,7 @@ export const Footer: React.FC<FooterProps> = ({ settings, onOpenAdmin, isAdmin }
               href={`https://www.instagram.com/${settings.instagramHandle}/`}
               target="_blank"
               rel="noreferrer noopener"
-              className="text-[#CF3B25] hover:underline flex items-center gap-1"
+              className="text-[#315B8A] hover:underline flex items-center gap-1"
             >
               <Instagram className="w-3.5 h-3.5" />
               <span>@{settings.instagramHandle}</span>
@@ -35,7 +35,7 @@ export const Footer: React.FC<FooterProps> = ({ settings, onOpenAdmin, isAdmin }
           {/* Right: Admin login link and subtle credit */}
           <div className="flex items-center gap-4">
             <span className="flex items-center gap-1">
-              Feito com <Heart className="w-3.5 h-3.5 text-[#CF3B25] fill-[#CF3B25]" /> para celebrar uma nova fase
+              Feito com <Heart className="w-3.5 h-3.5 text-[#315B8A] fill-[#315B8A]" /> para celebrar uma nova fase
             </span>
             <span className="text-[#DCC6A6]">·</span>
             <button

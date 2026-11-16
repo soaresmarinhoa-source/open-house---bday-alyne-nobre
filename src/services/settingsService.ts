@@ -57,9 +57,21 @@ function normalizeSettings(settings: EventSettings): EventSettings {
         resolveImageUrl(url, defaults[index % defaults.length] || defaults[0])
       )
     : defaults;
+  const legacyHeroHeadings = [
+    'Meu cantinho, minhas regras e Deus cuidando de cada detalhe. 🏡🤎',
+  ];
+  const legacyHeroSubheadings = [
+    'Estou saindo da casa dos meus pais e começando uma fase nova, com muita alegria, gratidão a Deus e aquele frio na barriga. Quero comemorar meu aniversário e essa conquista com vocês!',
+  ];
 
   return {
     ...settings,
+    heroHeading: legacyHeroHeadings.includes(settings.heroHeading)
+      ? DEFAULT_SETTINGS.heroHeading
+      : settings.heroHeading,
+    heroSubheading: legacyHeroSubheadings.includes(settings.heroSubheading)
+      ? DEFAULT_SETTINGS.heroSubheading
+      : settings.heroSubheading,
     mainImageUrl: resolveImageUrl(settings.mainImageUrl, DEFAULT_SETTINGS.mainImageUrl),
     galleryImages,
   };

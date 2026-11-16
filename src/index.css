@@ -6,7 +6,7 @@
   --font-mono: 'DM Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
   --font-hand: 'Caveat', 'Segoe Script', cursive;
   --color-sun: #F2B84B;
-  --color-coral: #CF3B25;
+  --color-blue: #315B8A;
   --color-ink: #1B2F4E;
   --color-cream: #FBF4E8;
 }
@@ -60,7 +60,7 @@ body {
   border-radius: 9999px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #CF3B25;
+  background: #315B8A;
 }
 
 ::selection {

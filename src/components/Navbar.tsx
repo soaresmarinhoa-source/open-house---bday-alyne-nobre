@@ -20,17 +20,17 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenAdmin, isAdmin }) => {
   return (
     <header className="sticky top-0 z-40 bg-[#FBF4E8]/90 backdrop-blur-md border-b border-[#E8D4B8]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
-        {/* Zone 1: Single text wordmark with coral dot */}
+        {/* Zone 1: Single text wordmark with blue dot */}
         <a
           href="#topo"
           onClick={(e) => {
             e.preventDefault();
             window.scrollTo({ top: 0, behavior: 'smooth' });
           }}
-          className="font-serif text-xl sm:text-2xl font-medium tracking-tight text-[#1B2F4E] hover:text-[#CF3B25] transition-colors flex items-center"
+          className="font-serif text-xl sm:text-2xl font-medium tracking-tight text-[#1B2F4E] hover:text-[#315B8A] transition-colors flex items-center"
         >
           <span>Amanda Marinho</span>
-          <span className="w-2 h-2 rounded-full bg-[#CF3B25] inline-block ml-1" aria-hidden="true" />
+          <span className="w-2 h-2 rounded-full bg-[#315B8A] inline-block ml-1" aria-hidden="true" />
         </a>
 
         {/* Zone 2: Clean text navigation links with sun-yellow underline on hover */}
@@ -71,7 +71,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenAdmin, isAdmin }) => {
         <div className="flex items-center gap-3">
           <button
             onClick={() => scrollTo('rsvp')}
-            className="hidden sm:inline-flex items-center justify-center h-10 px-5 text-xs font-semibold tracking-wide uppercase text-white bg-[#CF3B25] hover:bg-[#A82D1B] rounded-full transition-colors shadow-xs active:scale-[0.98] cursor-pointer whitespace-nowrap"
+            className="hidden sm:inline-flex items-center justify-center h-10 px-5 text-xs font-semibold tracking-wide uppercase text-white bg-[#315B8A] hover:bg-[#244568] rounded-full transition-colors shadow-xs active:scale-[0.98] cursor-pointer whitespace-nowrap"
           >
             Confirmar Presença
           </button>
@@ -82,7 +82,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenAdmin, isAdmin }) => {
             title={isAdmin ? "Painel da Anfitriã (Conectado)" : "Área da Anfitriã (Admin)"}
             className={`h-10 px-3 inline-flex items-center justify-center gap-1.5 rounded-full border text-xs font-medium transition-colors cursor-pointer ${
               isAdmin
-                ? 'bg-[#FDE9E3] border-[#CF3B25]/30 text-[#CF3B25] hover:bg-[#F3E3CB]'
+                ? 'bg-[#E7EEF6] border-[#315B8A]/30 text-[#315B8A] hover:bg-[#F3E3CB]'
                 : 'border-[#E8D4B8] text-[#4B5A72] hover:text-[#1B2F4E] hover:bg-[#F6EBD9]'
             }`}
           >
@@ -108,35 +108,35 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenAdmin, isAdmin }) => {
             onClick={() => scrollTo('evento')}
             className="w-full text-left py-2.5 text-base font-medium text-[#1B2F4E] flex items-center gap-3 border-b border-[#F7E6D0]"
           >
-            <Home className="w-4 h-4 text-[#CF3B25]" />
+            <Home className="w-4 h-4 text-[#315B8A]" />
             O Evento
           </button>
           <button
             onClick={() => scrollTo('presentes')}
             className="w-full text-left py-2.5 text-base font-medium text-[#1B2F4E] flex items-center gap-3 border-b border-[#F7E6D0]"
           >
-            <Gift className="w-4 h-4 text-[#CF3B25]" />
+            <Gift className="w-4 h-4 text-[#315B8A]" />
             Lista de Presentes
           </button>
           <button
             onClick={() => scrollTo('rsvp')}
             className="w-full text-left py-2.5 text-base font-medium text-[#1B2F4E] flex items-center gap-3 border-b border-[#F7E6D0]"
           >
-            <CalendarCheck className="w-4 h-4 text-[#CF3B25]" />
+            <CalendarCheck className="w-4 h-4 text-[#315B8A]" />
             Confirmar Presença (RSVP)
           </button>
           <button
             onClick={() => scrollTo('galeria')}
             className="w-full text-left py-2.5 text-base font-medium text-[#1B2F4E] flex items-center gap-3 border-b border-[#F7E6D0]"
           >
-            <Home className="w-4 h-4 text-[#CF3B25]" />
+            <Home className="w-4 h-4 text-[#315B8A]" />
             Galeria do Apê
           </button>
           <button
             onClick={() => scrollTo('local')}
             className="w-full text-left py-2.5 text-base font-medium text-[#1B2F4E] flex items-center gap-3"
           >
-            <MapPin className="w-4 h-4 text-[#CF3B25]" />
+            <MapPin className="w-4 h-4 text-[#315B8A]" />
             Como Chegar
           </button>
           <button
@@ -144,15 +144,15 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenAdmin, isAdmin }) => {
               setMobileMenuOpen(false);
               onOpenAdmin();
             }}
-            className="w-full text-left py-2.5 text-base font-medium text-[#CF3B25] flex items-center gap-3 border-t border-[#F7E6D0] pt-3"
+            className="w-full text-left py-2.5 text-base font-medium text-[#315B8A] flex items-center gap-3 border-t border-[#F7E6D0] pt-3"
           >
-            <Lock className="w-4 h-4 text-[#CF3B25]" />
+            <Lock className="w-4 h-4 text-[#315B8A]" />
             {isAdmin ? 'Painel da Anfitriã' : 'Área da Anfitriã (Admin)'}
           </button>
           <div className="pt-2">
             <button
               onClick={() => scrollTo('rsvp')}
-              className="w-full h-11 rounded-full bg-[#CF3B25] text-white text-sm font-semibold flex items-center justify-center shadow-xs"
+              className="w-full h-11 rounded-full bg-[#315B8A] text-white text-sm font-semibold flex items-center justify-center shadow-xs"
             >
               Confirmar Minha Presença
             </button>

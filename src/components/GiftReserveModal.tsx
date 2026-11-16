@@ -171,7 +171,7 @@ export const GiftReserveModal: React.FC<GiftReserveModalProps> = ({
         particleCount: 120,
         spread: 80,
         origin: { y: 0.5 },
-        colors: ['#CF3B25', '#F2B84B', '#8A9A86', '#1B2F4E'],
+        colors: ['#315B8A', '#F2B84B', '#8A9A86', '#1B2F4E'],
       });
 
       setIsReservedSuccess(true);
@@ -187,7 +187,7 @@ export const GiftReserveModal: React.FC<GiftReserveModalProps> = ({
     <>
       {gift.purchaseUrl && (
         <div className="bg-[#FFFFFF] border border-[#E8D4B8] rounded-2xl p-4 mb-4 text-left">
-          <div className="text-xs font-mono font-semibold uppercase tracking-wider text-[#A82D1B] mb-1">
+          <div className="text-xs font-mono font-semibold uppercase tracking-wider text-[#244568] mb-1">
             Comprar na loja
           </div>
           <p className="text-xs text-[#4B5A72] mb-3">
@@ -210,13 +210,13 @@ export const GiftReserveModal: React.FC<GiftReserveModalProps> = ({
   const renderShipping = () => (
     <>
       {gift.purchaseUrl && settings?.shippingStreet?.trim() && (
-        <div className="bg-[#FFFFFF] border-2 border-[#CF3B25]/30 rounded-2xl p-5 mb-6 text-left shadow-xs">
+        <div className="bg-[#FFFFFF] border-2 border-[#315B8A]/30 rounded-2xl p-5 mb-6 text-left shadow-xs">
           <div className="flex items-center gap-2 mb-2">
-            <div className="w-7 h-7 rounded-lg bg-[#FDE9E3] flex items-center justify-center text-[#CF3B25] shrink-0">
+            <div className="w-7 h-7 rounded-lg bg-[#E7EEF6] flex items-center justify-center text-[#315B8A] shrink-0">
               <Truck className="w-4 h-4" />
             </div>
             <div>
-              <div className="text-xs font-mono font-bold uppercase tracking-wider text-[#A82D1B]">
+              <div className="text-xs font-mono font-bold uppercase tracking-wider text-[#244568]">
                 Aviso: Para onde enviar o presente
               </div>
               <p className="text-[11px] text-[#4B5A72]">
@@ -276,7 +276,7 @@ export const GiftReserveModal: React.FC<GiftReserveModalProps> = ({
               </>
             ) : (
               <>
-                <Copy className="w-4 h-4 text-[#A82D1B]" />
+                <Copy className="w-4 h-4 text-[#244568]" />
                 <span>Copiar Endereço Completo de Entrega</span>
               </>
             )}
@@ -302,8 +302,8 @@ export const GiftReserveModal: React.FC<GiftReserveModalProps> = ({
 
         {isReservedSuccess ? (
           <div className="text-center py-4">
-            <div className="w-16 h-16 rounded-full bg-[#FDE9E3] text-[#CF3B25] flex items-center justify-center mx-auto mb-4">
-              <Heart className="w-8 h-8 fill-[#CF3B25]" />
+            <div className="w-16 h-16 rounded-full bg-[#E7EEF6] text-[#315B8A] flex items-center justify-center mx-auto mb-4">
+              <Heart className="w-8 h-8 fill-[#315B8A]" />
             </div>
 
             <h3 className="font-serif text-2xl sm:text-3xl font-medium text-[#1B2F4E] mb-2">
@@ -316,7 +316,7 @@ export const GiftReserveModal: React.FC<GiftReserveModalProps> = ({
             {(gift.type === 'pix' || gift.type === 'shares' || gift.pixKey) && (
               <div className="bg-[#FFFFFF] border border-[#E8D4B8] rounded-2xl p-5 mb-6 text-left space-y-4">
                 <div className="flex items-center justify-between">
-                  <div className="text-xs font-mono font-semibold uppercase tracking-wider text-[#A82D1B]">
+                  <div className="text-xs font-mono font-semibold uppercase tracking-wider text-[#244568]">
                     Próximo passo: Pagamento via Pix
                   </div>
                   {activeBankName && (
@@ -380,7 +380,7 @@ export const GiftReserveModal: React.FC<GiftReserveModalProps> = ({
                     <button
                       type="button"
                       onClick={handleCopyPix}
-                      className="ml-2 px-3 py-1.5 rounded-lg bg-[#CF3B25] hover:bg-[#A82D1B] text-white text-xs font-sans font-semibold flex items-center gap-1.5 transition-colors cursor-pointer shrink-0"
+                      className="ml-2 px-3 py-1.5 rounded-lg bg-[#315B8A] hover:bg-[#244568] text-white text-xs font-sans font-semibold flex items-center gap-1.5 transition-colors cursor-pointer shrink-0"
                     >
                       {pixCopied ? (
                         <>
@@ -416,7 +416,7 @@ export const GiftReserveModal: React.FC<GiftReserveModalProps> = ({
                         className="w-44 h-44 object-contain mx-auto rounded-lg"
                       />
                     ) : (
-                      <div className="w-44 h-44 flex items-center justify-center text-[#A82D1B]">
+                      <div className="w-44 h-44 flex items-center justify-center text-[#244568]">
                         <PixIcon className="w-12 h-12" />
                       </div>
                     )}
@@ -435,7 +435,7 @@ export const GiftReserveModal: React.FC<GiftReserveModalProps> = ({
             <button
               type="button"
               onClick={onClose}
-              className="w-full h-11 rounded-full bg-[#CF3B25] hover:bg-[#A82D1B] text-white text-xs font-semibold tracking-wide transition-colors cursor-pointer"
+              className="w-full h-11 rounded-full bg-[#315B8A] hover:bg-[#244568] text-white text-xs font-semibold tracking-wide transition-colors cursor-pointer"
             >
               Fechar e Voltar à Lista
             </button>
@@ -486,7 +486,7 @@ export const GiftReserveModal: React.FC<GiftReserveModalProps> = ({
                 }
 
                 return (
-                  <div className="w-20 h-20 rounded-2xl bg-[#F7E6D0] flex items-center justify-center shrink-0 text-[#CF3B25]">
+                  <div className="w-20 h-20 rounded-2xl bg-[#F7E6D0] flex items-center justify-center shrink-0 text-[#315B8A]">
                     <ShoppingBag className="w-8 h-8" />
                   </div>
                 );
@@ -507,7 +507,7 @@ export const GiftReserveModal: React.FC<GiftReserveModalProps> = ({
                     <button
                       type="button"
                       onClick={() => setIsDescriptionExpanded((v) => !v)}
-                      className="mt-0.5 inline-flex items-center gap-1 text-[11px] font-semibold text-[#CF3B25] hover:text-[#A82D1B] transition-colors cursor-pointer"
+                      className="mt-0.5 inline-flex items-center gap-1 text-[11px] font-semibold text-[#315B8A] hover:text-[#244568] transition-colors cursor-pointer"
                     >
                       {isDescriptionExpanded ? (
                         <>
@@ -524,7 +524,7 @@ export const GiftReserveModal: React.FC<GiftReserveModalProps> = ({
                   )}
                 </div>
                 <div className="mt-2 flex items-center gap-3 text-xs">
-                  <span className="font-semibold text-[#CF3B25] text-sm tabular-nums">
+                  <span className="font-semibold text-[#315B8A] text-sm tabular-nums">
                     R$ {gift.price.toLocaleString('pt-BR')}
                     {gift.totalQuantity > 1 ? ' / cota' : ''}
                   </span>
@@ -575,7 +575,7 @@ export const GiftReserveModal: React.FC<GiftReserveModalProps> = ({
 
             {isSoldOut ? (
               <div className="text-center py-2">
-                <div className="p-4 rounded-2xl bg-[#FDE9E3] border border-[#E8D4B8] text-[#A82D1B] font-medium text-sm mb-4">
+                <div className="p-4 rounded-2xl bg-[#E7EEF6] border border-[#E8D4B8] text-[#244568] font-medium text-sm mb-4">
                   🎉 Esse presente já está garantido! Todas as cotas foram reservadas por amigos incríveis.
                 </div>
 
@@ -646,7 +646,7 @@ export const GiftReserveModal: React.FC<GiftReserveModalProps> = ({
                     value={guestName}
                     onChange={(e) => setGuestName(e.target.value)}
                     placeholder="Como você quer aparecer na lista da Alyne?"
-                    className="w-full h-11 px-4 rounded-xl border border-[#E8D4B8] bg-white focus:border-[#CF3B25] focus:ring-2 focus:ring-[#CF3B25]/15 outline-none transition-all text-sm text-[#1B2F4E]"
+                    className="w-full h-11 px-4 rounded-xl border border-[#E8D4B8] bg-white focus:border-[#315B8A] focus:ring-2 focus:ring-[#315B8A]/15 outline-none transition-all text-sm text-[#1B2F4E]"
                   />
                 </div>
 
@@ -661,7 +661,7 @@ export const GiftReserveModal: React.FC<GiftReserveModalProps> = ({
                     value={guestWhatsapp}
                     onChange={(e) => setGuestWhatsapp(e.target.value)}
                     placeholder="(11) 99999-9999"
-                    className="w-full h-11 px-4 rounded-xl border border-[#E8D4B8] bg-white focus:border-[#CF3B25] focus:ring-2 focus:ring-[#CF3B25]/15 outline-none transition-all text-sm text-[#1B2F4E]"
+                    className="w-full h-11 px-4 rounded-xl border border-[#E8D4B8] bg-white focus:border-[#315B8A] focus:ring-2 focus:ring-[#315B8A]/15 outline-none transition-all text-sm text-[#1B2F4E]"
                   />
                 </div>
 
@@ -675,7 +675,7 @@ export const GiftReserveModal: React.FC<GiftReserveModalProps> = ({
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
                     placeholder="Escreva o que quiser — vou adorar ler!"
-                    className="w-full p-3 rounded-xl border border-[#E8D4B8] bg-white focus:border-[#CF3B25] focus:ring-2 focus:ring-[#CF3B25]/15 outline-none transition-all text-sm text-[#1B2F4E] resize-none"
+                    className="w-full p-3 rounded-xl border border-[#E8D4B8] bg-white focus:border-[#315B8A] focus:ring-2 focus:ring-[#315B8A]/15 outline-none transition-all text-sm text-[#1B2F4E] resize-none"
                   />
                 </div>
 
@@ -690,7 +690,7 @@ export const GiftReserveModal: React.FC<GiftReserveModalProps> = ({
                   <button
                     type="submit"
                     disabled={loading}
-                    className="w-full h-12 rounded-full bg-[#CF3B25] hover:bg-[#A82D1B] disabled:opacity-50 text-white text-xs font-semibold tracking-wide uppercase flex items-center justify-center gap-2 shadow-xs active:scale-[0.98] transition-all cursor-pointer"
+                    className="w-full h-12 rounded-full bg-[#315B8A] hover:bg-[#244568] disabled:opacity-50 text-white text-xs font-semibold tracking-wide uppercase flex items-center justify-center gap-2 shadow-xs active:scale-[0.98] transition-all cursor-pointer"
                   >
                     {loading ? (
                       <span>Garantindo reserva...</span>

@@ -231,7 +231,7 @@ export default function App() {
           {authSessionLoading ? (
             <div className="fixed inset-0 z-50 bg-[#1B2F4E]/40 backdrop-blur-xs flex items-center justify-center">
               <div className="bg-white rounded-2xl p-6 shadow-xl flex items-center gap-3">
-                <div className="w-5 h-5 border-2 border-[#CF3B25] border-t-transparent rounded-full animate-spin" />
+                <div className="w-5 h-5 border-2 border-[#315B8A] border-t-transparent rounded-full animate-spin" />
                 <span className="text-sm font-medium text-[#1B2F4E]">Verificando sessão da anfitriã...</span>
               </div>
             </div>

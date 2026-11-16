@@ -96,8 +96,8 @@ export const HouseGallery: React.FC<HouseGalleryProps> = ({ settings }) => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <div className="flex items-center justify-center gap-2 text-xs font-mono font-semibold tracking-widest uppercase text-[#CF3B25] mb-3">
-            <Pin className="w-4 h-4 text-[#CF3B25]" />
+          <div className="flex items-center justify-center gap-2 text-xs font-mono font-semibold tracking-widest uppercase text-[#315B8A] mb-3">
+            <Pin className="w-4 h-4 text-[#315B8A]" />
             <span>Tour Virtual do Novo Lar</span>
           </div>
 
@@ -123,7 +123,7 @@ export const HouseGallery: React.FC<HouseGalleryProps> = ({ settings }) => {
                 type="button"
                 onClick={() => setActiveItem(item)}
                 aria-label={isVideo ? `Assistir vídeo: ${item.caption}` : `Abrir foto: ${item.caption}`}
-                className={`group relative bg-white p-3 pb-12 rounded-sm shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer text-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#CF3B25] focus-visible:ring-offset-2 min-h-[44px] ${rotClass} hover:rotate-0 hover:scale-105 hover:z-20 focus:rotate-0 focus:scale-105 focus:z-20`}
+                className={`group relative bg-white p-3 pb-12 rounded-sm shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer text-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#315B8A] focus-visible:ring-offset-2 min-h-[44px] ${rotClass} hover:rotate-0 hover:scale-105 hover:z-20 focus:rotate-0 focus:scale-105 focus:z-20`}
               >
                 {/* Decorative yellow washi tape on top of polaroid */}
                 <span
@@ -154,7 +154,7 @@ export const HouseGallery: React.FC<HouseGalleryProps> = ({ settings }) => {
 
                       {/* Play Button Overlay on video */}
                       <div className="absolute inset-0 bg-black/25 flex items-center justify-center transition-all group-hover:bg-black/35">
-                        <div className="w-12 h-12 rounded-full bg-white/95 text-[#CF3B25] flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                        <div className="w-12 h-12 rounded-full bg-white/95 text-[#315B8A] flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
                           <Play className="w-5 h-5 fill-current ml-0.5" />
                         </div>
                       </div>

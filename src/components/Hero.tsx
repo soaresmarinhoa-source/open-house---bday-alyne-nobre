@@ -84,15 +84,15 @@ export const Hero: React.FC<HeroProps> = ({ settings, onScrollTo }) => {
 
   return (
     <section id="topo" className="relative pt-8 pb-16 sm:pt-14 sm:pb-24 overflow-hidden">
-      {/* 2.1 Two blurred background blobs: yellow-sun soft and coral soft */}
+      {/* 2.1 Two blurred background blobs: yellow-sun soft and blue soft */}
       <div className="absolute top-0 right-1/4 w-96 h-96 bg-[#F2B84B]/25 rounded-full blur-3xl -z-10 pointer-events-none" />
-      <div className="absolute top-1/3 left-0 w-80 h-80 bg-[#CF3B25]/10 rounded-full blur-3xl -z-10 pointer-events-none" />
+      <div className="absolute top-1/3 left-0 w-80 h-80 bg-[#315B8A]/10 rounded-full blur-3xl -z-10 pointer-events-none" />
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
           <div className="lg:col-span-7 flex flex-col justify-center">
-            {/* 2.2 Kicker in DM Mono, uppercase, tracking-widest, color #CF3B25 with #F2B84B dots */}
-            <div className="flex items-center gap-2 text-xs sm:text-sm font-mono font-semibold tracking-widest uppercase text-[#CF3B25] mb-4">
+            {/* 2.2 Kicker in DM Mono, uppercase, tracking-widest, color #315B8A with #F2B84B dots */}
+            <div className="flex items-center gap-2 text-xs sm:text-sm font-mono font-semibold tracking-widest uppercase text-[#315B8A] mb-4">
               <span>Bday 2026</span>
               <span aria-hidden="true" className="text-[#F2B84B]">·</span>
               <span>Aniversário</span>
@@ -111,17 +111,17 @@ export const Hero: React.FC<HeroProps> = ({ settings, onScrollTo }) => {
 
             <div className="flex flex-wrap items-center gap-y-3 gap-x-5 py-4 border-y border-[#E8D4B8] text-sm text-[#2F4468] mb-8">
               <div className="flex items-center gap-2">
-                <Calendar className="w-4 h-4 text-[#CF3B25] shrink-0" />
+                <Calendar className="w-4 h-4 text-[#315B8A] shrink-0" />
                 <span className="capitalize font-medium">{formattedDate}</span>
               </div>
               <span className="hidden sm:inline text-[#DCC6A6]" aria-hidden="true">/</span>
               <div className="flex items-center gap-2">
-                <Clock className="w-4 h-4 text-[#CF3B25] shrink-0" />
+                <Clock className="w-4 h-4 text-[#315B8A] shrink-0" />
                 <span>A partir das <strong>{settings.eventTime}</strong></span>
               </div>
               <span className="hidden sm:inline text-[#DCC6A6]" aria-hidden="true">/</span>
               <div className="flex items-center gap-2">
-                <MapPin className="w-4 h-4 text-[#CF3B25] shrink-0" />
+                <MapPin className="w-4 h-4 text-[#315B8A] shrink-0" />
                 <span>{settings.locationName}</span>
               </div>
             </div>
@@ -132,7 +132,7 @@ export const Hero: React.FC<HeroProps> = ({ settings, onScrollTo }) => {
                 <span className="text-xs font-mono font-semibold tracking-wider uppercase text-[#5B6B82]">
                   {eventHasPassed ? 'Evento' : 'Contagem Regressiva para a Bagunça'}
                 </span>
-                <span className="text-xs font-mono text-[#CF3B25] font-medium">
+                <span className="text-xs font-mono text-[#315B8A] font-medium">
                   {eventHasPassed ? 'Celebramos com carinho' : 'faltam estes minutos pra festa'}
                 </span>
               </div>
@@ -163,7 +163,7 @@ export const Hero: React.FC<HeroProps> = ({ settings, onScrollTo }) => {
                     <span className="text-[11px] font-mono font-medium text-[#5B6B82] uppercase">min</span>
                   </div>
                   <div className="bg-[#FBF4E8] rounded-xl py-2 px-1 border border-[#E8D4B8]">
-                    <span className="block font-serif text-2xl sm:text-3xl font-semibold text-[#CF3B25] tabular-nums">
+                    <span className="block font-serif text-2xl sm:text-3xl font-semibold text-[#315B8A] tabular-nums">
                       {String(timeLeft.seconds).padStart(2, '0')}
                     </span>
                     <span className="text-[11px] font-mono font-medium text-[#5B6B82] uppercase">seg</span>
@@ -172,11 +172,11 @@ export const Hero: React.FC<HeroProps> = ({ settings, onScrollTo }) => {
               )}
             </div>
 
-            {/* 2.9 Buttons: primary coral, secondary outline ink, discrete apê link */}
+            {/* 2.9 Buttons: primary blue, secondary outline ink, discrete apê link */}
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
               <button
                 onClick={() => onScrollTo('rsvp')}
-                className="h-12 px-6 rounded-full bg-[#CF3B25] hover:bg-[#A82D1B] text-white text-sm font-semibold tracking-wide flex items-center justify-center transition-all shadow-xs active:scale-[0.98] cursor-pointer whitespace-nowrap"
+                className="h-12 px-6 rounded-full bg-[#315B8A] hover:bg-[#244568] text-white text-sm font-semibold tracking-wide flex items-center justify-center transition-all shadow-xs active:scale-[0.98] cursor-pointer whitespace-nowrap"
               >
                 Confirmar Minha Presença
               </button>
@@ -193,7 +193,7 @@ export const Hero: React.FC<HeroProps> = ({ settings, onScrollTo }) => {
                 className="h-12 px-5 text-[#4B5A72] hover:text-[#1B2F4E] text-sm font-medium flex items-center justify-center gap-1.5 transition-colors cursor-pointer whitespace-nowrap"
               >
                 Conhecer o Apê
-                <ArrowDown className="w-4 h-4 text-[#CF3B25]" />
+                <ArrowDown className="w-4 h-4 text-[#315B8A]" />
               </button>
             </div>
           </div>

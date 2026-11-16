@@ -360,7 +360,7 @@ export const GalleryTab: React.FC<GalleryTabProps> = ({ settings }) => {
             <h2 className="font-serif text-2xl font-medium text-[#2D2A26]">
               Galeria do Novo Apê 📸
             </h2>
-            <span className="px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-[#FAF4ED] text-[#CF3B25] border border-[#EADBCE]">
+            <span className="px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-[#FAF4ED] text-[#315B8A] border border-[#EADBCE]">
               Cloudinary Ativo
             </span>
           </div>
@@ -446,7 +446,7 @@ export const GalleryTab: React.FC<GalleryTabProps> = ({ settings }) => {
         }}
         className={`border-2 border-dashed rounded-2xl p-8 text-center transition-all duration-200 ${
           isDragOver
-            ? 'border-[#CF3B25] bg-[#CF3B25]/5 scale-[0.99]'
+            ? 'border-[#315B8A] bg-[#315B8A]/5 scale-[0.99]'
             : 'border-[#EADBCE] bg-[#FBF4E8]/50 hover:bg-[#FBF4E8]'
         }`}
       >
@@ -465,7 +465,7 @@ export const GalleryTab: React.FC<GalleryTabProps> = ({ settings }) => {
         />
 
         <div className="max-w-md mx-auto space-y-3">
-          <div className="w-14 h-14 mx-auto rounded-full bg-white border border-[#EADBCE] flex items-center justify-center text-[#CF3B25] shadow-xs">
+          <div className="w-14 h-14 mx-auto rounded-full bg-white border border-[#EADBCE] flex items-center justify-center text-[#315B8A] shadow-xs">
             <Upload className="w-6 h-6" />
           </div>
 
@@ -480,7 +480,7 @@ export const GalleryTab: React.FC<GalleryTabProps> = ({ settings }) => {
 
           <div className="flex flex-wrap items-center justify-center gap-2 pt-1 text-[11px] text-[#7D756C]">
             <span className="px-2.5 py-1 rounded-md bg-white border border-[#EADBCE] flex items-center gap-1 font-mono">
-              <ImageIcon className="w-3.5 h-3.5 text-[#C86D51]" /> Fotos (JPG, PNG, WEBP — otimização automática)
+              <ImageIcon className="w-3.5 h-3.5 text-[#315B8A]" /> Fotos (JPG, PNG, WEBP — otimização automática)
             </span>
             <span className="px-2.5 py-1 rounded-md bg-white border border-[#EADBCE] flex items-center gap-1 font-mono">
               <Film className="w-3.5 h-3.5 text-[#1B2F4E]" /> Vídeos (MP4, MOV, WEBM — até 100 MB com capa automática)
@@ -499,7 +499,7 @@ export const GalleryTab: React.FC<GalleryTabProps> = ({ settings }) => {
                 fileInputRef.current?.click();
               }
             }}
-            className="mt-3 px-5 py-2.5 rounded-xl bg-[#C86D51] hover:bg-[#B3593D] text-white font-medium text-xs shadow-xs transition-colors cursor-pointer"
+            className="mt-3 px-5 py-2.5 rounded-xl bg-[#315B8A] hover:bg-[#244568] text-white font-medium text-xs shadow-xs transition-colors cursor-pointer"
           >
             Escolher Arquivos do Computador / Celular
           </button>
@@ -511,7 +511,7 @@ export const GalleryTab: React.FC<GalleryTabProps> = ({ settings }) => {
         <div className="bg-white border border-[#EADBCE] rounded-2xl p-5 shadow-2xs space-y-3">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
-              <div className="w-2 h-2 rounded-full bg-[#CF3B25] animate-ping" />
+              <div className="w-2 h-2 rounded-full bg-[#315B8A] animate-ping" />
               <h3 className="text-xs font-bold uppercase tracking-wider text-[#2D2A26]">
                 Fila de Envio para Cloudinary ({queue.filter((q) => q.status === 'done').length}/{queue.length})
               </h3>
@@ -521,7 +521,7 @@ export const GalleryTab: React.FC<GalleryTabProps> = ({ settings }) => {
               <button
                 type="button"
                 onClick={handleClearCompleted}
-                className="text-xs text-[#A95339] hover:underline cursor-pointer"
+                className="text-xs text-[#244568] hover:underline cursor-pointer"
               >
                 Limpar concluídos
               </button>
@@ -568,7 +568,7 @@ export const GalleryTab: React.FC<GalleryTabProps> = ({ settings }) => {
                           ? 'bg-emerald-500'
                           : item.status === 'error'
                           ? 'bg-red-500'
-                          : 'bg-[#CF3B25]'
+                          : 'bg-[#315B8A]'
                       }`}
                       style={{ width: `${item.progress}%` }}
                     />
@@ -578,7 +578,7 @@ export const GalleryTab: React.FC<GalleryTabProps> = ({ settings }) => {
                   <div className="flex items-center justify-between text-[10px] mt-1">
                     {item.status === 'pending' && <span className="text-[#7D756C]">Aguardando na fila...</span>}
                     {item.status === 'uploading' && (
-                      <span className="text-[#CF3B25] flex items-center gap-1 font-medium">
+                      <span className="text-[#315B8A] flex items-center gap-1 font-medium">
                         <Loader2 className="w-3 h-3 animate-spin" />
                         Enviando para o Cloudinary ({item.progress}%)...
                       </span>
@@ -629,7 +629,7 @@ export const GalleryTab: React.FC<GalleryTabProps> = ({ settings }) => {
 
           <div className="flex items-center gap-2 text-xs font-mono text-[#7D756C]">
             <span className="px-2 py-1 rounded-md bg-[#FAF8F5] border border-[#EADBCE] flex items-center gap-1">
-              <ImageIcon className="w-3 h-3 text-[#C86D51]" />
+              <ImageIcon className="w-3 h-3 text-[#315B8A]" />
               {items.filter((i) => i.type === 'image').length} Fotos
             </span>
             <span className="px-2 py-1 rounded-md bg-[#FAF8F5] border border-[#EADBCE] flex items-center gap-1">
@@ -641,12 +641,12 @@ export const GalleryTab: React.FC<GalleryTabProps> = ({ settings }) => {
 
         {loading ? (
           <div className="py-12 text-center text-xs text-[#7D756C] flex items-center justify-center gap-2">
-            <Loader2 className="w-4 h-4 animate-spin text-[#CF3B25]" />
+            <Loader2 className="w-4 h-4 animate-spin text-[#315B8A]" />
             Carregando itens da galeria...
           </div>
         ) : items.length === 0 ? (
           <div className="py-12 text-center max-w-md mx-auto space-y-3">
-            <div className="w-12 h-12 rounded-full bg-[#FAF4ED] text-[#C86D51] mx-auto flex items-center justify-center border border-[#EADBCE]">
+            <div className="w-12 h-12 rounded-full bg-[#FAF4ED] text-[#315B8A] mx-auto flex items-center justify-center border border-[#EADBCE]">
               <Sparkles className="w-6 h-6" />
             </div>
             <div>
@@ -668,7 +668,7 @@ export const GalleryTab: React.FC<GalleryTabProps> = ({ settings }) => {
               return (
                 <div
                   key={item.id}
-                  className="p-3.5 rounded-2xl border border-[#EADBCE] bg-[#FAF8F5] hover:border-[#CF3B25]/40 transition-all flex flex-col justify-between gap-3 shadow-2xs"
+                  className="p-3.5 rounded-2xl border border-[#EADBCE] bg-[#FAF8F5] hover:border-[#315B8A]/40 transition-all flex flex-col justify-between gap-3 shadow-2xs"
                 >
                   <div className="flex gap-3">
                     {/* Media Thumbnail */}
@@ -711,7 +711,7 @@ export const GalleryTab: React.FC<GalleryTabProps> = ({ settings }) => {
                         title="Ampliar mídia"
                       >
                         {isVideo ? (
-                          <div className="w-8 h-8 rounded-full bg-white/90 text-[#CF3B25] flex items-center justify-center shadow-md">
+                          <div className="w-8 h-8 rounded-full bg-white/90 text-[#315B8A] flex items-center justify-center shadow-md">
                             <Play className="w-4 h-4 fill-current ml-0.5" />
                           </div>
                         ) : (
@@ -750,7 +750,7 @@ export const GalleryTab: React.FC<GalleryTabProps> = ({ settings }) => {
                             }
                           }}
                           placeholder={isVideo ? 'Ex: Sala integrada com a cozinha' : 'Ex: Nosso cantinho do café'}
-                          className="w-full h-8 px-2.5 rounded-lg border border-[#EADBCE] bg-white text-xs text-[#2D2A26] outline-none focus:border-[#CF3B25]"
+                          className="w-full h-8 px-2.5 rounded-lg border border-[#EADBCE] bg-white text-xs text-[#2D2A26] outline-none focus:border-[#315B8A]"
                         />
                       </div>
 
@@ -766,7 +766,7 @@ export const GalleryTab: React.FC<GalleryTabProps> = ({ settings }) => {
                           }`}
                         >
                           {isSavingThis ? (
-                            <Loader2 className="w-3 h-3 animate-spin text-[#CF3B25]" />
+                            <Loader2 className="w-3 h-3 animate-spin text-[#315B8A]" />
                           ) : isSaved ? (
                             <>
                               <Check className="w-3 h-3 text-emerald-600" />
@@ -822,7 +822,7 @@ export const GalleryTab: React.FC<GalleryTabProps> = ({ settings }) => {
           <div className="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 border border-[#EADBCE] shadow-2xl space-y-5 animate-in fade-in zoom-in-95 duration-200 max-h-[90vh] overflow-y-auto">
             <div className="flex items-center justify-between border-b border-[#EADBCE] pb-4">
               <div className="flex items-center gap-2.5">
-                <div className="w-10 h-10 rounded-2xl bg-gradient-to-br from-[#CF3B25] to-[#F2B84B] flex items-center justify-center text-white shadow-xs">
+                <div className="w-10 h-10 rounded-2xl bg-gradient-to-br from-[#315B8A] to-[#F2B84B] flex items-center justify-center text-white shadow-xs">
                   <Cloud className="w-5 h-5" />
                 </div>
                 <div>
@@ -854,7 +854,7 @@ export const GalleryTab: React.FC<GalleryTabProps> = ({ settings }) => {
                   value={cloudNameInput}
                   onChange={(e) => setCloudNameInput(e.target.value)}
                   placeholder="Ex: da1234abc ou ape-alyne"
-                  className="w-full h-11 px-3.5 rounded-xl border border-[#EADBCE] text-xs text-[#2D2A26] outline-none focus:border-[#CF3B25]"
+                  className="w-full h-11 px-3.5 rounded-xl border border-[#EADBCE] text-xs text-[#2D2A26] outline-none focus:border-[#315B8A]"
                 />
                 <p className="text-[10px] text-[#7D756C] mt-1">
                   Encontrado na página inicial do seu Dashboard no Cloudinary.
@@ -871,7 +871,7 @@ export const GalleryTab: React.FC<GalleryTabProps> = ({ settings }) => {
                   value={uploadPresetInput}
                   onChange={(e) => setUploadPresetInput(e.target.value)}
                   placeholder="Ex: galeria_ape ou ml_default"
-                  className="w-full h-11 px-3.5 rounded-xl border border-[#EADBCE] text-xs text-[#2D2A26] outline-none focus:border-[#CF3B25]"
+                  className="w-full h-11 px-3.5 rounded-xl border border-[#EADBCE] text-xs text-[#2D2A26] outline-none focus:border-[#315B8A]"
                 />
                 <p className="text-[10px] text-[#7D756C] mt-1">
                   Criado em <strong>Settings &gt; Upload &gt; Add upload preset</strong> (marcado como <em>Unsigned</em>).
@@ -884,7 +884,7 @@ export const GalleryTab: React.FC<GalleryTabProps> = ({ settings }) => {
                   type="button"
                   disabled={testingConnection || !cloudNameInput || !uploadPresetInput}
                   onClick={handleTestCloudinary}
-                  className="w-full h-10 rounded-xl border border-[#CF3B25] text-[#CF3B25] hover:bg-[#CF3B25]/5 text-xs font-semibold disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2 cursor-pointer transition-colors"
+                  className="w-full h-10 rounded-xl border border-[#315B8A] text-[#315B8A] hover:bg-[#315B8A]/5 text-xs font-semibold disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2 cursor-pointer transition-colors"
                 >
                   {testingConnection ? (
                     <>
@@ -927,7 +927,7 @@ export const GalleryTab: React.FC<GalleryTabProps> = ({ settings }) => {
                   className="w-full px-4 py-3 flex items-center justify-between text-left text-xs font-semibold text-[#1B2F4E] hover:bg-[#F2B84B]/10 cursor-pointer"
                 >
                   <span className="flex items-center gap-1.5">
-                    <Info className="w-4 h-4 text-[#CF3B25]" />
+                    <Info className="w-4 h-4 text-[#315B8A]" />
                     Como criar sua conta gratuita no Cloudinary em 2 minutos
                   </span>
                   {showCloudinaryGuide ? (
@@ -946,7 +946,7 @@ export const GalleryTab: React.FC<GalleryTabProps> = ({ settings }) => {
                           href="https://cloudinary.com/users/register_free"
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-[#CF3B25] underline font-semibold inline-flex items-center gap-0.5"
+                          className="text-[#315B8A] underline font-semibold inline-flex items-center gap-0.5"
                         >
                           cloudinary.com/users/register_free
                           <ExternalLink className="w-3 h-3" />
@@ -994,7 +994,7 @@ export const GalleryTab: React.FC<GalleryTabProps> = ({ settings }) => {
                 <button
                   type="submit"
                   disabled={savingConfig || !cloudNameInput || !uploadPresetInput}
-                  className="px-5 py-2.5 rounded-xl bg-[#C86D51] hover:bg-[#A95339] text-white text-xs font-semibold cursor-pointer shadow-xs transition-colors disabled:opacity-50"
+                  className="px-5 py-2.5 rounded-xl bg-[#315B8A] hover:bg-[#244568] text-white text-xs font-semibold cursor-pointer shadow-xs transition-colors disabled:opacity-50"
                 >
                   {savingConfig ? 'Salvando...' : 'Salvar Configurações'}
                 </button>

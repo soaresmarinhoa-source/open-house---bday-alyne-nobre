@@ -216,7 +216,7 @@ export const RsvpSection: React.FC<RsvpSectionProps> = ({ settings, guests }) =>
           particleCount: 140,
           spread: 80,
           origin: { y: 0.6 },
-          colors: ['#CF3B25', '#F2B84B', '#8A9A86', '#1B2F4E'],
+          colors: ['#315B8A', '#F2B84B', '#8A9A86', '#1B2F4E'],
         });
       }
 
@@ -259,7 +259,7 @@ export const RsvpSection: React.FC<RsvpSectionProps> = ({ settings, guests }) =>
       <div className="max-w-3xl mx-auto px-4 sm:px-6">
         {/* Section Header */}
         <div className="text-center mb-10 sm:mb-12">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#F3E3CB] text-[#CF3B25] font-mono text-xs font-semibold tracking-widest uppercase mb-4">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#F3E3CB] text-[#315B8A] font-mono text-xs font-semibold tracking-widest uppercase mb-4">
             <Sparkles className="w-3.5 h-3.5" />
             <span>Vossa Ilustríssima Presença</span>
           </div>
@@ -300,7 +300,7 @@ export const RsvpSection: React.FC<RsvpSectionProps> = ({ settings, guests }) =>
                 {submitted === 'confirmed' ? (
                   <CheckCircle2 className="w-8 h-8" />
                 ) : (
-                  <Heart className="w-8 h-8 fill-current text-[#CF3B25]" />
+                  <Heart className="w-8 h-8 fill-current text-[#315B8A]" />
                 )}
               </div>
 
@@ -353,7 +353,7 @@ export const RsvpSection: React.FC<RsvpSectionProps> = ({ settings, guests }) =>
 
                 <a
                   href="#presentes"
-                  className="w-full sm:w-auto h-11 px-5 rounded-full bg-[#CF3B25] hover:bg-[#A82D1B] text-white text-xs font-semibold tracking-wide flex items-center justify-center gap-2 transition-colors cursor-pointer"
+                  className="w-full sm:w-auto h-11 px-5 rounded-full bg-[#315B8A] hover:bg-[#244568] text-white text-xs font-semibold tracking-wide flex items-center justify-center gap-2 transition-colors cursor-pointer"
                 >
                   <Heart className="w-4 h-4 fill-white" />
                   <span>Ver Lista de Presentes</span>
@@ -385,7 +385,7 @@ export const RsvpSection: React.FC<RsvpSectionProps> = ({ settings, guests }) =>
                   onChange={(e) => setName(e.target.value)}
                   placeholder="Ex: Gabriela Ribeiro"
                   maxLength={80}
-                  className="w-full h-12 px-4 rounded-xl border border-[#E8D4B8] bg-[#FBF4E8] text-sm text-[#1B2F4E] focus:bg-white focus:border-[#CF3B25] focus:ring-2 focus:ring-[#CF3B25]/15 outline-none transition-all"
+                  className="w-full h-12 px-4 rounded-xl border border-[#E8D4B8] bg-[#FBF4E8] text-sm text-[#1B2F4E] focus:bg-white focus:border-[#315B8A] focus:ring-2 focus:ring-[#315B8A]/15 outline-none transition-all"
                 />
               </div>
 
@@ -401,7 +401,7 @@ export const RsvpSection: React.FC<RsvpSectionProps> = ({ settings, guests }) =>
                   onChange={(e) => setWhatsapp(e.target.value)}
                   placeholder="Ex: (11) 98765-4321"
                   maxLength={25}
-                  className="w-full h-12 px-4 rounded-xl border border-[#E8D4B8] bg-[#FBF4E8] text-sm text-[#1B2F4E] focus:bg-white focus:border-[#CF3B25] focus:ring-2 focus:ring-[#CF3B25]/15 outline-none transition-all font-mono"
+                  className="w-full h-12 px-4 rounded-xl border border-[#E8D4B8] bg-[#FBF4E8] text-sm text-[#1B2F4E] focus:bg-white focus:border-[#315B8A] focus:ring-2 focus:ring-[#315B8A]/15 outline-none transition-all font-mono"
                 />
                 <span className="text-[11px] text-[#6F7F97] mt-1 block">
                   Usado para identificarmos seu convite e alinharmos avisos sobre o evento.
@@ -410,7 +410,7 @@ export const RsvpSection: React.FC<RsvpSectionProps> = ({ settings, guests }) =>
                 {/* Live Guest Lookup Feedback */}
                 {isSearchingGuest && (
                   <div className="mt-2.5 flex items-center gap-2 text-xs text-[#6F7F97]">
-                    <span className="w-2 h-2 rounded-full bg-[#CF3B25] animate-ping" />
+                    <span className="w-2 h-2 rounded-full bg-[#315B8A] animate-ping" />
                     <span>Localizando seu convite na lista...</span>
                   </div>
                 )}
@@ -424,7 +424,7 @@ export const RsvpSection: React.FC<RsvpSectionProps> = ({ settings, guests }) =>
                   }`}>
                     <div className="flex items-start gap-3">
                       <div className={`w-8 h-8 rounded-xl flex items-center justify-center shrink-0 ${
-                        matchedGuest.maxCompanions === 0 ? 'bg-[#F3E3CB] text-[#CF3B25]' : 'bg-emerald-100 text-emerald-700'
+                        matchedGuest.maxCompanions === 0 ? 'bg-[#F3E3CB] text-[#315B8A]' : 'bg-emerald-100 text-emerald-700'
                       }`}>
                         {matchedGuest.maxCompanions === 0 ? <User className="w-4 h-4" /> : <Users className="w-4 h-4" />}
                       </div>
@@ -435,7 +435,7 @@ export const RsvpSection: React.FC<RsvpSectionProps> = ({ settings, guests }) =>
                           </span>
                           <span className={`px-2 py-0.5 rounded-full text-[10px] font-mono font-semibold uppercase tracking-wider ${
                             matchedGuest.maxCompanions === 0
-                              ? 'bg-[#F3E3CB] text-[#CF3B25]'
+                              ? 'bg-[#F3E3CB] text-[#315B8A]'
                               : 'bg-emerald-200/70 text-emerald-800'
                           }`}>
                             {matchedGuest.maxCompanions === 0
@@ -553,7 +553,7 @@ export const RsvpSection: React.FC<RsvpSectionProps> = ({ settings, guests }) =>
                     /* Convite Individual — Apenas o próprio convidado */
                     <div className="p-4 rounded-2xl bg-[#F6EBD9]/80 border border-[#E8D4B8] flex items-center justify-between">
                       <div className="flex items-center gap-3">
-                        <div className="w-9 h-9 rounded-xl bg-white border border-[#E8D4B8] flex items-center justify-center text-[#CF3B25]">
+                        <div className="w-9 h-9 rounded-xl bg-white border border-[#E8D4B8] flex items-center justify-center text-[#315B8A]">
                           <UserCheck className="w-5 h-5" />
                         </div>
                         <div>
@@ -567,7 +567,7 @@ export const RsvpSection: React.FC<RsvpSectionProps> = ({ settings, guests }) =>
                           </span>
                         </div>
                       </div>
-                      <span className="px-3 py-1 rounded-full bg-white border border-[#E8D4B8] text-xs font-bold text-[#CF3B25] shrink-0">
+                      <span className="px-3 py-1 rounded-full bg-white border border-[#E8D4B8] text-xs font-bold text-[#315B8A] shrink-0">
                         1 pessoa
                       </span>
                     </div>
@@ -578,7 +578,7 @@ export const RsvpSection: React.FC<RsvpSectionProps> = ({ settings, guests }) =>
                         <label className="text-xs font-mono font-semibold uppercase tracking-wider text-[#4B5A72]">
                           Quantas pessoas no seu grupo (incluindo você)?
                         </label>
-                        <span className="text-xs font-bold text-[#CF3B25]">
+                        <span className="text-xs font-bold text-[#315B8A]">
                           {attendeesCount} {attendeesCount === 1 ? 'pessoa' : 'pessoas'}
                         </span>
                       </div>
@@ -591,7 +591,7 @@ export const RsvpSection: React.FC<RsvpSectionProps> = ({ settings, guests }) =>
                             onClick={() => handleAttendeesChange(num)}
                             className={`h-10 px-4 rounded-xl text-xs font-semibold border transition-all cursor-pointer ${
                               attendeesCount === num
-                                ? 'bg-[#CF3B25] border-[#CF3B25] text-white shadow-xs'
+                                ? 'bg-[#315B8A] border-[#315B8A] text-white shadow-xs'
                                 : 'bg-[#FBF4E8] border-[#E8D4B8] text-[#4B5A72] hover:bg-white'
                             }`}
                           >
@@ -628,7 +628,7 @@ export const RsvpSection: React.FC<RsvpSectionProps> = ({ settings, guests }) =>
                                 onChange={(e) => handleCompanionNameChange(idx, e.target.value)}
                                 placeholder={`Nome completo do ${idx + 1}º acompanhante`}
                                 maxLength={80}
-                                className="w-full h-11 px-3.5 rounded-xl border border-[#E8D4B8] bg-[#FBF4E8] text-xs text-[#1B2F4E] focus:bg-white focus:border-[#CF3B25] outline-none transition-all"
+                                className="w-full h-11 px-3.5 rounded-xl border border-[#E8D4B8] bg-[#FBF4E8] text-xs text-[#1B2F4E] focus:bg-white focus:border-[#315B8A] outline-none transition-all"
                               />
                             </div>
                           ))}
@@ -650,7 +650,7 @@ export const RsvpSection: React.FC<RsvpSectionProps> = ({ settings, guests }) =>
                   onChange={(e) => setNotes(e.target.value)}
                   placeholder="Ex: Não como carne de porco / Mal posso esperar pra conhecer o apê novo e comemorar com você!"
                   maxLength={500}
-                  className="w-full p-3.5 rounded-xl border border-[#E8D4B8] bg-[#FBF4E8] text-xs text-[#1B2F4E] focus:bg-white focus:border-[#CF3B25] outline-none transition-all resize-none"
+                  className="w-full p-3.5 rounded-xl border border-[#E8D4B8] bg-[#FBF4E8] text-xs text-[#1B2F4E] focus:bg-white focus:border-[#315B8A] outline-none transition-all resize-none"
                 />
                 <div className="text-right text-[10px] text-[#6F7F97] mt-1">
                   {notes.length}/500 caracteres
@@ -668,7 +668,7 @@ export const RsvpSection: React.FC<RsvpSectionProps> = ({ settings, guests }) =>
               <button
                 type="submit"
                 disabled={submitting}
-                className="w-full h-13 rounded-full bg-[#CF3B25] hover:bg-[#A82D1B] disabled:opacity-50 text-white text-xs sm:text-sm font-semibold tracking-wide uppercase transition-colors cursor-pointer flex items-center justify-center gap-2 shadow-xs"
+                className="w-full h-13 rounded-full bg-[#315B8A] hover:bg-[#244568] disabled:opacity-50 text-white text-xs sm:text-sm font-semibold tracking-wide uppercase transition-colors cursor-pointer flex items-center justify-center gap-2 shadow-xs"
               >
                 {submitting ? (
                   <span>Gravando sua confirmação...</span>

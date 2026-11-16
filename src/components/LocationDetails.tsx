@@ -22,8 +22,8 @@ export const LocationDetails: React.FC<LocationDetailsProps> = ({ settings }) =>
       <div className="max-w-4xl mx-auto px-4 sm:px-6">
         
         <div className="text-center mb-10">
-          <div className="flex items-center justify-center gap-2 text-xs font-mono font-semibold tracking-widest uppercase text-[#CF3B25] mb-3">
-            <MapPin className="w-3.5 h-3.5 text-[#CF3B25]" />
+          <div className="flex items-center justify-center gap-2 text-xs font-mono font-semibold tracking-widest uppercase text-[#315B8A] mb-3">
+            <MapPin className="w-3.5 h-3.5 text-[#315B8A]" />
             <span>Coordenadas da Celebração</span>
           </div>
 
@@ -41,7 +41,7 @@ export const LocationDetails: React.FC<LocationDetailsProps> = ({ settings }) =>
             {/* Left Column: Details */}
             <div className="space-y-5">
               <div>
-                <span className="text-xs font-mono font-semibold uppercase tracking-wider text-[#A82D1B] block mb-1">
+                <span className="text-xs font-mono font-semibold uppercase tracking-wider text-[#244568] block mb-1">
                   Local
                 </span>
                 <h3 className="font-serif text-xl sm:text-2xl font-medium text-[#1B2F4E]">
@@ -54,18 +54,18 @@ export const LocationDetails: React.FC<LocationDetailsProps> = ({ settings }) =>
 
               <div className="pt-3 border-t border-[#F7E6D0] space-y-2 text-sm text-[#3E5070]">
                 <div className="flex items-center gap-2.5">
-                  <Calendar className="w-4 h-4 text-[#CF3B25] shrink-0" />
+                  <Calendar className="w-4 h-4 text-[#315B8A] shrink-0" />
                   <span>Data: <strong>{settings.eventDate}</strong></span>
                 </div>
                 <div className="flex items-center gap-2.5">
-                  <Clock className="w-4 h-4 text-[#CF3B25] shrink-0" />
+                  <Clock className="w-4 h-4 text-[#315B8A] shrink-0" />
                   <span>Horário: <strong>{settings.eventTime}</strong> {settings.eventEndTime ? `até ${settings.eventEndTime}` : ''}</span>
                 </div>
               </div>
 
               {settings.locationNotes && (
                 <div className="p-3.5 rounded-xl bg-[#F6EBD9] border border-[#E8D4B8] text-xs text-[#4B5A72] flex gap-2.5">
-                  <Info className="w-4 h-4 text-[#CF3B25] shrink-0 mt-0.5" />
+                  <Info className="w-4 h-4 text-[#315B8A] shrink-0 mt-0.5" />
                   <span>{settings.locationNotes}</span>
                 </div>
               )}
@@ -103,7 +103,7 @@ export const LocationDetails: React.FC<LocationDetailsProps> = ({ settings }) =>
 
             {/* Right Column: Visual Map Card */}
             <div className="h-64 sm:h-72 rounded-2xl bg-[#F3E3CB] border border-[#E8D4B8] overflow-hidden relative flex flex-col items-center justify-center p-6 text-center">
-              <div className="w-14 h-14 rounded-full bg-white shadow-md flex items-center justify-center text-[#CF3B25] mb-3">
+              <div className="w-14 h-14 rounded-full bg-white shadow-md flex items-center justify-center text-[#315B8A] mb-3">
                 <MapPin className="w-7 h-7" />
               </div>
               <span className="font-serif text-lg font-medium text-[#1B2F4E] mb-1">
@@ -116,7 +116,7 @@ export const LocationDetails: React.FC<LocationDetailsProps> = ({ settings }) =>
                 href={`https://maps.google.com/?q=${encodeURIComponent(fullAddress)}`}
                 target="_blank"
                 rel="noreferrer noopener"
-                className="text-xs font-semibold text-[#CF3B25] hover:underline"
+                className="text-xs font-semibold text-[#315B8A] hover:underline"
               >
                 Clique para traçar rota no Maps →
               </a>

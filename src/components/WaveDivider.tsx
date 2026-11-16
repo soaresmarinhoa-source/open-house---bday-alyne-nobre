@@ -29,7 +29,7 @@ export const WaveDivider: React.FC<WaveDividerProps> = ({
         {/* Coral wave line */}
         <path
           d="M0 12 C100 2 200 22 300 12 C400 2 500 22 600 12 C700 2 800 22 900 12 C1000 2 1100 22 1200 12"
-          stroke="#CF3B25"
+          stroke="#315B8A"
           strokeWidth="3.5"
           strokeLinecap="round"
         />

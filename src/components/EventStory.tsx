@@ -28,7 +28,7 @@ export const EventStory: React.FC = () => {
         {/* 3 Pillars of the celebration */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
           <div className="bg-[#FBF4E8] p-6 rounded-2xl border border-[#E8D4B8]">
-            <div className="w-10 h-10 rounded-xl bg-[#F7E6D0] text-[#CF3B25] flex items-center justify-center mb-4">
+            <div className="w-10 h-10 rounded-xl bg-[#F7E6D0] text-[#315B8A] flex items-center justify-center mb-4">
               <PartyPopper className="w-5 h-5" />
             </div>
             <h3 className="font-serif text-lg font-semibold text-[#1B2F4E] mb-2">1. Meu Aniversário</h3>
@@ -38,7 +38,7 @@ export const EventStory: React.FC = () => {
           </div>
 
           <div className="bg-[#FBF4E8] p-6 rounded-2xl border border-[#E8D4B8]">
-            <div className="w-10 h-10 rounded-xl bg-[#F7E6D0] text-[#CF3B25] flex items-center justify-center mb-4">
+            <div className="w-10 h-10 rounded-xl bg-[#F7E6D0] text-[#315B8A] flex items-center justify-center mb-4">
               <Heart className="w-5 h-5" />
             </div>
             <h3 className="font-serif text-lg font-semibold text-[#1B2F4E] mb-2">2. Chá de Casa Nova</h3>
@@ -48,7 +48,7 @@ export const EventStory: React.FC = () => {
           </div>
 
           <div className="bg-[#FBF4E8] p-6 rounded-2xl border border-[#E8D4B8]">
-            <div className="w-10 h-10 rounded-xl bg-[#F7E6D0] text-[#CF3B25] flex items-center justify-center mb-4">
+            <div className="w-10 h-10 rounded-xl bg-[#F7E6D0] text-[#315B8A] flex items-center justify-center mb-4">
               <Wine className="w-5 h-5" />
             </div>
             <h3 className="font-serif text-lg font-semibold text-[#1B2F4E] mb-2">3. Celebrando Conquistas</h3>

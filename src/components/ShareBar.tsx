@@ -65,7 +65,7 @@ export const ShareBar: React.FC<ShareBarProps> = ({ settings }) => {
         <div className="flex flex-wrap items-center justify-center gap-3">
           <button
             onClick={handleShare}
-            className="h-11 px-5 rounded-full bg-[#CF3B25] hover:bg-[#A82D1B] text-white text-xs font-semibold tracking-wide uppercase flex items-center gap-2 shadow-xs transition-colors cursor-pointer"
+            className="h-11 px-5 rounded-full bg-[#315B8A] hover:bg-[#244568] text-white text-xs font-semibold tracking-wide uppercase flex items-center gap-2 shadow-xs transition-colors cursor-pointer"
           >
             <Share2 className="w-4 h-4" />
             <span>Compartilhar Convite</span>
