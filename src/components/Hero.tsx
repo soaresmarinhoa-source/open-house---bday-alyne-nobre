@@ -74,12 +74,12 @@ export const Hero: React.FC<HeroProps> = ({ settings, onScrollTo }) => {
   })();
 
   const rotatingBadgeText = eventDateFormattedShort
-    ? `OPEN HOUSE • ${eventDateFormattedShort} • ANIVERSÁRIO • CASA NOVA • `
-    : `OPEN HOUSE • ANIVERSÁRIO • CASA NOVA • `;
+    ? `${eventDateFormattedShort} • ANIVERSÁRIO • CASA NOVA • `
+    : `ANIVERSÁRIO • CASA NOVA • `;
 
   const eventHasPassed = targetTimestamp ? targetTimestamp < Date.now() : false;
-  const heroHeading = settings.heroHeading || 'Minha casa nova finalmente saiu do Pinterest!';
-  const heroSubheading = settings.heroSubheading || 'Esse ano a comemoração é diferente: aniversário + casa nova + a desculpa perfeita para reunir quem eu amo.';
+  const heroHeading = settings.heroHeading || 'Um novo lar, uma nova história e a graça de Deus em cada detalhe. 🏡❤️';
+  const heroSubheading = settings.heroSubheading || 'Depois de tantos sonhos, planos e orações, chegou a hora de viver um novo capítulo! Eu, Pedrinho e Kahlel estamos de mudança para o nosso cantinho. Um espaço que ainda está ganhando forma, mas que já está cheio de amor, expectativas e gratidão a Deus. Quero celebrar essa conquista com pessoas especiais que fazem parte da nossa história!';
   const heroQuote = settings.quote || 'Vem comemorar comigo e, se quiser, ajuda a montar minha casa nova 😂';
 
   return (
@@ -93,7 +93,7 @@ export const Hero: React.FC<HeroProps> = ({ settings, onScrollTo }) => {
           <div className="lg:col-span-7 flex flex-col justify-center">
             {/* 2.2 Kicker in DM Mono, uppercase, tracking-widest, color #CF3B25 with #F2B84B dots */}
             <div className="flex items-center gap-2 text-xs sm:text-sm font-mono font-semibold tracking-widest uppercase text-[#CF3B25] mb-4">
-              <span>Open House</span>
+              <span>Bday 2026</span>
               <span aria-hidden="true" className="text-[#F2B84B]">·</span>
               <span>Aniversário</span>
               <span aria-hidden="true" className="text-[#F2B84B]">·</span>

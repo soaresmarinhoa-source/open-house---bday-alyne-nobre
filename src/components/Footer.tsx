@@ -19,7 +19,7 @@ export const Footer: React.FC<FooterProps> = ({ settings, onOpenAdmin, isAdmin }
               {settings.hostName}
             </span>
             <span className="hidden sm:inline text-[#DCC6A6]">·</span>
-            <span>Open House & Bday 2026</span>
+            <span>Bday 2026</span>
             <span className="hidden sm:inline text-[#DCC6A6]">·</span>
             <a
               href={`https://www.instagram.com/${settings.instagramHandle}/`}

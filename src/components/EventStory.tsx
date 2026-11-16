@@ -51,9 +51,9 @@ export const EventStory: React.FC = () => {
             <div className="w-10 h-10 rounded-xl bg-[#F7E6D0] text-[#CF3B25] flex items-center justify-center mb-4">
               <Wine className="w-5 h-5" />
             </div>
-            <h3 className="font-serif text-lg font-semibold text-[#1B2F4E] mb-2">3. Open House</h3>
+            <h3 className="font-serif text-lg font-semibold text-[#1B2F4E] mb-2">3. Celebrando Conquistas</h3>
             <p className="text-sm text-[#4B5A72] leading-relaxed">
-              Portas abertas, comidinhas gostosas e a inauguração oficial das melhores conversas.
+              Porque algumas bênçãos merecem ser comemoradas em grande estilo!
             </p>
           </div>
         </div>
