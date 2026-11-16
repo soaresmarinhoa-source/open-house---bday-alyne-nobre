@@ -790,7 +790,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
               Painel Administrativo
             </h1>
             <span className="text-[11px] text-[#7D756C]">
-              Open House & Bday • Alyne Nobre
+              Bday • Amanda Marinho
             </span>
           </div>
         </div>
@@ -2692,7 +2692,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                       type="text"
                       value={settingsForm.shippingRecipientName || ''}
                       onChange={(e) => setSettingsForm({ ...settingsForm, shippingRecipientName: e.target.value })}
-                      placeholder="Ex: Alyne Nobre"
+                      placeholder="Ex: Amanda Marinho"
                       className="w-full h-10 px-3 rounded-xl border border-[#EADBCE] bg-white text-xs text-[#2D2A26] outline-none"
                     />
                   </div>
@@ -2847,7 +2847,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                       type="text"
                       value={settingsForm.pixReceiverName || ''}
                       onChange={(e) => setSettingsForm({ ...settingsForm, pixReceiverName: e.target.value })}
-                      placeholder="Ex: Alyne Nobre Custodio"
+                      placeholder="Ex: Amanda Soares Marinho "
                       className="w-full h-10 px-3 rounded-xl border border-[#EADBCE] bg-white text-xs text-[#2D2A26] outline-none"
                     />
                   </div>

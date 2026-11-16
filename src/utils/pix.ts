@@ -43,18 +43,18 @@ export function buildPixPayload({
   pixKey,
   amount,
   description = 'Presente',
-  merchantName = 'Alyne Nobre',
+  merchantName = 'Amanda Marinho',
   merchantCity = 'SAO PAULO',
   txId = '***',
 }: PixPayloadOptions): string {
   const sanitizedPixKey = (pixKey || '').trim();
   if (!sanitizedPixKey) return '';
 
-  const cleanName = (merchantName || 'Alyne Nobre')
+  const cleanName = (merchantName || 'Amanda Marinho')
     .normalize('NFD')
     .replace(/[\u0300-\u036f]/g, '')
     .trim()
-    .slice(0, 25) || 'ALYNE NOBRE';
+    .slice(0, 25) || 'Amanda Marinho';
 
   const cleanCity = (merchantCity || 'SAO PAULO')
     .normalize('NFD')

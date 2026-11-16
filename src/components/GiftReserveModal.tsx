@@ -39,7 +39,7 @@ export const GiftReserveModal: React.FC<GiftReserveModalProps> = ({
     ? giftPixKey
     : settings?.pixKey || DEFAULT_SETTINGS.pixKey;
   const activePixKeyType = settings?.pixKeyType || 'E-mail';
-  const activeReceiverName = settings?.pixReceiverName || 'Alyne Nobre';
+  const activeReceiverName = settings?.pixReceiverName || 'Amanda Marinho';
   const activeBankName = settings?.pixBankName || '';
   const activeBankLink = (settings?.pixBankLink || '').trim() || (gift?.pixBankLink || '').trim();
   const activeCopiaECola = (settings?.pixCopiaECola || '').trim() || (gift?.pixCopiaECola || '').trim();
@@ -73,7 +73,7 @@ export const GiftReserveModal: React.FC<GiftReserveModalProps> = ({
         pixKey: activePixKey,
         amount: gift.price * quantity,
         description: `${gift.name}`.slice(0, 40),
-        merchantName: activeReceiverName || 'Alyne Nobre',
+        merchantName: activeReceiverName || 'Amanda Marinho',
         merchantCity: 'SAO PAULO',
         txId: `OPENHOUSE-${gift.id}`.slice(0, 25),
       });

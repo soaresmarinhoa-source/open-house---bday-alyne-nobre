@@ -29,7 +29,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenAdmin, isAdmin }) => {
           }}
           className="font-serif text-xl sm:text-2xl font-medium tracking-tight text-[#1B2F4E] hover:text-[#CF3B25] transition-colors flex items-center"
         >
-          <span>Alyne Nobre</span>
+          <span>Amanda Marinho</span>
           <span className="w-2 h-2 rounded-full bg-[#CF3B25] inline-block ml-1" aria-hidden="true" />
         </a>
 

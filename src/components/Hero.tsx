@@ -211,7 +211,7 @@ export const Hero: React.FC<HeroProps> = ({ settings, onScrollTo }) => {
               <div className="relative rounded-t-[999px] rounded-b-3xl overflow-hidden shadow-xl aspect-[4/5] bg-[#F6EBD9]">
                 <img
                   src={settings.mainImageUrl || 'default'}
-                  alt="Alyne Nobre no apê novo"
+                  alt="Amanda Marinho no apê novo"
                   referrerPolicy="no-referrer"
                   fetchPriority="high"
                   className="w-full h-full object-cover object-center"

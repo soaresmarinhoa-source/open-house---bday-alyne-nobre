@@ -5,8 +5,8 @@ import kitchenDining from '../assets/images/kitchen_dining_bar_1790969125087.jpg
 import readingNook from '../assets/images/aesthetic_reading_nook_1790969135611.jpg';
 
 export const DEFAULT_SETTINGS: EventSettings = {
-  eventName: "Open House • Aniversário • Chá de Casa Nova",
-  hostName: "Alyne Nobre",
+  eventName: "Aniversário • Chá de Casa Nova",
+  hostName: "Amanda Marinho",
   instagramHandle: "nobremente_",
   eventDate: "2026-11-21",
   eventTime: "17:00",
@@ -22,7 +22,7 @@ export const DEFAULT_SETTINGS: EventSettings = {
   mainImageUrl: alynePortrait,
   pixKey: "alyne2.nobre.c@gmail.com",
   pixKeyType: "E-mail",
-  pixReceiverName: "Alyne Nobre",
+  pixReceiverName: "Amanda Marinho",
   pixBankName: "Nubank",
   pixBankLink: "",
   pixCopiaECola: "",

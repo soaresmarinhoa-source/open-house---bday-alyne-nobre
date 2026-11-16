@@ -10,7 +10,7 @@ interface ShareBarProps {
 export const ShareBar: React.FC<ShareBarProps> = ({ settings }) => {
   const [copied, setCopied] = useState(false);
 
-  const hostName = settings?.hostName || 'Alyne Nobre';
+  const hostName = settings?.hostName || 'Amanda Marinho';
   const hostFirstName = hostName.split(' ')[0] || 'Alyne';
   const hostPhone = settings?.hostWhatsapp || settings?.shippingPhone || '11987654321';
 
@@ -21,7 +21,7 @@ export const ShareBar: React.FC<ShareBarProps> = ({ settings }) => {
     if (navigator.share) {
       try {
         await navigator.share({
-          title: settings?.eventName || "Open House & Bday Alyne Nobre",
+          title: settings?.eventName || "Open House & Bday Amanda Marinho",
           text: shareText,
           url: shareUrl,
         });
