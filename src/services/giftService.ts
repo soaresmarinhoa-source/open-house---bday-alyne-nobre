@@ -180,7 +180,12 @@ function notifyGiftListeners() {
 export const isAdminUser = () => {
   const email = auth?.currentUser?.email?.trim().toLowerCase();
   const envAdmin = (import.meta.env.VITE_ADMIN_EMAIL || '').trim().toLowerCase();
-  return Boolean(email && (email === envAdmin || email === 'alyne.custodio@dux-company.com' || email === 'alyne2.nobre.c@gmail.com'));
+  return Boolean(email && (
+    email === envAdmin ||
+    email === 'alyne.custodio@dux-company.com' ||
+    email === 'alyne2.nobre.c@gmail.com' ||
+    email === 'soaresmarinhoa@gmail.com'
+  ));
 };
 
 export function subscribeGifts(

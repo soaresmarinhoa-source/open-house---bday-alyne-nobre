@@ -65,7 +65,8 @@ function canManageGuests(): boolean {
   return Boolean(email && (
     email === envAdmin ||
     email === 'alyne.custodio@dux-company.com' ||
-    email === 'alyne2.nobre.c@gmail.com'
+    email === 'alyne2.nobre.c@gmail.com' ||
+    email === 'soaresmarinhoa@gmail.com'
   ));
 }
 

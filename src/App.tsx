@@ -27,6 +27,7 @@ const AdminDashboard = lazy(() => import('./components/Admin/AdminDashboard').th
 const ADMIN_ALLOWED_EMAILS = [
   'alyne.custodio@dux-company.com',
   'alyne2.nobre.c@gmail.com',
+  'soaresmarinhoa@gmail.com',
 ];
 
 export function normalizeAdminEmail(value?: string | null): string {
