@@ -1,27 +1,24 @@
 import React from 'react';
-import { Sparkles, Heart, Wine, PartyPopper } from 'lucide-react';
+import { Heart, Wine, PartyPopper } from 'lucide-react';
 
 export const EventStory: React.FC = () => {
   return (
     <section id="evento" className="py-16 sm:py-20 bg-[#F6EBD9] border-y border-[#E8D4B8]">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
         
-        {/* Subtle kicker */}
-        <div className="flex items-center justify-center gap-2 text-xs font-mono font-semibold tracking-widest uppercase text-[#CF3B25] mb-3">
-          <Sparkles className="w-3.5 h-3.5 text-[#CF3B25]" />
-          <span>A Desculpa Perfeita</span>
-        </div>
-
         <h2 className="font-serif text-3xl sm:text-4xl font-medium text-[#1B2F4E] mb-6 text-balance">
-          Três motivos para <span className="bg-gradient-to-t from-[#F2B84B] to-[#F2B84B] bg-[length:100%_40%] bg-no-repeat bg-bottom">comemorar</span> em um só dia
+          Um novo lar, uma nova história!
         </h2>
 
         <div className="space-y-4 text-base sm:text-lg text-[#3E5070] leading-relaxed max-w-2xl mx-auto mb-10">
           <p>
-            Mudar de casa dá trabalho, desencaixotar coisa não acaba nunca e o saldo bancário chora… mas ter o meu cantinho do jeitinho que eu sempre sonhei compensa cada parafuso!
+            Deus tem nos conduzido a novos caminhos, e chegou a hora de viver um sonho muito especial: nosso novo lar!
           </p>
           <p>
-            E já que meu aniversário caiu bem na época em que as chaves foram entregues, decidi juntar tudo: <strong>Open House + Aniversário + Chá de Casa Nova</strong>.
+            Eu, Pedrinho e Kahlel estamos nos preparando para começar essa nova etapa, cheia de sonhos, descobertas e momentos felizes.
+          </p>
+          <p>
+            Quero celebrar meu aniversário e essa conquista com pessoas especiais que fazem parte da minha história. Será uma alegria ter você conosco nesse momento tão importante!
           </p>
           <p className="font-serif italic text-lg sm:text-xl text-[#1B2F4E]">
             “Mais do que móveis e eletros, o que faz uma casa virar lar são as pessoas que enchem ela de vida, risadas e memórias boas.”
