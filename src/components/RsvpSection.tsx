@@ -642,7 +642,7 @@ export const RsvpSection: React.FC<RsvpSectionProps> = ({ settings, guests }) =>
               {/* 5. Mensagem carinhosa ou restrição alimentar */}
               <div>
                 <label className="block text-xs font-mono font-semibold uppercase tracking-wider text-[#4B5A72] mb-1.5">
-                  Recado carinhoso para a Alyne ou restrição alimentar (opcional)
+                  Recado carinhoso para a Amanda (opcional)
                 </label>
                 <textarea
                   rows={3}
