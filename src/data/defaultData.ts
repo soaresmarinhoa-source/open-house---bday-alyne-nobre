@@ -1,5 +1,5 @@
 import { EventSettings, Gift, Guest, GiftReservation } from '../types';
-import alynePortrait from '../assets/images/alyne_portrait_1790969104126.jpg';
+import alynePortrait from '../assets/images/alyne_portrait_1790969104126.jpeg';
 import modernLivingRoom from '../assets/images/modern_living_room_1790969114799.jpg';
 import kitchenDining from '../assets/images/kitchen_dining_bar_1790969125087.jpg';
 import readingNook from '../assets/images/aesthetic_reading_nook_1790969135611.jpg';
@@ -409,4 +409,3 @@ export const INITIAL_RESERVATIONS: GiftReservation[] = [
     createdAt: "2026-10-02T13:30:00.000Z",
   }
 ];
-

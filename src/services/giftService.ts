@@ -17,7 +17,7 @@ import { db, isFirebaseConfigured } from '../lib/firebase';
 import { auth } from '../lib/firebase';
 import { Gift, GiftCategory, GiftReservation, GiftStatus, GiftFulfillmentStatus } from '../types';
 import { INITIAL_GIFTS, INITIAL_RESERVATIONS } from '../data/defaultData';
-import alynePortrait from '../assets/images/alyne_portrait_1790969104126.jpg';
+import alynePortrait from '../assets/images/alyne_portrait_1790969104126.jpeg';
 import modernLivingRoom from '../assets/images/modern_living_room_1790969114799.jpg';
 import kitchenDining from '../assets/images/kitchen_dining_bar_1790969125087.jpg';
 import readingNook from '../assets/images/aesthetic_reading_nook_1790969135611.jpg';
@@ -859,4 +859,3 @@ export async function updateReservationFulfillment(
     await updateDoc(reservationRef, firestoreUpdates);
   }
 }
-

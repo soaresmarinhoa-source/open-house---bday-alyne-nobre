@@ -5,7 +5,7 @@ import { subscribeGalleryMedia } from '../services/galleryService';
 import modernLivingRoom from '../assets/images/modern_living_room_1790969114799.jpg';
 import kitchenDining from '../assets/images/kitchen_dining_bar_1790969125087.jpg';
 import readingNook from '../assets/images/aesthetic_reading_nook_1790969135611.jpg';
-import alynePortrait from '../assets/images/alyne_portrait_1790969104126.jpg';
+import alynePortrait from '../assets/images/alyne_portrait_1790969104126.jpeg';
 
 interface HouseGalleryProps {
   settings: EventSettings;
