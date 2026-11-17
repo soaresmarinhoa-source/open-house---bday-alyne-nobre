@@ -42,7 +42,7 @@ export function formatWhatsappUrl(phone: string, text?: string): string {
 }
 
 /**
- * Formats a phone number for display (e.g. (11) 98765-4321)
+ * Formats a phone number for display (e.g. (21) 97013-1541)
  */
 export function formatPhoneDisplay(phone: string): string {
   if (!phone) return '';
@@ -70,7 +70,7 @@ export function normalizePhoneId(phone?: string | null): string | null {
     return null;
   }
 
-  // Remove country code 55 if phone has 12 or 13 digits (e.g. 5511987654321 -> 11987654321)
+  // Remove country code 55 if phone has 12 or 13 digits (e.g. 5521970131541 -> 21970131541)
   const normalized = digits.startsWith('55') && digits.length > 11 ? digits.slice(2) : digits;
   const last11 = normalized.length > 11 ? normalized.slice(-11) : normalized;
 

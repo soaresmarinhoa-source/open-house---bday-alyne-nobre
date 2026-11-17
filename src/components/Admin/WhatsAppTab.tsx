@@ -517,7 +517,7 @@ export const WhatsAppTab: React.FC<WhatsAppTabProps> = ({
     return {
       id: 'preview',
       name: 'Camila Santos',
-      whatsapp: '11987654321',
+      whatsapp: '21970131541',
       maxCompanions: 1,
       attendees: 1,
       companions: [],
@@ -1254,7 +1254,7 @@ export const WhatsAppTab: React.FC<WhatsAppTabProps> = ({
                   autoFocus
                   value={phoneInputValue}
                   onChange={(e) => setPhoneInputValue(e.target.value)}
-                  placeholder="Ex: (11) 98765-4321"
+                  placeholder="Ex: (21) 97013-1541"
                   className="w-full h-11 px-3 rounded-xl border border-[#EADBCE] bg-white text-xs text-[#2D2A26] outline-none font-mono"
                 />
                 <span className="text-[10px] text-[#A59E95] mt-1 block">

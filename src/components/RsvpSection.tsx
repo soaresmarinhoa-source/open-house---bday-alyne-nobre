@@ -135,7 +135,7 @@ export const RsvpSection: React.FC<RsvpSectionProps> = ({ settings, guests }) =>
   }, [whatsapp]);
 
   const hostPhoneLink = useMemo(() => {
-    const hostNumber = settings?.hostWhatsapp || settings?.shippingPhone || '(11) 98765-4321';
+    const hostNumber = settings?.hostWhatsapp || settings?.shippingPhone || '21970131541';
     const guestLabel = name.trim() || 'Convidado';
     const message = `Oi Amanda! Sou ${guestLabel} (${whatsapp || 'meu telefone'}). Gostaria de saber se é possível levar acompanhante no seu evento!`;
     return formatWhatsappUrl(hostNumber, message);
@@ -399,7 +399,7 @@ export const RsvpSection: React.FC<RsvpSectionProps> = ({ settings, guests }) =>
                   required
                   value={whatsapp}
                   onChange={(e) => setWhatsapp(e.target.value)}
-                  placeholder="Ex: (11) 98765-4321"
+                  placeholder="Ex: (21) 97013-1541"
                   maxLength={25}
                   className="w-full h-12 px-4 rounded-xl border border-[#D5E1CB] bg-[#F2F6EE] text-sm text-[#1B2F4E] focus:bg-white focus:border-[#315B8A] focus:ring-2 focus:ring-[#315B8A]/15 outline-none transition-all font-mono"
                 />

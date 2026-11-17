@@ -12,7 +12,7 @@ export const ShareBar: React.FC<ShareBarProps> = ({ settings }) => {
 
   const hostName = settings?.hostName || 'Amanda Marinho';
   const hostFirstName = hostName.split(' ')[0] || 'Amanda';
-  const hostPhone = settings?.hostWhatsapp || settings?.shippingPhone || '11987654321';
+  const hostPhone = settings?.hostWhatsapp || settings?.shippingPhone || '21970131541';
 
   const shareText = "Quero comemorar meu aniversário e essa fase nova com você! 🏡❤️";
   const shareUrl = typeof window !== 'undefined' ? window.location.href : '';

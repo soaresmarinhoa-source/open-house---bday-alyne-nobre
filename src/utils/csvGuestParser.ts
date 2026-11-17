@@ -180,7 +180,7 @@ export function downloadSampleGuestsCsv(): void {
   const content = [
     'Nome;WhatsApp;Limite_Acompanhantes;Status;Observacao',
     'Camila Santos;11998765432;1;pendente;Amiga de infância',
-    'Lucas Ferreira;11987654321;0;pendente;Primo (individual)',
+    'Lucas Ferreira;21970131541;0;pendente;Primo (individual)',
     'Mariana Silva;11976543210;2;pendente;Colega com família',
     'Rodrigo Costa;11965432109;1;pendente;',
   ].join('\r\n');
