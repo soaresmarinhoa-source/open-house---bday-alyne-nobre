@@ -777,12 +777,12 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
   });
 
   return (
-    <div className="fixed inset-0 z-50 bg-[#F7F9F4] overflow-y-auto flex flex-col">
+    <div className="fixed inset-0 z-50 bg-[#FAF8F5] overflow-y-auto flex flex-col">
       
       {/* Top Header */}
-      <header className="sticky top-0 z-30 bg-white border-b border-[#DDE7D5] px-4 sm:px-6 h-16 flex items-center justify-between shadow-2xs">
+      <header className="sticky top-0 z-30 bg-white border-b border-[#EADBCE] px-4 sm:px-6 h-16 flex items-center justify-between shadow-2xs">
         <div className="flex items-center gap-3">
-          <div className="w-8 h-8 rounded-lg bg-[#E7EEF6] text-[#315B8A] flex items-center justify-center font-serif font-bold text-sm">
+          <div className="w-8 h-8 rounded-lg bg-[#F0E6DE] text-[#C86D51] flex items-center justify-center font-serif font-bold text-sm">
             AN
           </div>
           <div>
@@ -798,7 +798,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
         <div className="flex items-center gap-2">
           <button
             onClick={onClose}
-            className="h-9 px-3.5 rounded-lg border border-[#DDE7D5] text-xs font-semibold text-[#68625B] hover:text-[#2D2A26] hover:bg-[#F7F9F4] transition-colors cursor-pointer"
+            className="h-9 px-3.5 rounded-lg border border-[#EADBCE] text-xs font-semibold text-[#68625B] hover:text-[#2D2A26] hover:bg-[#FAF8F5] transition-colors cursor-pointer"
           >
             Ver Site Público
           </button>
@@ -806,7 +806,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
           <button
             onClick={onLogout}
             title="Sair do painel"
-            className="h-9 w-9 rounded-lg border border-[#DDE7D5] text-[#68625B] hover:text-red-600 hover:bg-red-50 flex items-center justify-center transition-colors cursor-pointer"
+            className="h-9 w-9 rounded-lg border border-[#EADBCE] text-[#68625B] hover:text-red-600 hover:bg-red-50 flex items-center justify-center transition-colors cursor-pointer"
           >
             <LogOut className="w-4 h-4" />
           </button>
@@ -814,14 +814,14 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
       </header>
 
       {/* Tabs Navigation */}
-      <div className="bg-[#F7F9F4] border-b border-[#DDE7D5] px-4 sm:px-6">
+      <div className="bg-[#FAF8F5] border-b border-[#EADBCE] px-4 sm:px-6">
         <div className="max-w-6xl mx-auto flex items-center gap-2 overflow-x-auto py-2.5 scrollbar-none">
           <button
             onClick={() => setActiveTab('overview')}
             className={`h-9 px-4 rounded-lg text-xs font-semibold whitespace-nowrap transition-colors cursor-pointer ${
               activeTab === 'overview'
-                ? 'bg-[#315B8A] text-white shadow-xs'
-                : 'text-[#68625B] hover:text-[#2D2A26] hover:bg-[#EEF2EA]'
+                ? 'bg-[#C86D51] text-white shadow-xs'
+                : 'text-[#68625B] hover:text-[#2D2A26] hover:bg-[#F4EFEB]'
             }`}
           >
             Visão Geral
@@ -831,8 +831,8 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
             onClick={() => setActiveTab('gifts')}
             className={`h-9 px-4 rounded-lg text-xs font-semibold whitespace-nowrap transition-colors cursor-pointer ${
               activeTab === 'gifts'
-                ? 'bg-[#315B8A] text-white shadow-xs'
-                : 'text-[#68625B] hover:text-[#2D2A26] hover:bg-[#EEF2EA]'
+                ? 'bg-[#C86D51] text-white shadow-xs'
+                : 'text-[#68625B] hover:text-[#2D2A26] hover:bg-[#F4EFEB]'
             }`}
           >
             Gerenciar Presentes ({gifts.length})
@@ -842,8 +842,8 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
             onClick={() => setActiveTab('whoGaveWhat')}
             className={`h-9 px-4 rounded-lg text-xs font-semibold whitespace-nowrap transition-colors cursor-pointer ${
               activeTab === 'whoGaveWhat'
-                ? 'bg-[#315B8A] text-white shadow-xs'
-                : 'text-[#68625B] hover:text-[#2D2A26] hover:bg-[#EEF2EA]'
+                ? 'bg-[#C86D51] text-white shadow-xs'
+                : 'text-[#68625B] hover:text-[#2D2A26] hover:bg-[#F4EFEB]'
             }`}
           >
             Quem está me presenteando? ({reservations.length})
@@ -861,8 +861,8 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
             onClick={() => setActiveTab('guests')}
             className={`h-9 px-4 rounded-lg text-xs font-semibold whitespace-nowrap transition-colors cursor-pointer ${
               activeTab === 'guests'
-                ? 'bg-[#315B8A] text-white shadow-xs'
-                : 'text-[#68625B] hover:text-[#2D2A26] hover:bg-[#EEF2EA]'
+                ? 'bg-[#C86D51] text-white shadow-xs'
+                : 'text-[#68625B] hover:text-[#2D2A26] hover:bg-[#F4EFEB]'
             }`}
           >
             Convidados ({guests.length})
@@ -872,8 +872,8 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
             onClick={() => setActiveTab('whatsapp')}
             className={`h-9 px-4 rounded-lg text-xs font-semibold whitespace-nowrap transition-colors cursor-pointer flex items-center gap-1.5 ${
               activeTab === 'whatsapp'
-                ? 'bg-[#315B8A] text-white shadow-xs'
-                : 'text-[#68625B] hover:text-[#2D2A26] hover:bg-[#EEF2EA]'
+                ? 'bg-[#C86D51] text-white shadow-xs'
+                : 'text-[#68625B] hover:text-[#2D2A26] hover:bg-[#F4EFEB]'
             }`}
           >
             <MessageSquare className="w-3.5 h-3.5" />
@@ -884,8 +884,8 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
             onClick={() => setActiveTab('gallery')}
             className={`h-9 px-4 rounded-lg text-xs font-semibold whitespace-nowrap transition-colors cursor-pointer flex items-center gap-1.5 ${
               activeTab === 'gallery'
-                ? 'bg-[#315B8A] text-white shadow-xs'
-                : 'text-[#68625B] hover:text-[#2D2A26] hover:bg-[#EEF2EA]'
+                ? 'bg-[#C86D51] text-white shadow-xs'
+                : 'text-[#68625B] hover:text-[#2D2A26] hover:bg-[#F4EFEB]'
             }`}
           >
             Galeria do Apê 📸
@@ -895,8 +895,8 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
             onClick={() => setActiveTab('settings')}
             className={`h-9 px-4 rounded-lg text-xs font-semibold whitespace-nowrap transition-colors cursor-pointer ${
               activeTab === 'settings'
-                ? 'bg-[#315B8A] text-white shadow-xs'
-                : 'text-[#68625B] hover:text-[#2D2A26] hover:bg-[#EEF2EA]'
+                ? 'bg-[#C86D51] text-white shadow-xs'
+                : 'text-[#68625B] hover:text-[#2D2A26] hover:bg-[#F4EFEB]'
             }`}
           >
             Personalizar Evento
@@ -967,19 +967,19 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
 
             {/* Metric Cards Grid */}
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4">
-              <div className="bg-white p-4 rounded-2xl border border-[#DDE7D5] shadow-2xs">
+              <div className="bg-white p-4 rounded-2xl border border-[#EADBCE] shadow-2xs">
                 <span className="text-[11px] font-medium text-[#7D756C] block uppercase tracking-wider">
                   Confirmados
                 </span>
                 <span className="font-serif text-2xl sm:text-3xl font-semibold text-[#2D2A26] tabular-nums mt-1 block">
                   {totalPeopleCount}
                 </span>
-                <span className="text-[11px] text-[#244568]">
+                <span className="text-[11px] text-[#A95339]">
                   {confirmedGuests.length} respostas positivas
                 </span>
               </div>
 
-              <div className="bg-white p-4 rounded-2xl border border-[#DDE7D5] shadow-2xs">
+              <div className="bg-white p-4 rounded-2xl border border-[#EADBCE] shadow-2xs">
                 <span className="text-[11px] font-medium text-[#7D756C] block uppercase tracking-wider">
                   Total Presentes
                 </span>
@@ -991,7 +991,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                 </span>
               </div>
 
-              <div className="bg-white p-4 rounded-2xl border border-[#DDE7D5] shadow-2xs">
+              <div className="bg-white p-4 rounded-2xl border border-[#EADBCE] shadow-2xs">
                 <span className="text-[11px] font-medium text-[#7D756C] block uppercase tracking-wider">
                   Disponíveis
                 </span>
@@ -1003,11 +1003,11 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                 </span>
               </div>
 
-              <div className="bg-white p-4 rounded-2xl border border-[#DDE7D5] shadow-2xs">
+              <div className="bg-white p-4 rounded-2xl border border-[#EADBCE] shadow-2xs">
                 <span className="text-[11px] font-medium text-[#7D756C] block uppercase tracking-wider">
                   Esgotados
                 </span>
-                <span className="font-serif text-2xl sm:text-3xl font-semibold text-[#315B8A] tabular-nums mt-1 block">
+                <span className="font-serif text-2xl sm:text-3xl font-semibold text-[#C86D51] tabular-nums mt-1 block">
                   {soldOutGiftsCount}
                 </span>
                 <span className="text-[11px] text-[#7D756C]">
@@ -1015,19 +1015,19 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                 </span>
               </div>
 
-              <div className="bg-white p-4 rounded-2xl border border-[#DDE7D5] shadow-2xs">
+              <div className="bg-white p-4 rounded-2xl border border-[#EADBCE] shadow-2xs">
                 <span className="text-[11px] font-medium text-[#7D756C] block uppercase tracking-wider">
                   Cotas Reservadas
                 </span>
                 <span className="font-serif text-2xl sm:text-3xl font-semibold text-[#2D2A26] tabular-nums mt-1 block">
                   {totalReservedQuotas}
                 </span>
-                <span className="text-[11px] text-[#244568]">
+                <span className="text-[11px] text-[#A95339]">
                   {reservations.length} amigos presentearam
                 </span>
               </div>
 
-              <div className="bg-white p-4 rounded-2xl border border-[#DDE7D5] shadow-2xs">
+              <div className="bg-white p-4 rounded-2xl border border-[#EADBCE] shadow-2xs">
                 <span className="text-[11px] font-medium text-[#7D756C] block uppercase tracking-wider">
                   Ausentes
                 </span>
@@ -1041,7 +1041,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
             </div>
 
             {/* Financial Overview Banner */}
-            <div className="bg-gradient-to-r from-white to-emerald-50/60 p-5 rounded-3xl border border-[#DDE7D5] shadow-2xs flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <div className="bg-gradient-to-r from-white to-emerald-50/60 p-5 rounded-3xl border border-[#EADBCE] shadow-2xs flex flex-col sm:flex-row sm:items-center justify-between gap-4">
               <div className="flex items-center gap-3.5">
                 <div className="w-12 h-12 rounded-2xl bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold shrink-0">
                   <DollarSign className="w-6 h-6 text-emerald-700" />
@@ -1070,14 +1070,14 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
               
               {/* Quick Actions */}
-              <div className="bg-white p-6 rounded-3xl border border-[#DDE7D5] shadow-2xs">
+              <div className="bg-white p-6 rounded-3xl border border-[#EADBCE] shadow-2xs">
                 <h3 className="font-serif text-lg font-medium text-[#2D2A26] mb-4">
                   Ações Rápidas
                 </h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   <button
                     onClick={handleOpenNewGiftModal}
-                    className="h-12 px-4 rounded-xl bg-[#315B8A] hover:bg-[#244568] text-white text-xs font-semibold flex items-center justify-center gap-2 transition-colors cursor-pointer"
+                    className="h-12 px-4 rounded-xl bg-[#C86D51] hover:bg-[#A95339] text-white text-xs font-semibold flex items-center justify-center gap-2 transition-colors cursor-pointer"
                   >
                     <Plus className="w-4 h-4" />
                     <span>+ Novo Presente</span>
@@ -1085,23 +1085,23 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
 
                   <button
                     onClick={() => setIsScraperModalOpen(true)}
-                    className="h-12 px-4 rounded-xl border border-[#DDE7D5] hover:bg-[#F7F9F4] text-[#2D2A26] text-xs font-semibold flex items-center justify-center gap-2 transition-colors cursor-pointer"
+                    className="h-12 px-4 rounded-xl border border-[#EADBCE] hover:bg-[#FAF8F5] text-[#2D2A26] text-xs font-semibold flex items-center justify-center gap-2 transition-colors cursor-pointer"
                   >
-                    <LinkIcon className="w-4 h-4 text-[#315B8A]" />
+                    <LinkIcon className="w-4 h-4 text-[#C86D51]" />
                     <span>Importar por Link</span>
                   </button>
 
                   <button
                     onClick={handleOpenGiftCsvModal}
-                    className="h-12 px-4 rounded-xl border border-[#DDE7D5] hover:bg-[#F7F9F4] text-[#2D2A26] text-xs font-semibold flex items-center justify-center gap-2 transition-colors cursor-pointer"
+                    className="h-12 px-4 rounded-xl border border-[#EADBCE] hover:bg-[#FAF8F5] text-[#2D2A26] text-xs font-semibold flex items-center justify-center gap-2 transition-colors cursor-pointer"
                   >
-                    <FileSpreadsheet className="w-4 h-4 text-[#315B8A]" />
+                    <FileSpreadsheet className="w-4 h-4 text-[#C86D51]" />
                     <span>Importar CSV</span>
                   </button>
 
                   <button
                     onClick={handleExportGuestsCsv}
-                    className="h-12 px-4 rounded-xl border border-[#DDE7D5] hover:bg-[#F7F9F4] text-[#2D2A26] text-xs font-semibold flex items-center justify-center gap-2 transition-colors cursor-pointer"
+                    className="h-12 px-4 rounded-xl border border-[#EADBCE] hover:bg-[#FAF8F5] text-[#2D2A26] text-xs font-semibold flex items-center justify-center gap-2 transition-colors cursor-pointer"
                   >
                     <Download className="w-4 h-4 text-[#68625B]" />
                     <span>Exportar Convidados (CSV)</span>
@@ -1109,7 +1109,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
 
                   <button
                     onClick={handleExportGiftsCsv}
-                    className="h-12 px-4 rounded-xl border border-[#DDE7D5] hover:bg-[#F7F9F4] text-[#2D2A26] text-xs font-semibold flex items-center justify-center gap-2 transition-colors cursor-pointer"
+                    className="h-12 px-4 rounded-xl border border-[#EADBCE] hover:bg-[#FAF8F5] text-[#2D2A26] text-xs font-semibold flex items-center justify-center gap-2 transition-colors cursor-pointer"
                   >
                     <Download className="w-4 h-4 text-[#68625B]" />
                     <span>Exportar Presentes (CSV)</span>
@@ -1117,23 +1117,23 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
 
                   <button
                     onClick={() => setActiveTab('whoGaveWhat')}
-                    className="h-12 px-4 rounded-xl border border-[#DDE7D5] hover:bg-[#F7F9F4] text-[#2D2A26] text-xs font-semibold flex items-center justify-center gap-2 transition-colors cursor-pointer"
+                    className="h-12 px-4 rounded-xl border border-[#EADBCE] hover:bg-[#FAF8F5] text-[#2D2A26] text-xs font-semibold flex items-center justify-center gap-2 transition-colors cursor-pointer"
                   >
-                    <Heart className="w-4 h-4 text-[#315B8A]" />
+                    <Heart className="w-4 h-4 text-[#C86D51]" />
                     <span>Ver Quem Me Presenteou</span>
                   </button>
                 </div>
               </div>
 
               {/* Recent Reservations */}
-              <div className="bg-white p-6 rounded-3xl border border-[#DDE7D5] shadow-2xs">
+              <div className="bg-white p-6 rounded-3xl border border-[#EADBCE] shadow-2xs">
                 <div className="flex items-center justify-between mb-4">
                   <h3 className="font-serif text-lg font-medium text-[#2D2A26]">
                     Últimas Reservas Feitas
                   </h3>
                   <button
                     onClick={() => setActiveTab('whoGaveWhat')}
-                    className="text-xs text-[#315B8A] hover:underline font-medium cursor-pointer"
+                    className="text-xs text-[#C86D51] hover:underline font-medium cursor-pointer"
                   >
                     Ver todas →
                   </button>
@@ -1148,7 +1148,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                     {reservations.slice(0, 4).map((r, i) => (
                       <div
                         key={r.id || i}
-                        className="flex items-center justify-between p-3 rounded-xl bg-[#F7F9F4] border border-[#E7EEF6]"
+                        className="flex items-center justify-between p-3 rounded-xl bg-[#FAF8F5] border border-[#F0E6DE]"
                       >
                         <div>
                           <strong className="text-xs font-semibold text-[#2D2A26] block">
@@ -1187,31 +1187,31 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
               <div className="flex items-center gap-2">
                 <button
                   onClick={() => setIsScraperModalOpen(true)}
-                  className="h-10 px-3.5 rounded-xl border border-[#DDE7D5] bg-white hover:bg-[#F7F9F4] text-xs font-semibold text-[#2D2A26] flex items-center gap-1.5 transition-colors cursor-pointer"
+                  className="h-10 px-3.5 rounded-xl border border-[#EADBCE] bg-white hover:bg-[#FAF8F5] text-xs font-semibold text-[#2D2A26] flex items-center gap-1.5 transition-colors cursor-pointer"
                 >
-                  <LinkIcon className="w-3.5 h-3.5 text-[#315B8A]" />
+                  <LinkIcon className="w-3.5 h-3.5 text-[#C86D51]" />
                   <span>Por Link</span>
                 </button>
 
                 <button
                   onClick={handleOpenGiftCsvModal}
-                  className="h-10 px-3.5 rounded-xl border border-[#DDE7D5] bg-white hover:bg-[#F7F9F4] text-xs font-semibold text-[#2D2A26] flex items-center gap-1.5 transition-colors cursor-pointer"
+                  className="h-10 px-3.5 rounded-xl border border-[#EADBCE] bg-white hover:bg-[#FAF8F5] text-xs font-semibold text-[#2D2A26] flex items-center gap-1.5 transition-colors cursor-pointer"
                 >
-                  <FileSpreadsheet className="w-4 h-4 text-[#315B8A]" />
+                  <FileSpreadsheet className="w-4 h-4 text-[#C86D51]" />
                   <span>Importar CSV</span>
                 </button>
 
                 <button
                   onClick={handleExportGiftsCsv}
-                  className="h-10 px-3.5 rounded-xl border border-[#DDE7D5] bg-white hover:bg-[#F7F9F4] text-xs font-semibold text-[#2D2A26] flex items-center gap-1.5 transition-colors cursor-pointer"
+                  className="h-10 px-3.5 rounded-xl border border-[#EADBCE] bg-white hover:bg-[#FAF8F5] text-xs font-semibold text-[#2D2A26] flex items-center gap-1.5 transition-colors cursor-pointer"
                 >
-                  <Download className="w-4 h-4 text-[#315B8A]" />
+                  <Download className="w-4 h-4 text-[#C86D51]" />
                   <span>Exportar CSV</span>
                 </button>
 
                 <button
                   onClick={handleOpenNewGiftModal}
-                  className="h-10 px-4 rounded-xl bg-[#315B8A] hover:bg-[#244568] text-white text-xs font-semibold flex items-center gap-1.5 transition-colors shadow-xs cursor-pointer"
+                  className="h-10 px-4 rounded-xl bg-[#C86D51] hover:bg-[#A95339] text-white text-xs font-semibold flex items-center gap-1.5 transition-colors shadow-xs cursor-pointer"
                 >
                   <Plus className="w-4 h-4" />
                   <span>Novo Presente</span>
@@ -1220,7 +1220,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                 <button
                   onClick={handleSeedDefaultGifts}
                   disabled={seedingGifts}
-                  className="h-10 px-3.5 rounded-xl border border-[#315B8A] bg-[#F7F9F4] hover:bg-[#F3E7DE] text-[#315B8A] text-xs font-semibold flex items-center gap-1.5 transition-colors cursor-pointer"
+                  className="h-10 px-3.5 rounded-xl border border-[#C86D51] bg-[#FAF8F5] hover:bg-[#F3E7DE] text-[#C86D51] text-xs font-semibold flex items-center gap-1.5 transition-colors cursor-pointer"
                 >
                   <Sparkles className="w-4 h-4" />
                   <span>{seedingGifts ? 'Semeando...' : 'Carregar Padrões'}</span>
@@ -1240,7 +1240,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                 <button
                   onClick={handleSeedDefaultGifts}
                   disabled={seedingGifts}
-                  className="h-11 px-6 rounded-xl bg-[#315B8A] hover:bg-[#244568] text-white text-xs font-semibold uppercase tracking-wide cursor-pointer transition-colors shadow-xs"
+                  className="h-11 px-6 rounded-xl bg-[#C86D51] hover:bg-[#A95339] text-white text-xs font-semibold uppercase tracking-wide cursor-pointer transition-colors shadow-xs"
                 >
                   {seedingGifts ? 'Carregando presentes...' : 'Carregar Lista Padrão de Presentes no Firestore'}
                 </button>
@@ -1256,14 +1256,14 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                   value={giftSearch}
                   onChange={(e) => setGiftSearch(e.target.value)}
                   placeholder="Buscar presente por nome..."
-                  className="w-full h-10 pl-9 pr-4 rounded-xl border border-[#DDE7D5] bg-white text-xs text-[#2D2A26] outline-none"
+                  className="w-full h-10 pl-9 pr-4 rounded-xl border border-[#EADBCE] bg-white text-xs text-[#2D2A26] outline-none"
                 />
               </div>
 
               <select
                 value={giftFilterCategory}
                 onChange={(e) => setGiftFilterCategory(e.target.value)}
-                className="h-10 px-3 rounded-xl border border-[#DDE7D5] bg-white text-xs text-[#2D2A26] outline-none w-full sm:w-auto"
+                className="h-10 px-3 rounded-xl border border-[#EADBCE] bg-white text-xs text-[#2D2A26] outline-none w-full sm:w-auto"
               >
                 <option value="all">Todas as Categorias</option>
                 <option value="cozinha">Cozinha</option>
@@ -1277,10 +1277,10 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
             </div>
 
             {/* Gifts Table */}
-            <div className="bg-white rounded-3xl border border-[#DDE7D5] overflow-hidden shadow-2xs">
+            <div className="bg-white rounded-3xl border border-[#EADBCE] overflow-hidden shadow-2xs">
               <div className="overflow-x-auto">
                 <table className="w-full text-left text-xs">
-                  <thead className="bg-[#F7F9F4] border-b border-[#DDE7D5] text-[#7D756C] uppercase font-semibold">
+                  <thead className="bg-[#FAF8F5] border-b border-[#EADBCE] text-[#7D756C] uppercase font-semibold">
                     <tr>
                       <th className="p-4">Presente</th>
                       <th className="p-4">Categoria</th>
@@ -1290,9 +1290,9 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                       <th className="p-4 text-right">Ações</th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-[#E7EEF6]">
+                  <tbody className="divide-y divide-[#F0E6DE]">
                     {filteredGifts.map((gift) => (
-                      <tr key={gift.id} className="hover:bg-[#F7F9F4]/60 transition-colors">
+                      <tr key={gift.id} className="hover:bg-[#FAF8F5]/60 transition-colors">
                         <td className="p-4">
                           <div className="flex items-center gap-3">
                             {gift.imageUrl ? (
@@ -1300,10 +1300,10 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                                 src={gift.imageUrl}
                                 alt={gift.name}
                                 referrerPolicy="no-referrer"
-                                className="w-10 h-10 rounded-lg object-cover border border-[#DDE7D5] shrink-0"
+                                className="w-10 h-10 rounded-lg object-cover border border-[#EADBCE] shrink-0"
                               />
                             ) : (
-                              <div className="w-10 h-10 rounded-lg bg-[#E7EEF6] text-[#315B8A] flex items-center justify-center shrink-0">
+                              <div className="w-10 h-10 rounded-lg bg-[#F0E6DE] text-[#C86D51] flex items-center justify-center shrink-0">
                                 <GiftIcon className="w-4 h-4" />
                               </div>
                             )}
@@ -1325,7 +1325,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                         </td>
                         <td className="p-4 tabular-nums">
                           <div>
-                            <span className="font-semibold text-[#315B8A]">
+                            <span className="font-semibold text-[#C86D51]">
                               {gift.availableQuantity}
                             </span>{' '}
                             / {gift.totalQuantity} cotas
@@ -1340,7 +1340,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                                   className={`text-[10px] font-semibold px-1.5 py-0.5 rounded ${
                                     isSold
                                       ? 'bg-amber-100 text-amber-900'
-                                      : 'bg-[#F7F9F4] text-[#7D756C] border border-[#DDE7D5]'
+                                      : 'bg-[#FAF8F5] text-[#7D756C] border border-[#EADBCE]'
                                   }`}
                                 >
                                   {isSold ? 'Garantido por:' : 'Reservas:'}
@@ -1349,7 +1349,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                                   <span
                                     key={r.id || i}
                                     title={`${r.guestName} (${r.guestWhatsapp || 'Sem tel'}) - ${r.quantity} cota(s)`}
-                                    className="inline-flex items-center text-[10px] font-medium bg-[#E7EEF6] text-[#244568] border border-[#E7EEF6] px-1.5 py-0.5 rounded"
+                                    className="inline-flex items-center text-[10px] font-medium bg-[#FBF0EB] text-[#A95339] border border-[#F0E6DE] px-1.5 py-0.5 rounded"
                                   >
                                     {r.guestName} ({r.quantity})
                                   </span>
@@ -1386,14 +1386,14 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                             <button
                               onClick={() => handleDuplicateGift(gift)}
                               title="Duplicar presente"
-                              className="h-8 w-8 rounded-lg text-[#68625B] hover:text-[#2D2A26] hover:bg-[#F7F9F4] flex items-center justify-center cursor-pointer"
+                              className="h-8 w-8 rounded-lg text-[#68625B] hover:text-[#2D2A26] hover:bg-[#FAF8F5] flex items-center justify-center cursor-pointer"
                             >
                               <Copy className="w-3.5 h-3.5" />
                             </button>
                             <button
                               onClick={() => handleEditGift(gift)}
                               title="Editar presente"
-                              className="h-8 w-8 rounded-lg text-[#68625B] hover:text-[#2D2A26] hover:bg-[#F7F9F4] flex items-center justify-center cursor-pointer"
+                              className="h-8 w-8 rounded-lg text-[#68625B] hover:text-[#2D2A26] hover:bg-[#FAF8F5] flex items-center justify-center cursor-pointer"
                             >
                               <Edit2 className="w-3.5 h-3.5" />
                             </button>
@@ -1432,9 +1432,9 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                 <button
                   type="button"
                   onClick={handleExportReservationsCsv}
-                  className="h-10 px-3.5 rounded-xl border border-[#DDE7D5] bg-white hover:bg-[#F7F9F4] text-xs font-semibold text-[#2D2A26] flex items-center gap-1.5 transition-colors cursor-pointer shadow-2xs"
+                  className="h-10 px-3.5 rounded-xl border border-[#EADBCE] bg-white hover:bg-[#FAF8F5] text-xs font-semibold text-[#2D2A26] flex items-center gap-1.5 transition-colors cursor-pointer shadow-2xs"
                 >
-                  <Download className="w-4 h-4 text-[#315B8A]" />
+                  <Download className="w-4 h-4 text-[#C86D51]" />
                   <span>Exportar Relatório CSV</span>
                 </button>
               </div>
@@ -1469,7 +1469,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                       <button
                         type="button"
                         onClick={() => handleAddGifterToGuests(g)}
-                        className="h-8 px-3 rounded-lg bg-[#315B8A] hover:bg-[#244568] text-white text-[11px] font-semibold flex items-center gap-1.5 shrink-0 cursor-pointer"
+                        className="h-8 px-3 rounded-lg bg-[#C86D51] hover:bg-[#A95339] text-white text-[11px] font-semibold flex items-center gap-1.5 shrink-0 cursor-pointer"
                       >
                         <UserPlus className="w-3.5 h-3.5" />
                         Adicionar à lista
@@ -1482,7 +1482,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
 
             {/* 4 Cards de Resumo Financeiro & Entregas */}
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
-              <div className="p-4 rounded-2xl bg-white border border-[#DDE7D5] shadow-2xs">
+              <div className="p-4 rounded-2xl bg-white border border-[#EADBCE] shadow-2xs">
                 <span className="text-[11px] font-semibold uppercase tracking-wider text-[#7D756C] block mb-1">
                   Total Geral Reservado
                 </span>
@@ -1551,9 +1551,9 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                   </button>
                 </div>
               ) : (
-                <div className="p-4 rounded-2xl bg-white border border-[#DDE7D5] shadow-2xs flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs">
+                <div className="p-4 rounded-2xl bg-white border border-[#EADBCE] shadow-2xs flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs">
                   <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 rounded-lg bg-[#F7F9F4] text-[#315B8A] flex items-center justify-center shrink-0 border border-[#DDE7D5]">
+                    <div className="w-8 h-8 rounded-lg bg-[#FAF8F5] text-[#C86D51] flex items-center justify-center shrink-0 border border-[#EADBCE]">
                       <Truck className="w-4 h-4" />
                     </div>
                     <div>
@@ -1574,7 +1574,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                     <button
                       type="button"
                       onClick={handleCopyShippingAddress}
-                      className="h-8 px-3 rounded-lg border border-[#DDE7D5] hover:bg-[#F7F9F4] text-xs font-medium text-[#2D2A26] flex items-center gap-1.5 transition-colors cursor-pointer"
+                      className="h-8 px-3 rounded-lg border border-[#EADBCE] hover:bg-[#FAF8F5] text-xs font-medium text-[#2D2A26] flex items-center gap-1.5 transition-colors cursor-pointer"
                     >
                       {copiedShipping ? (
                         <>
@@ -1583,7 +1583,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                         </>
                       ) : (
                         <>
-                          <Copy className="w-3.5 h-3.5 text-[#315B8A]" />
+                          <Copy className="w-3.5 h-3.5 text-[#C86D51]" />
                           <span>Copiar endereço</span>
                         </>
                       )}
@@ -1591,7 +1591,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                     <button
                       type="button"
                       onClick={() => setActiveTab('settings')}
-                      className="h-8 px-3 rounded-lg border border-[#DDE7D5] hover:bg-[#F7F9F4] text-xs font-medium text-[#68625B] transition-colors cursor-pointer"
+                      className="h-8 px-3 rounded-lg border border-[#EADBCE] hover:bg-[#FAF8F5] text-xs font-medium text-[#68625B] transition-colors cursor-pointer"
                     >
                       Editar
                     </button>
@@ -1601,7 +1601,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
             )}
 
             {/* Filter and Search Bar */}
-            <div className="bg-white p-4 rounded-2xl border border-[#DDE7D5] shadow-2xs flex flex-col md:flex-row items-stretch md:items-center justify-between gap-3">
+            <div className="bg-white p-4 rounded-2xl border border-[#EADBCE] shadow-2xs flex flex-col md:flex-row items-stretch md:items-center justify-between gap-3">
               <div className="relative flex-1">
                 <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-[#A59E95]" />
                 <input
@@ -1609,7 +1609,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                   value={resSearch}
                   onChange={(e) => setResSearch(e.target.value)}
                   placeholder="Buscar reserva por convidado, WhatsApp, presente ou rastreio..."
-                  className="w-full h-10 pl-9 pr-4 rounded-xl border border-[#DDE7D5] bg-[#F7F9F4] text-xs text-[#2D2A26] focus:bg-white focus:outline-none focus:border-[#315B8A] transition-colors"
+                  className="w-full h-10 pl-9 pr-4 rounded-xl border border-[#EADBCE] bg-[#FAF8F5] text-xs text-[#2D2A26] focus:bg-white focus:outline-none focus:border-[#C86D51] transition-colors"
                 />
               </div>
 
@@ -1621,7 +1621,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                     setResTypeFilter(e.target.value as any);
                     setResStatusFilter('all');
                   }}
-                  className="h-10 px-3 rounded-xl border border-[#DDE7D5] bg-white text-xs text-[#2D2A26] font-medium focus:outline-none focus:border-[#315B8A] cursor-pointer"
+                  className="h-10 px-3 rounded-xl border border-[#EADBCE] bg-white text-xs text-[#2D2A26] font-medium focus:outline-none focus:border-[#C86D51] cursor-pointer"
                 >
                   <option value="all">Todos os tipos ({reservations.length})</option>
                   <option value="pix">Somente Pix / Cotas ({pixReservations.length})</option>
@@ -1632,7 +1632,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                 <select
                   value={resStatusFilter}
                   onChange={(e) => setResStatusFilter(e.target.value)}
-                  className="h-10 px-3 rounded-xl border border-[#DDE7D5] bg-white text-xs text-[#2D2A26] font-medium focus:outline-none focus:border-[#315B8A] cursor-pointer"
+                  className="h-10 px-3 rounded-xl border border-[#EADBCE] bg-white text-xs text-[#2D2A26] font-medium focus:outline-none focus:border-[#C86D51] cursor-pointer"
                 >
                   {resTypeFilter === 'all' && (
                     <>
@@ -1661,13 +1661,13 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                   )}
                 </select>
 
-                <div className="flex items-center rounded-xl border border-[#DDE7D5] bg-[#F7F9F4] p-0.5">
+                <div className="flex items-center rounded-xl border border-[#EADBCE] bg-[#FAF8F5] p-0.5">
                   <button
                     type="button"
                     onClick={() => setResViewMode('list')}
                     className={`h-9 px-3 rounded-lg text-xs font-semibold cursor-pointer transition-colors ${
                       resViewMode === 'list'
-                        ? 'bg-white text-[#315B8A] shadow-2xs'
+                        ? 'bg-white text-[#C86D51] shadow-2xs'
                         : 'text-[#68625B] hover:text-[#2D2A26]'
                     }`}
                   >
@@ -1678,7 +1678,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                     onClick={() => setResViewMode('byGift')}
                     className={`h-9 px-3 rounded-lg text-xs font-semibold cursor-pointer transition-colors ${
                       resViewMode === 'byGift'
-                        ? 'bg-white text-[#315B8A] shadow-2xs'
+                        ? 'bg-white text-[#C86D51] shadow-2xs'
                         : 'text-[#68625B] hover:text-[#2D2A26]'
                     }`}
                   >
@@ -1696,8 +1696,8 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
             )}
 
             {reservations.length === 0 ? (
-              <div className="text-center py-16 bg-white rounded-3xl border border-[#DDE7D5] p-8 shadow-2xs">
-                <Heart className="w-10 h-10 text-[#315B8A] mx-auto mb-2 opacity-50" />
+              <div className="text-center py-16 bg-white rounded-3xl border border-[#EADBCE] p-8 shadow-2xs">
+                <Heart className="w-10 h-10 text-[#C86D51] mx-auto mb-2 opacity-50" />
                 <p className="font-serif text-lg font-medium text-[#2D2A26]">
                   Nenhum presente reservado ainda
                 </p>
@@ -1744,7 +1744,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
 
               if (filteredRes.length === 0) {
                 return (
-                  <div className="text-center py-12 bg-white rounded-2xl border border-[#DDE7D5] text-xs text-[#7D756C] shadow-2xs">
+                  <div className="text-center py-12 bg-white rounded-2xl border border-[#EADBCE] text-xs text-[#7D756C] shadow-2xs">
                     Nenhuma reserva encontrada com este filtro ou busca.
                   </div>
                 );
@@ -1771,17 +1771,17 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                       const purchaseUrl = associatedGift?.purchaseUrl;
 
                       return (
-                        <div key={giftKey} className="bg-white rounded-2xl border border-[#DDE7D5] p-5 shadow-2xs space-y-4">
-                          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-[#E7EEF6]">
+                        <div key={giftKey} className="bg-white rounded-2xl border border-[#EADBCE] p-5 shadow-2xs space-y-4">
+                          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-[#F0E6DE]">
                             <div className="flex items-center gap-3">
                               {associatedGift?.imageUrl ? (
                                 <img
                                   src={associatedGift.imageUrl}
                                   alt={giftDisplayName}
-                                  className="w-12 h-12 rounded-xl object-cover border border-[#DDE7D5] shrink-0"
+                                  className="w-12 h-12 rounded-xl object-cover border border-[#EADBCE] shrink-0"
                                 />
                               ) : (
-                                <div className="w-12 h-12 rounded-xl bg-[#E7EEF6] text-[#315B8A] flex items-center justify-center shrink-0">
+                                <div className="w-12 h-12 rounded-xl bg-[#F0E6DE] text-[#C86D51] flex items-center justify-center shrink-0">
                                   <GiftIcon className="w-5 h-5" />
                                 </div>
                               )}
@@ -1790,7 +1790,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                                   <h3 className="font-serif text-base font-semibold text-[#2D2A26]">
                                     {giftDisplayName}
                                   </h3>
-                                  <span className="text-[10px] px-1.5 py-0.5 rounded font-medium bg-[#DDE7D5]/50 text-[#7D756C]">
+                                  <span className="text-[10px] px-1.5 py-0.5 rounded font-medium bg-[#EADBCE]/50 text-[#7D756C]">
                                     {isLink ? 'Loja/Link' : 'Pix'}
                                   </span>
                                 </div>
@@ -1805,7 +1805,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                                         href={purchaseUrl}
                                         target="_blank"
                                         rel="noreferrer noopener"
-                                        className="inline-flex items-center gap-1 text-[#315B8A] hover:underline font-semibold"
+                                        className="inline-flex items-center gap-1 text-[#C86D51] hover:underline font-semibold"
                                       >
                                         <span>Link da Loja</span>
                                         <ExternalLink className="w-3 h-3" />
@@ -1843,7 +1843,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                               const whatsappUrl = formatWhatsappUrl(r.guestWhatsapp, whatsappText);
 
                               return (
-                                <div key={r.id} className="p-3.5 rounded-xl bg-[#F7F9F4] border border-[#DDE7D5] text-xs space-y-2">
+                                <div key={r.id} className="p-3.5 rounded-xl bg-[#FAF8F5] border border-[#EADBCE] text-xs space-y-2">
                                   <div className="flex items-start justify-between">
                                     <div>
                                       <strong className="text-[#2D2A26] block">{r.guestName}</strong>
@@ -1879,14 +1879,14 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                                   </div>
 
                                   {r.message && (
-                                    <p className="text-[11px] text-[#7D756C] italic bg-white p-2 rounded-lg border border-[#DDE7D5]/50">
+                                    <p className="text-[11px] text-[#7D756C] italic bg-white p-2 rounded-lg border border-[#EADBCE]/50">
                                       "{r.message}"
                                     </p>
                                   )}
 
                                   {isLink && (
                                     <div className="flex items-center gap-1.5 pt-1 flex-wrap">
-                                      <div className="inline-flex rounded-lg border border-[#DDE7D5] p-0.5 bg-white text-[10px]">
+                                      <div className="inline-flex rounded-lg border border-[#EADBCE] p-0.5 bg-white text-[10px]">
                                         <button
                                           type="button"
                                           onClick={() => handleUpdateFulfillment(r.id, 'reserved', r.guestName)}
@@ -1929,7 +1929,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                                     </div>
                                   )}
 
-                                  <div className="flex items-center justify-between text-[#68625B] pt-1 border-t border-[#DDE7D5]/50">
+                                  <div className="flex items-center justify-between text-[#68625B] pt-1 border-t border-[#EADBCE]/50">
                                     <span>
                                       {r.quantity} {r.quantity > 1 ? (isLink ? 'itens' : 'cotas') : (isLink ? 'item' : 'cota')} = <strong>R$ {amount.toLocaleString('pt-BR', { minimumFractionDigits: 2 })}</strong>
                                     </span>
@@ -1938,7 +1938,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                                         <button
                                           type="button"
                                           onClick={() => handleToggleReservationPaid(r)}
-                                          className="text-[11px] text-[#315B8A] hover:underline font-semibold cursor-pointer"
+                                          className="text-[11px] text-[#C86D51] hover:underline font-semibold cursor-pointer"
                                         >
                                           {r.paid ? 'Marcar Pendente' : 'Confirmar Pago'}
                                         </button>
@@ -2004,7 +2004,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                     return (
                       <div
                         key={res.id}
-                        className="bg-white p-5 rounded-2xl border border-[#DDE7D5] shadow-2xs space-y-3 flex flex-col justify-between hover:shadow-xs transition-shadow"
+                        className="bg-white p-5 rounded-2xl border border-[#EADBCE] shadow-2xs space-y-3 flex flex-col justify-between hover:shadow-xs transition-shadow"
                       >
                         <div className="space-y-3">
                           <div className="flex items-start justify-between gap-2">
@@ -2047,15 +2047,15 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                           </div>
 
                           {/* Gift Card */}
-                          <div className="p-3 rounded-xl bg-[#F7F9F4] border border-[#E7EEF6] text-xs flex items-center gap-3">
+                          <div className="p-3 rounded-xl bg-[#FAF8F5] border border-[#F0E6DE] text-xs flex items-center gap-3">
                             {associatedGift?.imageUrl ? (
                               <img
                                 src={associatedGift.imageUrl}
                                 alt={displayName}
-                                className="w-12 h-12 rounded-lg object-cover border border-[#DDE7D5] shrink-0"
+                                className="w-12 h-12 rounded-lg object-cover border border-[#EADBCE] shrink-0"
                               />
                             ) : (
-                              <div className="w-12 h-12 rounded-lg bg-[#E7EEF6] text-[#315B8A] flex items-center justify-center shrink-0">
+                              <div className="w-12 h-12 rounded-lg bg-[#F0E6DE] text-[#C86D51] flex items-center justify-center shrink-0">
                                 <GiftIcon className="w-5 h-5" />
                               </div>
                             )}
@@ -2064,7 +2064,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                                 <span className="text-[10px] text-[#A59E95] font-semibold uppercase tracking-wider block">
                                   {associatedGift?.category || 'Presente'}
                                 </span>
-                                <span className="text-[10px] px-1.5 py-0.2 rounded font-medium bg-[#DDE7D5]/50 text-[#7D756C]">
+                                <span className="text-[10px] px-1.5 py-0.2 rounded font-medium bg-[#EADBCE]/50 text-[#7D756C]">
                                   {isLink ? 'Loja/Link' : 'Pix'}
                                 </span>
                               </div>
@@ -2082,7 +2082,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                                   href={purchaseUrl}
                                   target="_blank"
                                   rel="noreferrer noopener"
-                                  className="inline-flex items-center gap-1 text-[11px] text-[#315B8A] hover:underline font-semibold mt-1"
+                                  className="inline-flex items-center gap-1 text-[11px] text-[#C86D51] hover:underline font-semibold mt-1"
                                 >
                                   <span>Link da Loja</span>
                                   <ExternalLink className="w-3 h-3" />
@@ -2093,7 +2093,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
 
                           {/* Mensagem do Convidado */}
                           {res.message && (
-                            <p className="text-xs italic text-[#5A544D] bg-[#F8FAF5] p-2.5 rounded-lg border border-[#E7EEF6]">
+                            <p className="text-xs italic text-[#5A544D] bg-[#FDFBF7] p-2.5 rounded-lg border border-[#F0E6DE]">
                               "{res.message}"
                             </p>
                           )}
@@ -2104,7 +2104,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                               <span className="text-[10px] font-semibold text-[#7D756C] block uppercase tracking-wider">
                                 Status da Compra / Envio:
                               </span>
-                              <div className="grid grid-cols-3 gap-1 rounded-xl border border-[#DDE7D5] p-1 bg-[#F7F9F4] text-[11px]">
+                              <div className="grid grid-cols-3 gap-1 rounded-xl border border-[#EADBCE] p-1 bg-[#FAF8F5] text-[11px]">
                                 <button
                                   type="button"
                                   onClick={() => handleUpdateFulfillment(res.id, 'reserved', res.guestName)}
@@ -2143,7 +2143,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                               {/* Editor e Exibição de Rastreio */}
                               <div className="pt-1 text-xs">
                                 {isEditingThis ? (
-                                  <div className="p-2.5 rounded-xl bg-[#F7F9F4] border border-[#DDE7D5] space-y-2">
+                                  <div className="p-2.5 rounded-xl bg-[#FAF8F5] border border-[#EADBCE] space-y-2">
                                     <div>
                                       <label className="text-[10px] font-semibold text-[#7D756C] block uppercase mb-0.5">
                                         Código de Rastreio:
@@ -2154,7 +2154,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                                         placeholder="Ex: QB123456789BR"
                                         value={trackingInput}
                                         onChange={(e) => setTrackingInput(e.target.value)}
-                                        className="w-full h-7 px-2 rounded-lg border border-[#DDE7D5] bg-white text-xs font-mono focus:outline-none focus:border-[#315B8A]"
+                                        className="w-full h-7 px-2 rounded-lg border border-[#EADBCE] bg-white text-xs font-mono focus:outline-none focus:border-[#C86D51]"
                                       />
                                     </div>
                                     <div>
@@ -2167,14 +2167,14 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                                         placeholder="Ex: Chega até sexta..."
                                         value={orderNoteInput}
                                         onChange={(e) => setOrderNoteInput(e.target.value)}
-                                        className="w-full h-7 px-2 rounded-lg border border-[#DDE7D5] bg-white text-xs focus:outline-none focus:border-[#315B8A]"
+                                        className="w-full h-7 px-2 rounded-lg border border-[#EADBCE] bg-white text-xs focus:outline-none focus:border-[#C86D51]"
                                       />
                                     </div>
                                     <div className="flex items-center justify-end gap-1.5 pt-0.5">
                                       <button
                                         type="button"
                                         onClick={() => setEditingTrackingId(null)}
-                                        className="h-6 px-2 rounded-lg border border-[#DDE7D5] bg-white text-[11px] font-medium text-[#68625B] hover:text-[#2D2A26] cursor-pointer"
+                                        className="h-6 px-2 rounded-lg border border-[#EADBCE] bg-white text-[11px] font-medium text-[#68625B] hover:text-[#2D2A26] cursor-pointer"
                                       >
                                         Cancelar
                                       </button>
@@ -2182,7 +2182,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                                         type="button"
                                         disabled={savingTrackingId === res.id}
                                         onClick={() => handleSaveTracking(res.id)}
-                                        className="h-6 px-2.5 rounded-lg bg-[#315B8A] hover:bg-[#244568] text-white text-[11px] font-semibold transition-colors cursor-pointer"
+                                        className="h-6 px-2.5 rounded-lg bg-[#C86D51] hover:bg-[#A95339] text-white text-[11px] font-semibold transition-colors cursor-pointer"
                                       >
                                         {savingTrackingId === res.id ? 'Salvando...' : 'Salvar'}
                                       </button>
@@ -2193,7 +2193,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                                     <div className="space-y-0.5">
                                       {res.trackingCode ? (
                                         <div className="flex items-center gap-1.5 text-[11px]">
-                                          <Truck className="w-3 h-3 text-[#315B8A]" />
+                                          <Truck className="w-3 h-3 text-[#C86D51]" />
                                           <span className="font-mono font-medium text-[#2D2A26]">{res.trackingCode}</span>
                                         </div>
                                       ) : (
@@ -2208,7 +2208,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                                     <button
                                       type="button"
                                       onClick={() => handleStartEditingTracking(res)}
-                                      className="text-[11px] text-[#315B8A] hover:underline font-semibold cursor-pointer shrink-0"
+                                      className="text-[11px] text-[#C86D51] hover:underline font-semibold cursor-pointer shrink-0"
                                     >
                                       {res.trackingCode || res.orderNote ? 'Editar' : '+ Rastreio/Obs'}
                                     </button>
@@ -2220,7 +2220,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                         </div>
 
                         {/* Actions footer */}
-                        <div className="pt-2 border-t border-[#E7EEF6] space-y-2 mt-2">
+                        <div className="pt-2 border-t border-[#F0E6DE] space-y-2 mt-2">
                           <div className="flex items-center justify-between gap-2">
                             {!isLink ? (
                               <button
@@ -2305,7 +2305,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
               <div className="flex items-center gap-2 flex-wrap">
                 <button
                   onClick={handleOpenAddGuest}
-                  className="h-10 px-4 rounded-xl bg-[#315B8A] hover:bg-[#244568] text-white text-xs font-semibold flex items-center gap-1.5 transition-colors cursor-pointer shadow-xs"
+                  className="h-10 px-4 rounded-xl bg-[#C86D51] hover:bg-[#A95339] text-white text-xs font-semibold flex items-center gap-1.5 transition-colors cursor-pointer shadow-xs"
                 >
                   <UserPlus className="w-4 h-4" />
                   <span>+ Adicionar Convidado</span>
@@ -2313,15 +2313,15 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
 
                 <button
                   onClick={handleOpenCsvModal}
-                  className="h-10 px-3.5 rounded-xl border border-[#DDE7D5] bg-white hover:bg-[#F7F9F4] text-xs font-semibold text-[#2D2A26] flex items-center gap-1.5 transition-colors cursor-pointer"
+                  className="h-10 px-3.5 rounded-xl border border-[#EADBCE] bg-white hover:bg-[#FAF8F5] text-xs font-semibold text-[#2D2A26] flex items-center gap-1.5 transition-colors cursor-pointer"
                 >
-                  <FileSpreadsheet className="w-4 h-4 text-[#315B8A]" />
+                  <FileSpreadsheet className="w-4 h-4 text-[#C86D51]" />
                   <span>Importar CSV</span>
                 </button>
 
                 <button
                   onClick={() => setIsBatchGuestModalOpen(true)}
-                  className="h-10 px-3.5 rounded-xl border border-[#DDE7D5] bg-white hover:bg-[#F7F9F4] text-xs font-semibold text-[#2D2A26] flex items-center gap-1.5 transition-colors cursor-pointer"
+                  className="h-10 px-3.5 rounded-xl border border-[#EADBCE] bg-white hover:bg-[#FAF8F5] text-xs font-semibold text-[#2D2A26] flex items-center gap-1.5 transition-colors cursor-pointer"
                 >
                   <ListPlus className="w-4 h-4 text-[#68625B]" />
                   <span>Em Lote</span>
@@ -2329,7 +2329,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
 
                 <button
                   onClick={handleExportGuestsCsv}
-                  className="h-10 px-3.5 rounded-xl border border-[#DDE7D5] bg-white hover:bg-[#F7F9F4] text-xs font-semibold text-[#2D2A26] flex items-center gap-1.5 transition-colors cursor-pointer"
+                  className="h-10 px-3.5 rounded-xl border border-[#EADBCE] bg-white hover:bg-[#FAF8F5] text-xs font-semibold text-[#2D2A26] flex items-center gap-1.5 transition-colors cursor-pointer"
                 >
                   <Download className="w-4 h-4 text-[#68625B]" />
                   <span>Exportar CSV</span>
@@ -2339,7 +2339,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
 
             {/* Quick Stats Grid */}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
-              <div className="p-4 rounded-2xl bg-white border border-[#DDE7D5]">
+              <div className="p-4 rounded-2xl bg-white border border-[#EADBCE]">
                 <span className="text-[11px] font-semibold uppercase tracking-wider text-[#A59E95] block mb-1">
                   Total na Lista
                 </span>
@@ -2389,14 +2389,14 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                   value={guestSearch}
                   onChange={(e) => setGuestSearch(e.target.value)}
                   placeholder="Buscar convidado por nome ou WhatsApp..."
-                  className="w-full h-10 pl-9 pr-4 rounded-xl border border-[#DDE7D5] bg-white text-xs text-[#2D2A26] outline-none"
+                  className="w-full h-10 pl-9 pr-4 rounded-xl border border-[#EADBCE] bg-white text-xs text-[#2D2A26] outline-none"
                 />
               </div>
 
               <select
                 value={guestFilter}
                 onChange={(e) => setGuestFilter(e.target.value as any)}
-                className="h-10 px-3 rounded-xl border border-[#DDE7D5] bg-white text-xs text-[#2D2A26] outline-none w-full sm:w-auto"
+                className="h-10 px-3 rounded-xl border border-[#EADBCE] bg-white text-xs text-[#2D2A26] outline-none w-full sm:w-auto"
               >
                 <option value="all">Todos os Status ({guests.length})</option>
                 <option value="confirmed">Confirmados 🎉 ({confirmedGuests.length})</option>
@@ -2406,10 +2406,10 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
             </div>
 
             {/* Guests Table */}
-            <div className="bg-white rounded-3xl border border-[#DDE7D5] overflow-hidden shadow-2xs">
+            <div className="bg-white rounded-3xl border border-[#EADBCE] overflow-hidden shadow-2xs">
               <div className="overflow-x-auto">
                 <table className="w-full text-left text-xs">
-                  <thead className="bg-[#F7F9F4] border-b border-[#DDE7D5] text-[#7D756C] uppercase font-semibold">
+                  <thead className="bg-[#FAF8F5] border-b border-[#EADBCE] text-[#7D756C] uppercase font-semibold">
                     <tr>
                       <th className="p-4">Convidado</th>
                       <th className="p-4">WhatsApp</th>
@@ -2421,7 +2421,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                       <th className="p-4 text-right">Ações</th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-[#E7EEF6]">
+                  <tbody className="divide-y divide-[#F0E6DE]">
                     {filteredGuests.length === 0 ? (
                       <tr>
                         <td colSpan={8} className="p-8 text-center text-xs text-[#7D756C]">
@@ -2430,7 +2430,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                       </tr>
                     ) : (
                       filteredGuests.map((guest) => (
-                        <tr key={guest.id} className="hover:bg-[#F7F9F4]/60 transition-colors">
+                        <tr key={guest.id} className="hover:bg-[#FAF8F5]/60 transition-colors">
                           <td className="p-4 font-semibold text-[#2D2A26]">
                             {guest.name}
                           </td>
@@ -2441,7 +2441,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                             {guest.maxCompanions === 0 ? (
                               <span className="text-stone-600 fontmedium">Individual</span>
                             ) : (
-                              <span className="text-[#315B8A] font-medium">+ até {guest.maxCompanions} acomp.</span>
+                              <span className="text-[#C86D51] font-medium">+ até {guest.maxCompanions} acomp.</span>
                             )}
                           </td>
                           <td className="p-4 tabular-nums">
@@ -2514,7 +2514,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                               <button
                                 onClick={() => handleOpenEditGuest(guest)}
                                 title="Editar convidado"
-                                className="h-8 w-8 rounded-lg text-[#68625B] hover:text-[#2D2A26] hover:bg-[#F7F9F4] inline-flex items-center justify-center cursor-pointer"
+                                className="h-8 w-8 rounded-lg text-[#68625B] hover:text-[#2D2A26] hover:bg-[#FAF8F5] inline-flex items-center justify-center cursor-pointer"
                               >
                                 <Edit2 className="w-3.5 h-3.5" />
                               </button>
@@ -2553,7 +2553,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
               </p>
             </div>
 
-            <form onSubmit={handleSaveSettings} className="bg-white p-6 sm:p-8 rounded-3xl border border-[#DDE7D5] shadow-2xs space-y-6">
+            <form onSubmit={handleSaveSettings} className="bg-white p-6 sm:p-8 rounded-3xl border border-[#EADBCE] shadow-2xs space-y-6">
               
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
@@ -2564,7 +2564,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                     type="text"
                     value={settingsForm.hostName}
                     onChange={(e) => setSettingsForm({ ...settingsForm, hostName: e.target.value })}
-                    className="w-full h-11 px-3.5 rounded-xl border border-[#DDE7D5] text-xs text-[#2D2A26] outline-none"
+                    className="w-full h-11 px-3.5 rounded-xl border border-[#EADBCE] text-xs text-[#2D2A26] outline-none"
                   />
                 </div>
 
@@ -2576,7 +2576,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                     type="text"
                     value={settingsForm.instagramHandle}
                     onChange={(e) => setSettingsForm({ ...settingsForm, instagramHandle: e.target.value })}
-                    className="w-full h-11 px-3.5 rounded-xl border border-[#DDE7D5] text-xs text-[#2D2A26] outline-none"
+                    className="w-full h-11 px-3.5 rounded-xl border border-[#EADBCE] text-xs text-[#2D2A26] outline-none"
                   />
                 </div>
               </div>
@@ -2590,7 +2590,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                     type="date"
                     value={settingsForm.eventDate}
                     onChange={(e) => setSettingsForm({ ...settingsForm, eventDate: e.target.value })}
-                    className="w-full h-11 px-3.5 rounded-xl border border-[#DDE7D5] text-xs text-[#2D2A26] outline-none"
+                    className="w-full h-11 px-3.5 rounded-xl border border-[#EADBCE] text-xs text-[#2D2A26] outline-none"
                   />
                 </div>
 
@@ -2603,7 +2603,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                     value={settingsForm.eventTime}
                     onChange={(e) => setSettingsForm({ ...settingsForm, eventTime: e.target.value })}
                     placeholder="17:00"
-                    className="w-full h-11 px-3.5 rounded-xl border border-[#DDE7D5] text-xs text-[#2D2A26] outline-none"
+                    className="w-full h-11 px-3.5 rounded-xl border border-[#EADBCE] text-xs text-[#2D2A26] outline-none"
                   />
                 </div>
 
@@ -2616,7 +2616,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                     value={settingsForm.eventEndTime || ''}
                     onChange={(e) => setSettingsForm({ ...settingsForm, eventEndTime: e.target.value })}
                     placeholder="23:30"
-                    className="w-full h-11 px-3.5 rounded-xl border border-[#DDE7D5] text-xs text-[#2D2A26] outline-none"
+                    className="w-full h-11 px-3.5 rounded-xl border border-[#EADBCE] text-xs text-[#2D2A26] outline-none"
                   />
                 </div>
               </div>
@@ -2630,7 +2630,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                     type="text"
                     value={settingsForm.locationName}
                     onChange={(e) => setSettingsForm({ ...settingsForm, locationName: e.target.value })}
-                    className="w-full h-11 px-3.5 rounded-xl border border-[#DDE7D5] text-xs text-[#2D2A26] outline-none"
+                    className="w-full h-11 px-3.5 rounded-xl border border-[#EADBCE] text-xs text-[#2D2A26] outline-none"
                   />
                 </div>
 
@@ -2642,7 +2642,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                     type="text"
                     value={settingsForm.locationCity}
                     onChange={(e) => setSettingsForm({ ...settingsForm, locationCity: e.target.value })}
-                    className="w-full h-11 px-3.5 rounded-xl border border-[#DDE7D5] text-xs text-[#2D2A26] outline-none"
+                    className="w-full h-11 px-3.5 rounded-xl border border-[#EADBCE] text-xs text-[#2D2A26] outline-none"
                   />
                 </div>
               </div>
@@ -2655,7 +2655,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                   type="text"
                   value={settingsForm.locationAddress}
                   onChange={(e) => setSettingsForm({ ...settingsForm, locationAddress: e.target.value })}
-                  className="w-full h-11 px-3.5 rounded-xl border border-[#DDE7D5] text-xs text-[#2D2A26] outline-none"
+                  className="w-full h-11 px-3.5 rounded-xl border border-[#EADBCE] text-xs text-[#2D2A26] outline-none"
                 />
               </div>
 
@@ -2668,14 +2668,14 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                   value={settingsForm.locationNotes || ''}
                   onChange={(e) => setSettingsForm({ ...settingsForm, locationNotes: e.target.value })}
                   placeholder="Ex: Interfone 82, vagas na rua ao lado..."
-                  className="w-full h-11 px-3.5 rounded-xl border border-[#DDE7D5] text-xs text-[#2D2A26] outline-none"
+                  className="w-full h-11 px-3.5 rounded-xl border border-[#EADBCE] text-xs text-[#2D2A26] outline-none"
                 />
               </div>
 
               {/* Endereço de Envio dos Presentes */}
-              <div className="p-5 rounded-2xl bg-[#F7F9F4] border border-[#DDE7D5] space-y-4">
+              <div className="p-5 rounded-2xl bg-[#FAF8F5] border border-[#EADBCE] space-y-4">
                 <div>
-                  <div className="text-xs font-semibold uppercase tracking-wider text-[#244568] flex items-center gap-1.5">
+                  <div className="text-xs font-semibold uppercase tracking-wider text-[#A95339] flex items-center gap-1.5">
                     <span>Endereço de Envio dos Presentes</span>
                   </div>
                   <p className="text-[11px] text-[#68625B] mt-0.5">
@@ -2693,7 +2693,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                       value={settingsForm.shippingRecipientName || ''}
                       onChange={(e) => setSettingsForm({ ...settingsForm, shippingRecipientName: e.target.value })}
                       placeholder="Ex: Amanda Marinho"
-                      className="w-full h-10 px-3 rounded-xl border border-[#DDE7D5] bg-white text-xs text-[#2D2A26] outline-none"
+                      className="w-full h-10 px-3 rounded-xl border border-[#EADBCE] bg-white text-xs text-[#2D2A26] outline-none"
                     />
                   </div>
 
@@ -2706,7 +2706,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                       value={settingsForm.shippingPhone || ''}
                       onChange={(e) => setSettingsForm({ ...settingsForm, shippingPhone: e.target.value })}
                       placeholder="Ex: (11) 99999-9999"
-                      className="w-full h-10 px-3 rounded-xl border border-[#DDE7D5] bg-white text-xs text-[#2D2A26] outline-none"
+                      className="w-full h-10 px-3 rounded-xl border border-[#EADBCE] bg-white text-xs text-[#2D2A26] outline-none"
                     />
                   </div>
                 </div>
@@ -2721,7 +2721,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                       value={settingsForm.shippingStreet || ''}
                       onChange={(e) => setSettingsForm({ ...settingsForm, shippingStreet: e.target.value })}
                       placeholder="Ex: Av. Paulista, 1000"
-                      className="w-full h-10 px-3 rounded-xl border border-[#DDE7D5] bg-white text-xs text-[#2D2A26] outline-none"
+                      className="w-full h-10 px-3 rounded-xl border border-[#EADBCE] bg-white text-xs text-[#2D2A26] outline-none"
                     />
                   </div>
 
@@ -2734,7 +2734,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                       value={settingsForm.shippingComplement || ''}
                       onChange={(e) => setSettingsForm({ ...settingsForm, shippingComplement: e.target.value })}
                       placeholder="Ex: Apto 82, Bloco B"
-                      className="w-full h-10 px-3 rounded-xl border border-[#DDE7D5] bg-white text-xs text-[#2D2A26] outline-none"
+                      className="w-full h-10 px-3 rounded-xl border border-[#EADBCE] bg-white text-xs text-[#2D2A26] outline-none"
                     />
                   </div>
                 </div>
@@ -2749,7 +2749,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                       value={settingsForm.shippingNeighborhood || ''}
                       onChange={(e) => setSettingsForm({ ...settingsForm, shippingNeighborhood: e.target.value })}
                       placeholder="Ex: Bela Vista"
-                      className="w-full h-10 px-3 rounded-xl border border-[#DDE7D5] bg-white text-xs text-[#2D2A26] outline-none"
+                      className="w-full h-10 px-3 rounded-xl border border-[#EADBCE] bg-white text-xs text-[#2D2A26] outline-none"
                     />
                   </div>
 
@@ -2762,7 +2762,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                       value={settingsForm.shippingCity || ''}
                       onChange={(e) => setSettingsForm({ ...settingsForm, shippingCity: e.target.value })}
                       placeholder="Ex: São Paulo, SP"
-                      className="w-full h-10 px-3 rounded-xl border border-[#DDE7D5] bg-white text-xs text-[#2D2A26] outline-none"
+                      className="w-full h-10 px-3 rounded-xl border border-[#EADBCE] bg-white text-xs text-[#2D2A26] outline-none"
                     />
                   </div>
 
@@ -2775,7 +2775,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                       value={settingsForm.shippingZip || ''}
                       onChange={(e) => setSettingsForm({ ...settingsForm, shippingZip: e.target.value })}
                       placeholder="Ex: 01310-100"
-                      className="w-full h-10 px-3 rounded-xl border border-[#DDE7D5] bg-white text-xs text-[#2D2A26] outline-none"
+                      className="w-full h-10 px-3 rounded-xl border border-[#EADBCE] bg-white text-xs text-[#2D2A26] outline-none"
                     />
                   </div>
                 </div>
@@ -2789,16 +2789,16 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                     value={settingsForm.shippingNotes || ''}
                     onChange={(e) => setSettingsForm({ ...settingsForm, shippingNotes: e.target.value })}
                     placeholder="Ex: Portaria recebe até 18h, deixar com o porteiro..."
-                    className="w-full p-2.5 rounded-xl border border-[#DDE7D5] bg-white text-xs text-[#2D2A26] outline-none resize-none"
+                    className="w-full p-2.5 rounded-xl border border-[#EADBCE] bg-white text-xs text-[#2D2A26] outline-none resize-none"
                   />
                 </div>
               </div>
 
               {/* Dados Bancários e Pix para Recebimento de Presentes */}
-              <div className="p-5 rounded-2xl bg-[#F7F9F4] border border-[#DDE7D5] space-y-4">
+              <div className="p-5 rounded-2xl bg-[#FAF8F5] border border-[#EADBCE] space-y-4">
                 <div>
-                  <div className="text-xs font-semibold uppercase tracking-wider text-[#244568] flex items-center gap-1.5">
-                    <QrCode className="w-4 h-4 text-[#315B8A]" />
+                  <div className="text-xs font-semibold uppercase tracking-wider text-[#A95339] flex items-center gap-1.5">
+                    <QrCode className="w-4 h-4 text-[#C86D51]" />
                     <span>Dados Bancários e Pix Oficial para Presentes</span>
                   </div>
                   <p className="text-[11px] text-[#68625B] mt-0.5">
@@ -2817,7 +2817,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                       value={settingsForm.pixKey}
                       onChange={(e) => setSettingsForm({ ...settingsForm, pixKey: e.target.value })}
                       placeholder="alyne2.nobre.c@gmail.com"
-                      className="w-full h-10 px-3 rounded-xl border border-[#DDE7D5] bg-white text-xs text-[#2D2A26] outline-none"
+                      className="w-full h-10 px-3 rounded-xl border border-[#EADBCE] bg-white text-xs text-[#2D2A26] outline-none"
                     />
                   </div>
 
@@ -2828,7 +2828,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                     <select
                       value={settingsForm.pixKeyType}
                       onChange={(e) => setSettingsForm({ ...settingsForm, pixKeyType: e.target.value })}
-                      className="w-full h-10 px-3 rounded-xl border border-[#DDE7D5] bg-white text-xs text-[#2D2A26] outline-none"
+                      className="w-full h-10 px-3 rounded-xl border border-[#EADBCE] bg-white text-xs text-[#2D2A26] outline-none"
                     >
                       <option value="E-mail">E-mail</option>
                       <option value="Celular">Celular / Telefone</option>
@@ -2848,7 +2848,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                       value={settingsForm.pixReceiverName || ''}
                       onChange={(e) => setSettingsForm({ ...settingsForm, pixReceiverName: e.target.value })}
                       placeholder="Ex: Amanda Soares Marinho "
-                      className="w-full h-10 px-3 rounded-xl border border-[#DDE7D5] bg-white text-xs text-[#2D2A26] outline-none"
+                      className="w-full h-10 px-3 rounded-xl border border-[#EADBCE] bg-white text-xs text-[#2D2A26] outline-none"
                     />
                   </div>
 
@@ -2861,7 +2861,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                       value={settingsForm.pixBankName || ''}
                       onChange={(e) => setSettingsForm({ ...settingsForm, pixBankName: e.target.value })}
                       placeholder="Ex: Nubank, Inter, Itaú, Bradesco..."
-                      className="w-full h-10 px-3 rounded-xl border border-[#DDE7D5] bg-white text-xs text-[#2D2A26] outline-none"
+                      className="w-full h-10 px-3 rounded-xl border border-[#EADBCE] bg-white text-xs text-[#2D2A26] outline-none"
                     />
                   </div>
                 </div>
@@ -2876,7 +2876,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                     value={settingsForm.pixBankLink || ''}
                     onChange={(e) => setSettingsForm({ ...settingsForm, pixBankLink: e.target.value })}
                     placeholder="Ex: https://nubank.com.br/cobrar/... ou link do seu app bancário"
-                    className="w-full h-10 px-3 rounded-xl border border-[#DDE7D5] bg-white text-xs text-[#2D2A26] outline-none"
+                    className="w-full h-10 px-3 rounded-xl border border-[#EADBCE] bg-white text-xs text-[#2D2A26] outline-none"
                   />
                   <span className="text-[10px] text-[#A59E95] mt-1 block">
                     Se preenchido, os convidados verão um botão para abrir diretamente o aplicativo do seu banco!
@@ -2893,7 +2893,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                     value={settingsForm.pixCopiaECola || ''}
                     onChange={(e) => setSettingsForm({ ...settingsForm, pixCopiaECola: e.target.value })}
                     placeholder="Cole aqui o código que começa com 000201... gerado pelo aplicativo do seu banco"
-                    className="w-full p-2.5 rounded-xl border border-[#DDE7D5] bg-white text-xs text-[#2D2A26] outline-none font-mono resize-none"
+                    className="w-full p-2.5 rounded-xl border border-[#EADBCE] bg-white text-xs text-[#2D2A26] outline-none font-mono resize-none"
                   />
                   <span className="text-[10px] text-[#A59E95] mt-0.5 block">
                     Garante 100% de compatibilidade na hora do convidado colar no banco dele.
@@ -2906,8 +2906,8 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                     Foto / Imagem do QR Code Oficial do seu Banco
                   </label>
                   <div className="flex flex-col sm:flex-row items-center gap-4">
-                    <label className="flex-1 w-full flex items-center justify-center gap-2 h-11 px-4 border-2 border-dashed border-[#DDE7D5] rounded-xl cursor-pointer bg-white hover:bg-[#F7F9F4] text-xs font-semibold text-[#2D2A26] transition-colors">
-                      <Upload className="w-4 h-4 text-[#315B8A]" />
+                    <label className="flex-1 w-full flex items-center justify-center gap-2 h-11 px-4 border-2 border-dashed border-[#EADBCE] rounded-xl cursor-pointer bg-white hover:bg-[#FAF8F5] text-xs font-semibold text-[#2D2A26] transition-colors">
+                      <Upload className="w-4 h-4 text-[#C86D51]" />
                       <span>{settingsForm.pixQrCodeUrl ? 'Trocar Imagem do QR Code' : 'Enviar Print do QR Code do Banco'}</span>
                       <input
                         type="file"
@@ -2919,7 +2919,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
 
                     {settingsForm.pixQrCodeUrl && (
                       <div className="flex items-center gap-2">
-                        <div className="w-11 h-11 rounded-xl overflow-hidden border border-[#DDE7D5] bg-white shrink-0">
+                        <div className="w-11 h-11 rounded-xl overflow-hidden border border-[#EADBCE] bg-white shrink-0">
                           <img
                             src={settingsForm.pixQrCodeUrl}
                             alt="QR Code"
@@ -2943,10 +2943,10 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
               </div>
 
               {/* Armazenamento de Fotos e Vídeos (Cloudinary) */}
-              <div className="p-5 rounded-2xl bg-[#F7F9F4] border border-[#DDE7D5] space-y-4">
+              <div className="p-5 rounded-2xl bg-[#FAF8F5] border border-[#EADBCE] space-y-4">
                 <div>
-                  <div className="text-xs font-semibold uppercase tracking-wider text-[#244568] flex items-center gap-1.5">
-                    <Cloud className="w-4 h-4 text-[#315B8A]" />
+                  <div className="text-xs font-semibold uppercase tracking-wider text-[#A95339] flex items-center gap-1.5">
+                    <Cloud className="w-4 h-4 text-[#C86D51]" />
                     <span>Armazenamento de Fotos e Vídeos (Cloudinary ☁️)</span>
                   </div>
                   <p className="text-[11px] text-[#68625B] mt-0.5">
@@ -2964,7 +2964,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                       value={settingsForm.cloudinaryCloudName || ''}
                       onChange={(e) => setSettingsForm({ ...settingsForm, cloudinaryCloudName: e.target.value })}
                       placeholder="Ex: seu-cloud-name"
-                      className="w-full h-10 px-3 rounded-xl border border-[#DDE7D5] bg-white text-xs text-[#2D2A26] outline-none"
+                      className="w-full h-10 px-3 rounded-xl border border-[#EADBCE] bg-white text-xs text-[#2D2A26] outline-none"
                     />
                   </div>
 
@@ -2977,7 +2977,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                       value={settingsForm.cloudinaryUploadPreset || ''}
                       onChange={(e) => setSettingsForm({ ...settingsForm, cloudinaryUploadPreset: e.target.value })}
                       placeholder="Ex: galeria_ape ou ml_default"
-                      className="w-full h-10 px-3 rounded-xl border border-[#DDE7D5] bg-white text-xs text-[#2D2A26] outline-none"
+                      className="w-full h-10 px-3 rounded-xl border border-[#EADBCE] bg-white text-xs text-[#2D2A26] outline-none"
                     />
                   </div>
                 </div>
@@ -2998,7 +2998,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                         setTestingCloudinarySettings(false);
                       }
                     }}
-                    className="h-9 px-3.5 rounded-xl border border-[#315B8A] text-[#315B8A] hover:bg-[#315B8A]/5 text-xs font-semibold disabled:opacity-40 disabled:cursor-not-allowed cursor-pointer transition-colors"
+                    className="h-9 px-3.5 rounded-xl border border-[#C86D51] text-[#C86D51] hover:bg-[#C86D51]/5 text-xs font-semibold disabled:opacity-40 disabled:cursor-not-allowed cursor-pointer transition-colors"
                   >
                     {testingCloudinarySettings ? 'Testando conexão...' : 'Testar Conexão com Cloudinary'}
                   </button>
@@ -3031,7 +3031,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
 
               <button
                 type="submit"
-                className="h-11 px-6 rounded-xl bg-[#315B8A] hover:bg-[#244568] text-white text-xs font-semibold tracking-wide uppercase transition-colors shadow-xs cursor-pointer"
+                className="h-11 px-6 rounded-xl bg-[#C86D51] hover:bg-[#A95339] text-white text-xs font-semibold tracking-wide uppercase transition-colors shadow-xs cursor-pointer"
               >
                 Salvar Alterações
               </button>
@@ -3075,16 +3075,16 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
       {/* ===================== MODAL: SCRAPE POR LINK ===================== */}
       {isScraperModalOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-xs">
-          <div className="relative w-full max-w-md bg-[#F7F9F4] border border-[#DDE7D5] rounded-3xl p-6 shadow-2xl">
+          <div className="relative w-full max-w-md bg-[#FAF8F5] border border-[#EADBCE] rounded-3xl p-6 shadow-2xl">
             <button
               onClick={() => setIsScraperModalOpen(false)}
-              className="absolute top-5 right-5 h-8 w-8 rounded-full bg-[#EEF2EA] text-[#68625B] hover:text-[#2D2A26] flex items-center justify-center cursor-pointer"
+              className="absolute top-5 right-5 h-8 w-8 rounded-full bg-[#F4EFEB] text-[#68625B] hover:text-[#2D2A26] flex items-center justify-center cursor-pointer"
             >
               <X className="w-4 h-4" />
             </button>
 
             <div className="mb-4">
-              <div className="w-10 h-10 rounded-xl bg-[#E7EEF6] text-[#315B8A] flex items-center justify-center mb-3">
+              <div className="w-10 h-10 rounded-xl bg-[#F0E6DE] text-[#C86D51] flex items-center justify-center mb-3">
                 <LinkIcon className="w-5 h-5" />
               </div>
               <h3 className="font-serif text-xl font-medium text-[#2D2A26]">
@@ -3106,14 +3106,14 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                   value={scraperUrl}
                   onChange={(e) => setScraperUrl(e.target.value)}
                   placeholder="https://www.amazon.com.br/..."
-                  className="w-full h-11 px-3.5 rounded-xl border border-[#DDE7D5] bg-white text-xs text-[#2D2A26] outline-none"
+                  className="w-full h-11 px-3.5 rounded-xl border border-[#EADBCE] bg-white text-xs text-[#2D2A26] outline-none"
                 />
               </div>
 
               <button
                 type="submit"
                 disabled={scrapingLoading}
-                className="w-full h-11 rounded-xl bg-[#315B8A] hover:bg-[#244568] disabled:opacity-50 text-white text-xs font-semibold tracking-wide uppercase transition-colors cursor-pointer"
+                className="w-full h-11 rounded-xl bg-[#C86D51] hover:bg-[#A95339] disabled:opacity-50 text-white text-xs font-semibold tracking-wide uppercase transition-colors cursor-pointer"
               >
                 {scrapingLoading ? 'Buscando informações da loja...' : 'Importar Informações'}
               </button>
@@ -3125,19 +3125,19 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
       {/* ===================== MODAL: ADICIONAR / EDITAR CONVIDADO ===================== */}
       {isGuestModalOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-xs">
-          <div className="relative w-full max-w-md bg-[#F7F9F4] border border-[#DDE7D5] rounded-3xl p-6 shadow-2xl">
+          <div className="relative w-full max-w-md bg-[#FAF8F5] border border-[#EADBCE] rounded-3xl p-6 shadow-2xl">
             <button
               onClick={() => {
                 setIsGuestModalOpen(false);
                 setEditingGuestItem(null);
               }}
-              className="absolute top-5 right-5 h-8 w-8 rounded-full bg-[#EEF2EA] text-[#68625B] hover:text-[#2D2A26] flex items-center justify-center cursor-pointer"
+              className="absolute top-5 right-5 h-8 w-8 rounded-full bg-[#F4EFEB] text-[#68625B] hover:text-[#2D2A26] flex items-center justify-center cursor-pointer"
             >
               <X className="w-4 h-4" />
             </button>
 
             <div className="mb-4">
-              <div className="w-10 h-10 rounded-xl bg-[#E7EEF6] text-[#315B8A] flex items-center justify-center mb-3">
+              <div className="w-10 h-10 rounded-xl bg-[#F0E6DE] text-[#C86D51] flex items-center justify-center mb-3">
                 <UserCheck className="w-5 h-5" />
               </div>
               <h3 className="font-serif text-xl font-medium text-[#2D2A26]">
@@ -3159,7 +3159,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                   value={guestNameInput}
                   onChange={(e) => setGuestNameInput(e.target.value)}
                   placeholder="Ex: Beatriz Lima"
-                  className="w-full h-11 px-3.5 rounded-xl border border-[#DDE7D5] bg-white text-xs text-[#2D2A26] outline-none"
+                  className="w-full h-11 px-3.5 rounded-xl border border-[#EADBCE] bg-white text-xs text-[#2D2A26] outline-none"
                 />
               </div>
 
@@ -3172,7 +3172,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                   value={guestWhatsappInput}
                   onChange={(e) => setGuestWhatsappInput(e.target.value)}
                   placeholder="Ex: 11999999999"
-                  className="w-full h-11 px-3.5 rounded-xl border border-[#DDE7D5] bg-white text-xs text-[#2D2A26] outline-none"
+                  className="w-full h-11 px-3.5 rounded-xl border border-[#EADBCE] bg-white text-xs text-[#2D2A26] outline-none"
                 />
               </div>
 
@@ -3183,7 +3183,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                 <select
                   value={guestMaxCompanionsInput}
                   onChange={(e) => setGuestMaxCompanionsInput(Number(e.target.value))}
-                  className="w-full h-11 px-3 rounded-xl border border-[#DDE7D5] bg-white text-xs text-[#2D2A26] outline-none"
+                  className="w-full h-11 px-3 rounded-xl border border-[#EADBCE] bg-white text-xs text-[#2D2A26] outline-none"
                 >
                   <option value={0}>0 - Individual (apenas o convidado)</option>
                   <option value={1}>1 acompanhante (convidado + 1)</option>
@@ -3203,7 +3203,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                 <select
                   value={guestStatusInput}
                   onChange={(e) => setGuestStatusInput(e.target.value as GuestStatus)}
-                  className="w-full h-11 px-3 rounded-xl border border-[#DDE7D5] bg-white text-xs text-[#2D2A26] outline-none"
+                  className="w-full h-11 px-3 rounded-xl border border-[#EADBCE] bg-white text-xs text-[#2D2A26] outline-none"
                 >
                   <option value="pending">Pendente ⏳ (aguardando resposta)</option>
                   <option value="confirmed">Confirmado 🎉</option>
@@ -3213,7 +3213,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
 
               <button
                 type="submit"
-                className="w-full h-11 rounded-xl bg-[#315B8A] hover:bg-[#244568] text-white text-xs font-semibold tracking-wide uppercase transition-colors cursor-pointer"
+                className="w-full h-11 rounded-xl bg-[#C86D51] hover:bg-[#A95339] text-white text-xs font-semibold tracking-wide uppercase transition-colors cursor-pointer"
               >
                 {editingGuestItem ? 'Salvar Alterações' : 'Adicionar à Lista'}
               </button>
@@ -3225,16 +3225,16 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
       {/* ===================== MODAL: ADICIONAR EM LOTE ===================== */}
       {isBatchGuestModalOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-xs">
-          <div className="relative w-full max-w-lg bg-[#F7F9F4] border border-[#DDE7D5] rounded-3xl p-6 shadow-2xl">
+          <div className="relative w-full max-w-lg bg-[#FAF8F5] border border-[#EADBCE] rounded-3xl p-6 shadow-2xl">
             <button
               onClick={() => setIsBatchGuestModalOpen(false)}
-              className="absolute top-5 right-5 h-8 w-8 rounded-full bg-[#EEF2EA] text-[#68625B] hover:text-[#2D2A26] flex items-center justify-center cursor-pointer"
+              className="absolute top-5 right-5 h-8 w-8 rounded-full bg-[#F4EFEB] text-[#68625B] hover:text-[#2D2A26] flex items-center justify-center cursor-pointer"
             >
               <X className="w-4 h-4" />
             </button>
 
             <div className="mb-4">
-              <div className="w-10 h-10 rounded-xl bg-[#E7EEF6] text-[#315B8A] flex items-center justify-center mb-3">
+              <div className="w-10 h-10 rounded-xl bg-[#F0E6DE] text-[#C86D51] flex items-center justify-center mb-3">
                 <ListPlus className="w-5 h-5" />
               </div>
               <h3 className="font-serif text-xl font-medium text-[#2D2A26]">
@@ -3256,7 +3256,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                   value={batchNamesInput}
                   onChange={(e) => setBatchNamesInput(e.target.value)}
                   placeholder="Camila Santos&#10;Lucas Ferreira&#10;Mariana Silva&#10;Rodrigo Costa"
-                  className="w-full p-3 rounded-xl border border-[#DDE7D5] bg-white text-xs text-[#2D2A26] outline-none resize-none font-mono"
+                  className="w-full p-3 rounded-xl border border-[#EADBCE] bg-white text-xs text-[#2D2A26] outline-none resize-none font-mono"
                 />
               </div>
 
@@ -3267,7 +3267,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                 <select
                   value={batchDefaultMaxInput}
                   onChange={(e) => setBatchDefaultMaxInput(Number(e.target.value))}
-                  className="w-full h-11 px-3 rounded-xl border border-[#DDE7D5] bg-white text-xs text-[#2D2A26] outline-none"
+                  className="w-full h-11 px-3 rounded-xl border border-[#EADBCE] bg-white text-xs text-[#2D2A26] outline-none"
                 >
                   <option value={0}>0 - Individual (apenas o convidado)</option>
                   <option value={1}>1 acompanhante (+1)</option>
@@ -3278,7 +3278,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
 
               <button
                 type="submit"
-                className="w-full h-11 rounded-xl bg-[#315B8A] hover:bg-[#244568] text-white text-xs font-semibold tracking-wide uppercase transition-colors cursor-pointer"
+                className="w-full h-11 rounded-xl bg-[#C86D51] hover:bg-[#A95339] text-white text-xs font-semibold tracking-wide uppercase transition-colors cursor-pointer"
               >
                 Cadastrar Todos os Convidados
               </button>
@@ -3290,20 +3290,20 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
       {/* ===================== MODAL: IMPORTAR CSV ===================== */}
       {isCsvImportModalOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-xs">
-          <div className="relative w-full max-w-xl bg-[#F7F9F4] border border-[#DDE7D5] rounded-3xl p-6 sm:p-8 shadow-2xl max-h-[90vh] overflow-y-auto">
+          <div className="relative w-full max-w-xl bg-[#FAF8F5] border border-[#EADBCE] rounded-3xl p-6 sm:p-8 shadow-2xl max-h-[90vh] overflow-y-auto">
             <button
               onClick={() => {
                 setIsCsvImportModalOpen(false);
                 setCsvParsedGuests([]);
                 setCsvFileName('');
               }}
-              className="absolute top-5 right-5 h-8 w-8 rounded-full bg-[#EEF2EA] text-[#68625B] hover:text-[#2D2A26] flex items-center justify-center cursor-pointer"
+              className="absolute top-5 right-5 h-8 w-8 rounded-full bg-[#F4EFEB] text-[#68625B] hover:text-[#2D2A26] flex items-center justify-center cursor-pointer"
             >
               <X className="w-4 h-4" />
             </button>
 
             <div className="mb-5">
-              <div className="w-10 h-10 rounded-xl bg-[#E7EEF6] text-[#315B8A] flex items-center justify-center mb-3">
+              <div className="w-10 h-10 rounded-xl bg-[#F0E6DE] text-[#C86D51] flex items-center justify-center mb-3">
                 <FileSpreadsheet className="w-5 h-5" />
               </div>
               <h3 className="font-serif text-xl sm:text-2xl font-medium text-[#2D2A26]">
@@ -3315,7 +3315,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
             </div>
 
             {/* Template download hint */}
-            <div className="mb-5 p-3.5 rounded-2xl bg-[#FFFFFF] border border-[#DDE7D5] flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs">
+            <div className="mb-5 p-3.5 rounded-2xl bg-[#FFFFFF] border border-[#EADBCE] flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs">
               <div className="text-[#68625B]">
                 <strong className="text-[#2D2A26] block">Ainda não tem a planilha no formato certo?</strong>
                 Baixe nosso modelo com as colunas certinhas (Nome, WhatsApp, Limite Acompanhantes).
@@ -3323,7 +3323,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
               <button
                 type="button"
                 onClick={downloadSampleGuestsCsv}
-                className="h-8 px-3 rounded-lg border border-[#315B8A] text-[#315B8A] hover:bg-[#E7EEF6] font-semibold text-xs whitespace-nowrap cursor-pointer transition-colors"
+                className="h-8 px-3 rounded-lg border border-[#C86D51] text-[#C86D51] hover:bg-[#FBF0EB] font-semibold text-xs whitespace-nowrap cursor-pointer transition-colors"
               >
                 Baixar Modelo CSV
               </button>
@@ -3334,8 +3334,8 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
               <label className="block text-xs font-semibold uppercase tracking-wider text-[#68625B] mb-1.5">
                 Selecione o arquivo .CSV do seu computador
               </label>
-              <label className="flex flex-col items-center justify-center w-full h-32 px-4 border-2 border-dashed border-[#DDE7D5] rounded-2xl cursor-pointer bg-white hover:bg-[#F7F9F4] transition-colors">
-                <Upload className="w-6 h-6 text-[#315B8A] mb-2" />
+              <label className="flex flex-col items-center justify-center w-full h-32 px-4 border-2 border-dashed border-[#EADBCE] rounded-2xl cursor-pointer bg-white hover:bg-[#FAF8F5] transition-colors">
+                <Upload className="w-6 h-6 text-[#C86D51] mb-2" />
                 <span className="text-xs font-medium text-[#2D2A26]">
                   {csvFileName ? `Arquivo: ${csvFileName}` : 'Clique para escolher o arquivo CSV ou arraste aqui'}
                 </span>
@@ -3363,7 +3363,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                   </span>
                 </div>
 
-                <div className="max-h-48 overflow-y-auto rounded-xl border border-[#DDE7D5] bg-white text-xs divide-y divide-[#E7EEF6]">
+                <div className="max-h-48 overflow-y-auto rounded-xl border border-[#EADBCE] bg-white text-xs divide-y divide-[#F0E6DE]">
                   {csvParsedGuests.slice(0, 15).map((g, idx) => (
                     <div key={idx} className="p-2.5 flex items-center justify-between gap-2">
                       <div>
@@ -3387,14 +3387,14 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                     </div>
                   ))}
                   {csvParsedGuests.length > 15 && (
-                    <div className="p-2 text-center text-[11px] text-[#7D756C] bg-[#F7F9F4]">
+                    <div className="p-2 text-center text-[11px] text-[#7D756C] bg-[#FAF8F5]">
                       E mais {csvParsedGuests.length - 15} convidados...
                     </div>
                   )}
                 </div>
 
                 {/* Import Mode */}
-                <div className="p-3.5 rounded-2xl bg-white border border-[#DDE7D5] space-y-2 text-xs">
+                <div className="p-3.5 rounded-2xl bg-white border border-[#EADBCE] space-y-2 text-xs">
                   <span className="font-semibold text-[#2D2A26] block">O que fazer com os convidados atuais?</span>
                   <div className="space-y-1.5">
                     <label className="flex items-center gap-2 cursor-pointer">
@@ -3403,7 +3403,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                         name="csvMode"
                         checked={csvImportMode === 'append'}
                         onChange={() => setCsvImportMode('append')}
-                        className="text-[#315B8A]"
+                        className="text-[#C86D51]"
                       />
                       <span>Adicionar à lista existente (mantém os convidados já cadastrados)</span>
                     </label>
@@ -3413,7 +3413,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                         name="csvMode"
                         checked={csvImportMode === 'replace'}
                         onChange={() => setCsvImportMode('replace')}
-                        className="text-[#315B8A]"
+                        className="text-[#C86D51]"
                       />
                       <span className="text-red-700">Substituir lista atual por esta nova lista</span>
                     </label>
@@ -3425,7 +3425,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                   type="button"
                   disabled={csvImporting}
                   onClick={handleConfirmCsvImport}
-                  className="w-full h-11 rounded-xl bg-[#315B8A] hover:bg-[#244568] disabled:opacity-50 text-white text-xs font-semibold tracking-wide uppercase transition-colors cursor-pointer shadow-xs"
+                  className="w-full h-11 rounded-xl bg-[#C86D51] hover:bg-[#A95339] disabled:opacity-50 text-white text-xs font-semibold tracking-wide uppercase transition-colors cursor-pointer shadow-xs"
                 >
                   {csvImporting
                     ? 'Importando convidados...'
@@ -3440,7 +3440,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
       {/* ===================== MODAL: IMPORTAR PRESENTES CSV ===================== */}
       {isGiftCsvImportModalOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-xs">
-          <div className="relative w-full max-w-2xl bg-[#F7F9F4] border border-[#DDE7D5] rounded-3xl p-6 sm:p-8 shadow-2xl max-h-[90vh] overflow-y-auto">
+          <div className="relative w-full max-w-2xl bg-[#FAF8F5] border border-[#EADBCE] rounded-3xl p-6 sm:p-8 shadow-2xl max-h-[90vh] overflow-y-auto">
             <button
               onClick={() => {
                 setIsGiftCsvImportModalOpen(false);
@@ -3448,13 +3448,13 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                 setGiftCsvFileName('');
                 setGiftCsvErrors([]);
               }}
-              className="absolute top-5 right-5 h-8 w-8 rounded-full bg-[#EEF2EA] text-[#68625B] hover:text-[#2D2A26] flex items-center justify-center cursor-pointer transition-colors"
+              className="absolute top-5 right-5 h-8 w-8 rounded-full bg-[#F4EFEB] text-[#68625B] hover:text-[#2D2A26] flex items-center justify-center cursor-pointer transition-colors"
             >
               <X className="w-4 h-4" />
             </button>
 
             <div className="mb-5">
-              <div className="w-10 h-10 rounded-xl bg-[#E7EEF6] text-[#315B8A] flex items-center justify-center mb-3">
+              <div className="w-10 h-10 rounded-xl bg-[#F0E6DE] text-[#C86D51] flex items-center justify-center mb-3">
                 <FileSpreadsheet className="w-5 h-5" />
               </div>
               <h3 className="font-serif text-xl sm:text-2xl font-medium text-[#2D2A26]">
@@ -3466,7 +3466,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
             </div>
 
             {/* Template download hint */}
-            <div className="mb-5 p-3.5 rounded-2xl bg-[#FFFFFF] border border-[#DDE7D5] flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs">
+            <div className="mb-5 p-3.5 rounded-2xl bg-[#FFFFFF] border border-[#EADBCE] flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs">
               <div className="text-[#68625B]">
                 <strong className="text-[#2D2A26] block">Ainda não tem a planilha no formato certo?</strong>
                 Baixe nosso modelo com as colunas certinhas (Nome, Descrição, Categoria, Tipo, Preço, Quantidade, etc.).
@@ -3474,7 +3474,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
               <button
                 type="button"
                 onClick={downloadSampleGiftsCsv}
-                className="h-8 px-3 rounded-lg border border-[#315B8A] text-[#315B8A] hover:bg-[#E7EEF6] font-semibold text-xs whitespace-nowrap cursor-pointer transition-colors"
+                className="h-8 px-3 rounded-lg border border-[#C86D51] text-[#C86D51] hover:bg-[#FBF0EB] font-semibold text-xs whitespace-nowrap cursor-pointer transition-colors"
               >
                 Baixar Modelo CSV
               </button>
@@ -3485,8 +3485,8 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
               <label className="block text-xs font-semibold uppercase tracking-wider text-[#68625B] mb-1.5">
                 Selecione o arquivo .CSV do seu computador
               </label>
-              <label className="flex flex-col items-center justify-center w-full h-32 px-4 border-2 border-dashed border-[#DDE7D5] rounded-2xl cursor-pointer bg-white hover:bg-[#F7F9F4] transition-colors">
-                <Upload className="w-6 h-6 text-[#315B8A] mb-2" />
+              <label className="flex flex-col items-center justify-center w-full h-32 px-4 border-2 border-dashed border-[#EADBCE] rounded-2xl cursor-pointer bg-white hover:bg-[#FAF8F5] transition-colors">
+                <Upload className="w-6 h-6 text-[#C86D51] mb-2" />
                 <span className="text-xs font-medium text-[#2D2A26] text-center">
                   {giftCsvFileName ? `Arquivo selecionado: ${giftCsvFileName}` : 'Clique para escolher o arquivo CSV ou arraste aqui'}
                 </span>
@@ -3529,8 +3529,8 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                   </span>
                 </div>
 
-                <div className="max-h-56 overflow-y-auto rounded-xl border border-[#DDE7D5] bg-white text-xs divide-y divide-[#E7EEF6]">
-                  <div className="grid grid-cols-12 gap-2 p-2.5 bg-[#F7F9F4] text-[10px] font-semibold text-[#7D756C] uppercase tracking-wider sticky top-0 border-b border-[#DDE7D5]">
+                <div className="max-h-56 overflow-y-auto rounded-xl border border-[#EADBCE] bg-white text-xs divide-y divide-[#F0E6DE]">
+                  <div className="grid grid-cols-12 gap-2 p-2.5 bg-[#FAF8F5] text-[10px] font-semibold text-[#7D756C] uppercase tracking-wider sticky top-0 border-b border-[#EADBCE]">
                     <div className="col-span-1 text-center">Foto</div>
                     <div className="col-span-4">Nome</div>
                     <div className="col-span-2">Categoria</div>
@@ -3545,10 +3545,10 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                           <img
                             src={g.imageUrl}
                             alt=""
-                            className="h-8 w-8 rounded-md object-cover border border-[#DDE7D5]"
+                            className="h-8 w-8 rounded-md object-cover border border-[#EADBCE]"
                           />
                         ) : (
-                          <span className="text-[9px] text-[#244568]">Sem foto</span>
+                          <span className="text-[9px] text-[#A95339]">Sem foto</span>
                         )}
                       </div>
                       <div className="col-span-4 truncate" title={g.name}>
@@ -3560,7 +3560,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                         )}
                       </div>
                       <div className="col-span-2">
-                        <span className="capitalize px-1.5 py-0.5 rounded text-[10px] bg-[#F7F9F4] text-[#68625B] border border-[#DDE7D5]">
+                        <span className="capitalize px-1.5 py-0.5 rounded text-[10px] bg-[#FAF8F5] text-[#68625B] border border-[#EADBCE]">
                           {g.category}
                         </span>
                       </div>
@@ -3582,20 +3582,20 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                     </div>
                   ))}
                   {giftCsvParsedGifts.length > 10 && (
-                    <div className="p-2.5 text-center text-[11px] text-[#7D756C] bg-[#F7F9F4] font-medium">
+                    <div className="p-2.5 text-center text-[11px] text-[#7D756C] bg-[#FAF8F5] font-medium">
                       + {giftCsvParsedGifts.length - 10} outros presentes...
                     </div>
                   )}
                 </div>
 
                 {/* Skip Existing Option */}
-                <div className="p-3.5 rounded-2xl bg-white border border-[#DDE7D5] text-xs">
+                <div className="p-3.5 rounded-2xl bg-white border border-[#EADBCE] text-xs">
                   <label className="flex items-center gap-2.5 cursor-pointer text-[#2D2A26] select-none">
                     <input
                       type="checkbox"
                       checked={giftCsvSkipExisting}
                       onChange={(e) => setGiftCsvSkipExisting(e.target.checked)}
-                      className="w-4 h-4 rounded text-[#315B8A] accent-[#315B8A] cursor-pointer"
+                      className="w-4 h-4 rounded text-[#C86D51] accent-[#C86D51] cursor-pointer"
                     />
                     <span>
                       <strong className="block">Pular presentes que já existem (mesmo nome)</strong>
@@ -3616,7 +3616,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                       setGiftCsvFileName('');
                       setGiftCsvErrors([]);
                     }}
-                    className="h-11 px-5 rounded-xl border border-[#DDE7D5] hover:bg-[#F7F9F4] text-xs font-semibold text-[#68625B] hover:text-[#2D2A26] transition-colors cursor-pointer"
+                    className="h-11 px-5 rounded-xl border border-[#EADBCE] hover:bg-[#FAF8F5] text-xs font-semibold text-[#68625B] hover:text-[#2D2A26] transition-colors cursor-pointer"
                   >
                     Cancelar
                   </button>
@@ -3625,7 +3625,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                     type="button"
                     disabled={giftCsvImporting || giftCsvParsedGifts.length === 0}
                     onClick={handleConfirmGiftCsvImport}
-                    className="h-11 px-6 rounded-xl bg-[#315B8A] hover:bg-[#244568] disabled:opacity-50 text-white text-xs font-semibold tracking-wide uppercase transition-colors cursor-pointer shadow-xs flex items-center justify-center gap-2"
+                    className="h-11 px-6 rounded-xl bg-[#C86D51] hover:bg-[#A95339] disabled:opacity-50 text-white text-xs font-semibold tracking-wide uppercase transition-colors cursor-pointer shadow-xs flex items-center justify-center gap-2"
                   >
                     {giftCsvImporting ? (
                       <>
@@ -3651,7 +3651,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                     setGiftCsvFileName('');
                     setGiftCsvErrors([]);
                   }}
-                  className="h-10 px-4 rounded-xl border border-[#DDE7D5] hover:bg-[#F7F9F4] text-xs font-semibold text-[#68625B] cursor-pointer"
+                  className="h-10 px-4 rounded-xl border border-[#EADBCE] hover:bg-[#FAF8F5] text-xs font-semibold text-[#68625B] cursor-pointer"
                 >
                   Fechar
                 </button>
@@ -3776,10 +3776,10 @@ const GiftFormModal: React.FC<GiftFormModalProps> = ({ gift, onClose, onSaved })
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-xs overflow-y-auto">
-      <div className="relative w-full max-w-xl bg-[#F7F9F4] border border-[#DDE7D5] rounded-3xl p-6 sm:p-8 shadow-2xl my-8">
+      <div className="relative w-full max-w-xl bg-[#FAF8F5] border border-[#EADBCE] rounded-3xl p-6 sm:p-8 shadow-2xl my-8">
         <button
           onClick={onClose}
-          className="absolute top-5 right-5 h-9 w-9 rounded-full bg-[#EEF2EA] text-[#68625B] hover:text-[#2D2A26] flex items-center justify-center cursor-pointer"
+          className="absolute top-5 right-5 h-9 w-9 rounded-full bg-[#F4EFEB] text-[#68625B] hover:text-[#2D2A26] flex items-center justify-center cursor-pointer"
         >
           <X className="w-5 h-5" />
         </button>
@@ -3802,7 +3802,7 @@ const GiftFormModal: React.FC<GiftFormModalProps> = ({ gift, onClose, onSaved })
               value={name}
               onChange={(e) => setName(e.target.value)}
               placeholder="Ex: Uma ajudinha para a 1ª parcela da geladeira 🥹"
-              className="w-full h-10 px-3 rounded-xl border border-[#DDE7D5] bg-white text-xs text-[#2D2A26] outline-none"
+              className="w-full h-10 px-3 rounded-xl border border-[#EADBCE] bg-white text-xs text-[#2D2A26] outline-none"
             />
           </div>
 
@@ -3821,7 +3821,7 @@ const GiftFormModal: React.FC<GiftFormModalProps> = ({ gift, onClose, onSaved })
               value={description}
               onChange={(e) => setDescription(e.target.value)}
               placeholder="Ex: Para garantir que as visitas não passem calor!"
-              className="w-full p-3 rounded-xl border border-[#DDE7D5] bg-white text-xs text-[#2D2A26] outline-none resize-none"
+              className="w-full p-3 rounded-xl border border-[#EADBCE] bg-white text-xs text-[#2D2A26] outline-none resize-none"
             />
           </div>
 
@@ -3833,7 +3833,7 @@ const GiftFormModal: React.FC<GiftFormModalProps> = ({ gift, onClose, onSaved })
               <select
                 value={category}
                 onChange={(e) => setCategory(e.target.value as GiftCategory)}
-                className="w-full h-10 px-3 rounded-xl border border-[#DDE7D5] bg-white text-xs text-[#2D2A26] outline-none"
+                className="w-full h-10 px-3 rounded-xl border border-[#EADBCE] bg-white text-xs text-[#2D2A26] outline-none"
               >
                 <option value="cozinha">Cozinha</option>
                 <option value="sala">Sala</option>
@@ -3852,7 +3852,7 @@ const GiftFormModal: React.FC<GiftFormModalProps> = ({ gift, onClose, onSaved })
               <select
                 value={type}
                 onChange={(e) => setType(e.target.value as GiftType)}
-                className="w-full h-10 px-3 rounded-xl border border-[#DDE7D5] bg-white text-xs text-[#2D2A26] outline-none"
+                className="w-full h-10 px-3 rounded-xl border border-[#EADBCE] bg-white text-xs text-[#2D2A26] outline-none"
               >
                 <option value="shares">Cotas (Várias pessoas)</option>
                 <option value="product">Produto Físico</option>
@@ -3869,7 +3869,7 @@ const GiftFormModal: React.FC<GiftFormModalProps> = ({ gift, onClose, onSaved })
               <select
                 value={status}
                 onChange={(e) => setStatus(e.target.value as GiftStatus)}
-                className="w-full h-10 px-3 rounded-xl border border-[#DDE7D5] bg-white text-xs text-[#2D2A26] outline-none"
+                className="w-full h-10 px-3 rounded-xl border border-[#EADBCE] bg-white text-xs text-[#2D2A26] outline-none"
               >
                 <option value="available">Disponível</option>
                 <option value="unavailable">Indisponível</option>
@@ -3890,7 +3890,7 @@ const GiftFormModal: React.FC<GiftFormModalProps> = ({ gift, onClose, onSaved })
                 required
                 value={price}
                 onChange={(e) => setPrice(Number(e.target.value))}
-                className="w-full h-10 px-3 rounded-xl border border-[#DDE7D5] bg-white text-xs text-[#2D2A26] outline-none"
+                className="w-full h-10 px-3 rounded-xl border border-[#EADBCE] bg-white text-xs text-[#2D2A26] outline-none"
               />
             </div>
 
@@ -3904,7 +3904,7 @@ const GiftFormModal: React.FC<GiftFormModalProps> = ({ gift, onClose, onSaved })
                 required
                 value={totalQuantity}
                 onChange={(e) => setTotalQuantity(Number(e.target.value))}
-                className="w-full h-10 px-3 rounded-xl border border-[#DDE7D5] bg-white text-xs text-[#2D2A26] outline-none"
+                className="w-full h-10 px-3 rounded-xl border border-[#EADBCE] bg-white text-xs text-[#2D2A26] outline-none"
               />
             </div>
           </div>
@@ -3920,10 +3920,10 @@ const GiftFormModal: React.FC<GiftFormModalProps> = ({ gift, onClose, onSaved })
                 value={imageUrl}
                 onChange={(e) => setImageUrl(e.target.value)}
                 placeholder="URL da imagem (ou envie do celular abaixo)"
-                className="flex-1 h-10 px-3 rounded-xl border border-[#DDE7D5] bg-white text-xs text-[#2D2A26] outline-none"
+                className="flex-1 h-10 px-3 rounded-xl border border-[#EADBCE] bg-white text-xs text-[#2D2A26] outline-none"
               />
               <label
-                className={`h-10 px-3 rounded-xl border border-[#DDE7D5] bg-[#EEF2EA] hover:bg-[#DDE7D5] text-xs font-medium text-[#2D2A26] flex items-center gap-1.5 cursor-pointer ${
+                className={`h-10 px-3 rounded-xl border border-[#EADBCE] bg-[#F4EFEB] hover:bg-[#EADBCE] text-xs font-medium text-[#2D2A26] flex items-center gap-1.5 cursor-pointer ${
                   imageUploading ? 'opacity-50 pointer-events-none' : ''
                 }`}
               >
@@ -3939,7 +3939,7 @@ const GiftFormModal: React.FC<GiftFormModalProps> = ({ gift, onClose, onSaved })
               </label>
             </div>
             {imageUrl && (
-              <div className="mt-2 w-16 h-16 rounded-xl overflow-hidden border border-[#DDE7D5]">
+              <div className="mt-2 w-16 h-16 rounded-xl overflow-hidden border border-[#EADBCE]">
                 <img src={imageUrl} alt="Prévia" className="w-full h-full object-cover" />
               </div>
             )}
@@ -3955,7 +3955,7 @@ const GiftFormModal: React.FC<GiftFormModalProps> = ({ gift, onClose, onSaved })
               value={memeUrl}
               onChange={(e) => setMemeUrl(e.target.value)}
               placeholder="Link direto do GIF/MP4 (ex.: https://media.giphy.com/media/.../giphy.gif)"
-              className="w-full h-10 px-3 rounded-xl border border-[#DDE7D5] bg-white text-xs text-[#2D2A26] outline-none"
+              className="w-full h-10 px-3 rounded-xl border border-[#EADBCE] bg-white text-xs text-[#2D2A26] outline-none"
             />
             <p className="text-[11px] text-[#7D756C] mt-1">
               Cole o link direto da mídia (.gif, .mp4, .webp). Links de página do Tenor/Instagram não funcionam.
@@ -3964,7 +3964,7 @@ const GiftFormModal: React.FC<GiftFormModalProps> = ({ gift, onClose, onSaved })
             {memeUrl.trim() && (
               <div className="mt-2.5 flex items-center gap-3">
                 {memeKind === 'video' ? (
-                  <div className="w-16 h-16 rounded-xl overflow-hidden border border-[#DDE7D5] bg-black">
+                  <div className="w-16 h-16 rounded-xl overflow-hidden border border-[#EADBCE] bg-black">
                     <video
                       src={normalizeMemeUrl(memeUrl)}
                       autoPlay
@@ -3975,7 +3975,7 @@ const GiftFormModal: React.FC<GiftFormModalProps> = ({ gift, onClose, onSaved })
                     />
                   </div>
                 ) : memeKind === 'image' ? (
-                  <div className="w-16 h-16 rounded-xl overflow-hidden border border-[#DDE7D5] bg-[#E9EFE4]">
+                  <div className="w-16 h-16 rounded-xl overflow-hidden border border-[#EADBCE] bg-[#EFE8DF]">
                     <img
                       src={normalizeMemeUrl(memeUrl)}
                       alt="Prévia do meme"
@@ -4003,7 +4003,7 @@ const GiftFormModal: React.FC<GiftFormModalProps> = ({ gift, onClose, onSaved })
                 value={purchaseUrl}
                 onChange={(e) => setPurchaseUrl(e.target.value)}
                 placeholder="https://... (ou link de loja)"
-                className="w-full h-10 px-3 rounded-xl border border-[#DDE7D5] bg-white text-xs text-[#2D2A26] outline-none"
+                className="w-full h-10 px-3 rounded-xl border border-[#EADBCE] bg-white text-xs text-[#2D2A26] outline-none"
               />
             </div>
 
@@ -4016,7 +4016,7 @@ const GiftFormModal: React.FC<GiftFormModalProps> = ({ gift, onClose, onSaved })
                 value={pixKey}
                 onChange={(e) => setPixKey(e.target.value)}
                 placeholder="Deixe em branco para usar a chave padrão"
-                className="w-full h-10 px-3 rounded-xl border border-[#DDE7D5] bg-white text-xs text-[#2D2A26] outline-none"
+                className="w-full h-10 px-3 rounded-xl border border-[#EADBCE] bg-white text-xs text-[#2D2A26] outline-none"
               />
             </div>
           </div>
@@ -4025,7 +4025,7 @@ const GiftFormModal: React.FC<GiftFormModalProps> = ({ gift, onClose, onSaved })
             <button
               type="submit"
               disabled={saving || imageUploading}
-              className="w-full h-11 rounded-xl bg-[#315B8A] hover:bg-[#244568] disabled:opacity-50 text-white text-xs font-semibold tracking-wide uppercase transition-colors cursor-pointer"
+              className="w-full h-11 rounded-xl bg-[#C86D51] hover:bg-[#A95339] disabled:opacity-50 text-white text-xs font-semibold tracking-wide uppercase transition-colors cursor-pointer"
             >
               {imageUploading ? 'Enviando imagem...' : saving ? 'Salvando...' : 'Salvar Presente'}
             </button>

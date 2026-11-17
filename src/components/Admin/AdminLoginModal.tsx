@@ -69,18 +69,18 @@ export const AdminLoginModal: React.FC<AdminLoginModalProps> = ({
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-xs">
-      <div className="relative w-full max-w-md bg-[#F7F9F4] border border-[#DDE7D5] rounded-3xl p-6 sm:p-8 shadow-2xl">
+      <div className="relative w-full max-w-md bg-[#FAF8F5] border border-[#EADBCE] rounded-3xl p-6 sm:p-8 shadow-2xl">
         <button
           type="button"
           aria-label="Fechar"
           onClick={onClose}
-          className="absolute top-5 right-5 h-9 w-9 rounded-full bg-[#EEF2EA] text-[#68625B] hover:text-[#2D2A26] flex items-center justify-center transition-colors cursor-pointer"
+          className="absolute top-5 right-5 h-9 w-9 rounded-full bg-[#F4EFEB] text-[#68625B] hover:text-[#2D2A26] flex items-center justify-center transition-colors cursor-pointer"
         >
           <X className="w-5 h-5" />
         </button>
 
         <div className="text-center mb-6">
-          <div className="w-12 h-12 rounded-2xl bg-[#E7EEF6] text-[#315B8A] flex items-center justify-center mx-auto mb-3">
+          <div className="w-12 h-12 rounded-2xl bg-[#F0E6DE] text-[#C86D51] flex items-center justify-center mx-auto mb-3">
             <ShieldCheck className="w-6 h-6" />
           </div>
           <h3 className="font-serif text-2xl font-medium text-[#2D2A26]">
@@ -104,7 +104,7 @@ export const AdminLoginModal: React.FC<AdminLoginModalProps> = ({
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="seu@email.com"
-                className="w-full h-11 pl-10 pr-4 rounded-xl border border-[#DDE7D5] bg-white text-sm text-[#2D2A26] focus:border-[#315B8A] focus:ring-2 focus:ring-[#315B8A]/15 outline-none transition-all"
+                className="w-full h-11 pl-10 pr-4 rounded-xl border border-[#EADBCE] bg-white text-sm text-[#2D2A26] focus:border-[#C86D51] focus:ring-2 focus:ring-[#C86D51]/15 outline-none transition-all"
               />
             </div>
           </div>
@@ -120,7 +120,7 @@ export const AdminLoginModal: React.FC<AdminLoginModalProps> = ({
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 placeholder="Digite sua senha"
-                className="w-full h-11 pl-10 pr-4 rounded-xl border border-[#DDE7D5] bg-white text-sm text-[#2D2A26] focus:border-[#315B8A] focus:ring-2 focus:ring-[#315B8A]/15 outline-none transition-all"
+                className="w-full h-11 pl-10 pr-4 rounded-xl border border-[#EADBCE] bg-white text-sm text-[#2D2A26] focus:border-[#C86D51] focus:ring-2 focus:ring-[#C86D51]/15 outline-none transition-all"
               />
             </div>
           </div>
@@ -135,14 +135,14 @@ export const AdminLoginModal: React.FC<AdminLoginModalProps> = ({
           <button
             type="submit"
             disabled={loading}
-            className="w-full h-11 rounded-xl bg-[#315B8A] hover:bg-[#244568] disabled:opacity-50 text-white text-xs font-semibold tracking-wide uppercase flex items-center justify-center gap-2 shadow-xs transition-colors cursor-pointer"
+            className="w-full h-11 rounded-xl bg-[#C86D51] hover:bg-[#A95339] disabled:opacity-50 text-white text-xs font-semibold tracking-wide uppercase flex items-center justify-center gap-2 shadow-xs transition-colors cursor-pointer"
           >
             {loading ? 'Entrando...' : 'Entrar no Painel'}
           </button>
         </form>
 
-        <div className="mt-5 pt-4 border-t border-[#DDE7D5] text-center text-xs text-[#68625B] flex items-center justify-center gap-2">
-          <Lock className="w-3.5 h-3.5 text-[#315B8A]" />
+        <div className="mt-5 pt-4 border-t border-[#EADBCE] text-center text-xs text-[#68625B] flex items-center justify-center gap-2">
+          <Lock className="w-3.5 h-3.5 text-[#C86D51]" />
           <span>Acesso protegido com autenticação do Firebase.</span>
         </div>
       </div>

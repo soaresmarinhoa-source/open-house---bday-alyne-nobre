@@ -563,7 +563,7 @@ export const WhatsAppTab: React.FC<WhatsAppTabProps> = ({
 
           <button
             onClick={handleCopyAllPhones}
-            className="h-9 px-3 rounded-xl border border-[#DDE7D5] bg-white hover:bg-[#F7F9F4] text-xs font-semibold text-[#68625B] hover:text-[#2D2A26] flex items-center gap-1.5 transition-colors cursor-pointer"
+            className="h-9 px-3 rounded-xl border border-[#EADBCE] bg-white hover:bg-[#FAF8F5] text-xs font-semibold text-[#68625B] hover:text-[#2D2A26] flex items-center gap-1.5 transition-colors cursor-pointer"
             title="Copiar lista de telefones válidos para bloco de notas"
           >
             <Copy className="w-3.5 h-3.5" />
@@ -581,14 +581,14 @@ export const WhatsAppTab: React.FC<WhatsAppTabProps> = ({
       )}
 
       {/* Progress & Stats Card */}
-      <div className="bg-white border border-[#DDE7D5] rounded-2xl p-4 sm:p-5 shadow-2xs">
+      <div className="bg-white border border-[#EADBCE] rounded-2xl p-4 sm:p-5 shadow-2xs">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-3">
           <div>
             <div className="flex items-center gap-2">
               <span className="text-[11px] font-semibold text-[#7D756C] uppercase tracking-wider block">
                 Progresso: {TEMPLATES_CONFIG[selectedTemplate].title}
               </span>
-              <span className="text-[10px] px-2 py-0.5 rounded-full bg-[#E7EEF6] text-[#315B8A] font-semibold border border-[#DDE7D5]">
+              <span className="text-[10px] px-2 py-0.5 rounded-full bg-[#FAF3F0] text-[#C86D51] font-semibold border border-[#EADBCE]">
                 Modelo Ativo
               </span>
             </div>
@@ -610,7 +610,7 @@ export const WhatsAppTab: React.FC<WhatsAppTabProps> = ({
               {sentCount > 0 && (
                 <button
                   onClick={handleClearCurrentTemplateHistory}
-                  className="text-[11px] font-semibold text-[#315B8A] hover:underline flex items-center gap-1 cursor-pointer"
+                  className="text-[11px] font-semibold text-[#C86D51] hover:underline flex items-center gap-1 cursor-pointer"
                   title={`Zerar marcações do modelo "${TEMPLATES_CONFIG[selectedTemplate].title}"`}
                 >
                   <RotateCcw className="w-3 h-3" />
@@ -631,7 +631,7 @@ export const WhatsAppTab: React.FC<WhatsAppTabProps> = ({
         </div>
 
         {/* Progress bar */}
-        <div className="w-full h-2.5 bg-[#EEF2EA] rounded-full overflow-hidden">
+        <div className="w-full h-2.5 bg-[#F4EFEB] rounded-full overflow-hidden">
           <div
             className="h-full bg-emerald-500 rounded-full transition-all duration-300"
             style={{
@@ -644,7 +644,7 @@ export const WhatsAppTab: React.FC<WhatsAppTabProps> = ({
       {/* Template & Editor Area */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
         {/* Left: Template Selector & Message Editor */}
-        <div className="lg:col-span-7 bg-white border border-[#DDE7D5] rounded-2xl p-5 shadow-2xs space-y-4">
+        <div className="lg:col-span-7 bg-white border border-[#EADBCE] rounded-2xl p-5 shadow-2xs space-y-4">
           <div>
             <label className="block text-[11px] font-semibold uppercase tracking-wider text-[#7D756C] mb-2">
               1. Escolha o Modelo da Mensagem
@@ -661,8 +661,8 @@ export const WhatsAppTab: React.FC<WhatsAppTabProps> = ({
                     onClick={() => handleSelectTemplate(tKey)}
                     className={`p-2.5 rounded-xl border text-left text-xs font-medium transition-colors cursor-pointer relative ${
                       isSelected
-                        ? 'border-[#315B8A] bg-[#E7EEF6] text-[#2D2A26] font-semibold ring-1 ring-[#315B8A]'
-                        : 'border-[#DDE7D5] bg-[#F7F9F4] text-[#68625B] hover:bg-[#EEF2EA] hover:text-[#2D2A26]'
+                        ? 'border-[#C86D51] bg-[#FAF3F0] text-[#2D2A26] font-semibold ring-1 ring-[#C86D51]'
+                        : 'border-[#EADBCE] bg-[#FAF8F5] text-[#68625B] hover:bg-[#F4EFEB] hover:text-[#2D2A26]'
                     }`}
                   >
                     <div className="flex items-center justify-between gap-1">
@@ -688,8 +688,8 @@ export const WhatsAppTab: React.FC<WhatsAppTabProps> = ({
                 <span
                   className={`px-2 py-0.5 rounded-full text-[10px] font-semibold border ${
                     isTemplateCustomized
-                      ? 'bg-[#EFF4E9] text-[#315B8A] border-[#DDE7D5]'
-                      : 'bg-[#EEF2EA] text-[#68625B] border-[#DDE7D5]'
+                      ? 'bg-[#FAF4ED] text-[#CF3B25] border-[#EADBCE]'
+                      : 'bg-[#F4EFEB] text-[#68625B] border-[#EADBCE]'
                   }`}
                 >
                   {isTemplateCustomized ? 'Personalizado' : 'Padrão'}
@@ -698,7 +698,7 @@ export const WhatsAppTab: React.FC<WhatsAppTabProps> = ({
               <button
                 type="button"
                 onClick={handleResetTemplate}
-                className="text-[10px] font-semibold text-[#315B8A] hover:underline cursor-pointer"
+                className="text-[10px] font-semibold text-[#C86D51] hover:underline cursor-pointer"
               >
                 Restaurar padrão
               </button>
@@ -709,7 +709,7 @@ export const WhatsAppTab: React.FC<WhatsAppTabProps> = ({
               rows={8}
               value={templateText}
               onChange={(e) => setTemplateText(e.target.value)}
-              className="w-full p-3.5 rounded-xl border border-[#DDE7D5] bg-[#F7F9F4] text-xs text-[#2D2A26] outline-none font-sans leading-relaxed resize-y focus:border-[#315B8A] focus:bg-white transition-colors"
+              className="w-full p-3.5 rounded-xl border border-[#EADBCE] bg-[#FAF8F5] text-xs text-[#2D2A26] outline-none font-sans leading-relaxed resize-y focus:border-[#C86D51] focus:bg-white transition-colors"
               placeholder="Digite o texto da mensagem..."
             />
 
@@ -719,12 +719,12 @@ export const WhatsAppTab: React.FC<WhatsAppTabProps> = ({
                 type="button"
                 onClick={handleSaveTemplate}
                 disabled={!isTemplateDirty || savingTemplate}
-                className="px-4 py-2 rounded-xl bg-[#315B8A] hover:bg-[#244568] disabled:bg-[#DDE7D5] disabled:text-[#A59E95] disabled:cursor-not-allowed text-white text-xs font-semibold cursor-pointer shadow-2xs transition-colors flex items-center gap-1.5"
+                className="px-4 py-2 rounded-xl bg-[#C86D51] hover:bg-[#B35D43] disabled:bg-[#EADBCE] disabled:text-[#A59E95] disabled:cursor-not-allowed text-white text-xs font-semibold cursor-pointer shadow-2xs transition-colors flex items-center gap-1.5"
               >
                 {savingTemplate ? 'Salvando...' : 'Salvar alterações'}
               </button>
               {isTemplateDirty && (
-                <span className="text-[11px] text-[#244568] font-medium">
+                <span className="text-[11px] text-[#A3432B] font-medium">
                   Alterações não salvas
                 </span>
               )}
@@ -755,7 +755,7 @@ export const WhatsAppTab: React.FC<WhatsAppTabProps> = ({
                     key={tag}
                     type="button"
                     onClick={() => insertTag(tag)}
-                    className="h-6 px-2 rounded-md bg-[#EEF2EA] hover:bg-[#DDE7D5] text-[10px] font-mono font-medium text-[#2D2A26] border border-[#DDE7D5] transition-colors cursor-pointer"
+                    className="h-6 px-2 rounded-md bg-[#F4EFEB] hover:bg-[#EADBCE] text-[10px] font-mono font-medium text-[#2D2A26] border border-[#EADBCE] transition-colors cursor-pointer"
                   >
                     +{label}
                   </button>
@@ -766,9 +766,9 @@ export const WhatsAppTab: React.FC<WhatsAppTabProps> = ({
         </div>
 
         {/* Right: Live WhatsApp Chat Bubble Preview */}
-        <div className="lg:col-span-5 bg-white border border-[#DDE7D5] rounded-2xl p-5 shadow-2xs flex flex-col justify-between">
+        <div className="lg:col-span-5 bg-white border border-[#EADBCE] rounded-2xl p-5 shadow-2xs flex flex-col justify-between">
           <div>
-            <div className="flex items-center justify-between pb-3 border-b border-[#DDE7D5]">
+            <div className="flex items-center justify-between pb-3 border-b border-[#EADBCE]">
               <div className="flex items-center gap-2">
                 <div className="w-7 h-7 rounded-full bg-emerald-600 text-white flex items-center justify-center font-bold text-xs">
                   A
@@ -788,13 +788,13 @@ export const WhatsAppTab: React.FC<WhatsAppTabProps> = ({
             </div>
 
             {/* Simulated Chat Window */}
-            <div className="mt-4 p-4 rounded-xl bg-[#E9EFE4] border border-[#DCE5D4] min-h-[220px] flex flex-col justify-end relative overflow-hidden">
+            <div className="mt-4 p-4 rounded-xl bg-[#EFEAE2] border border-[#DDD6CE] min-h-[220px] flex flex-col justify-end relative overflow-hidden">
               {/* Subtle WhatsApp wallpaper doodle effect */}
               <div
                 className="absolute inset-0 opacity-[0.04] pointer-events-none"
                 style={{
                   backgroundImage:
-                    'radial-gradient(#000 1px, transparent 1px), radial-gradient(#000 1px, #E9EFE4 1px)',
+                    'radial-gradient(#000 1px, transparent 1px), radial-gradient(#000 1px, #EFEAE2 1px)',
                   backgroundSize: '20px 20px',
                 }}
               />
@@ -810,8 +810,8 @@ export const WhatsAppTab: React.FC<WhatsAppTabProps> = ({
             </div>
           </div>
 
-          <div className="mt-4 pt-3 border-t border-[#DDE7D5] text-[11px] text-[#7D756C] flex items-center gap-1.5">
-            <Sparkles className="w-3.5 h-3.5 text-[#315B8A] shrink-0" />
+          <div className="mt-4 pt-3 border-t border-[#EADBCE] text-[11px] text-[#7D756C] flex items-center gap-1.5">
+            <Sparkles className="w-3.5 h-3.5 text-[#C86D51] shrink-0" />
             <span>
               Ao clicar no botão verde de cada convidado, o WhatsApp abre automaticamente com este texto preenchido.
             </span>
@@ -820,9 +820,9 @@ export const WhatsAppTab: React.FC<WhatsAppTabProps> = ({
       </div>
 
       {/* Guest List & Sending Conveyor Belt */}
-      <div className="bg-white border border-[#DDE7D5] rounded-2xl shadow-2xs overflow-hidden">
+      <div className="bg-white border border-[#EADBCE] rounded-2xl shadow-2xs overflow-hidden">
         {/* Controls and Filters Header */}
-        <div className="p-4 sm:p-5 border-b border-[#DDE7D5] bg-[#F7F9F4] space-y-3">
+        <div className="p-4 sm:p-5 border-b border-[#EADBCE] bg-[#FAF8F5] space-y-3">
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-3">
             <div className="relative flex-1 max-w-md">
               <Search className="w-4 h-4 text-[#7D756C] absolute left-3 top-1/2 -translate-y-1/2" />
@@ -831,7 +831,7 @@ export const WhatsAppTab: React.FC<WhatsAppTabProps> = ({
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 placeholder="Buscar convidado por nome ou telefone..."
-                className="w-full h-10 pl-9 pr-3 rounded-xl border border-[#DDE7D5] bg-white text-xs text-[#2D2A26] outline-none focus:border-[#315B8A]"
+                className="w-full h-10 pl-9 pr-3 rounded-xl border border-[#EADBCE] bg-white text-xs text-[#2D2A26] outline-none focus:border-[#C86D51]"
               />
             </div>
 
@@ -843,13 +843,13 @@ export const WhatsAppTab: React.FC<WhatsAppTabProps> = ({
           {/* Filter Pills */}
           <div className="flex flex-wrap items-center gap-2 pt-1 text-xs">
             {/* Status RSVP */}
-            <div className="flex items-center gap-1 bg-white p-1 rounded-xl border border-[#DDE7D5]">
+            <div className="flex items-center gap-1 bg-white p-1 rounded-xl border border-[#EADBCE]">
               <span className="text-[10px] font-semibold text-[#7D756C] px-2 uppercase">RSVP:</span>
               <button
                 onClick={() => setStatusFilter('all')}
                 className={`h-7 px-2.5 rounded-lg text-xs font-medium transition-colors cursor-pointer ${
                   statusFilter === 'all'
-                    ? 'bg-[#315B8A] text-white'
+                    ? 'bg-[#C86D51] text-white'
                     : 'text-[#68625B] hover:text-[#2D2A26]'
                 }`}
               >
@@ -859,7 +859,7 @@ export const WhatsAppTab: React.FC<WhatsAppTabProps> = ({
                 onClick={() => setStatusFilter('pending')}
                 className={`h-7 px-2.5 rounded-lg text-xs font-medium transition-colors cursor-pointer ${
                   statusFilter === 'pending'
-                    ? 'bg-[#315B8A] text-white'
+                    ? 'bg-[#C86D51] text-white'
                     : 'text-[#68625B] hover:text-[#2D2A26]'
                 }`}
               >
@@ -869,7 +869,7 @@ export const WhatsAppTab: React.FC<WhatsAppTabProps> = ({
                 onClick={() => setStatusFilter('confirmed')}
                 className={`h-7 px-2.5 rounded-lg text-xs font-medium transition-colors cursor-pointer ${
                   statusFilter === 'confirmed'
-                    ? 'bg-[#315B8A] text-white'
+                    ? 'bg-[#C86D51] text-white'
                     : 'text-[#68625B] hover:text-[#2D2A26]'
                 }`}
               >
@@ -879,7 +879,7 @@ export const WhatsAppTab: React.FC<WhatsAppTabProps> = ({
                 onClick={() => setStatusFilter('declined')}
                 className={`h-7 px-2.5 rounded-lg text-xs font-medium transition-colors cursor-pointer ${
                   statusFilter === 'declined'
-                    ? 'bg-[#315B8A] text-white'
+                    ? 'bg-[#C86D51] text-white'
                     : 'text-[#68625B] hover:text-[#2D2A26]'
                 }`}
               >
@@ -889,7 +889,7 @@ export const WhatsAppTab: React.FC<WhatsAppTabProps> = ({
                 onClick={() => setStatusFilter('with_gifts')}
                 className={`h-7 px-2.5 rounded-lg text-xs font-medium transition-colors cursor-pointer ${
                   statusFilter === 'with_gifts'
-                    ? 'bg-[#315B8A] text-white'
+                    ? 'bg-[#C86D51] text-white'
                     : 'text-[#68625B] hover:text-[#2D2A26]'
                 }`}
               >
@@ -898,13 +898,13 @@ export const WhatsAppTab: React.FC<WhatsAppTabProps> = ({
             </div>
 
             {/* Phone Filter */}
-            <div className="flex items-center gap-1 bg-white p-1 rounded-xl border border-[#DDE7D5]">
+            <div className="flex items-center gap-1 bg-white p-1 rounded-xl border border-[#EADBCE]">
               <span className="text-[10px] font-semibold text-[#7D756C] px-2 uppercase">Telefone:</span>
               <button
                 onClick={() => setPhoneFilter('all')}
                 className={`h-7 px-2.5 rounded-lg text-xs font-medium transition-colors cursor-pointer ${
                   phoneFilter === 'all'
-                    ? 'bg-[#315B8A] text-white'
+                    ? 'bg-[#C86D51] text-white'
                     : 'text-[#68625B] hover:text-[#2D2A26]'
                 }`}
               >
@@ -914,7 +914,7 @@ export const WhatsAppTab: React.FC<WhatsAppTabProps> = ({
                 onClick={() => setPhoneFilter('has_phone')}
                 className={`h-7 px-2.5 rounded-lg text-xs font-medium transition-colors cursor-pointer ${
                   phoneFilter === 'has_phone'
-                    ? 'bg-[#315B8A] text-white'
+                    ? 'bg-[#C86D51] text-white'
                     : 'text-[#68625B] hover:text-[#2D2A26]'
                 }`}
               >
@@ -924,7 +924,7 @@ export const WhatsAppTab: React.FC<WhatsAppTabProps> = ({
                 onClick={() => setPhoneFilter('no_phone')}
                 className={`h-7 px-2.5 rounded-lg text-xs font-medium transition-colors cursor-pointer ${
                   phoneFilter === 'no_phone'
-                    ? 'bg-[#315B8A] text-white'
+                    ? 'bg-[#C86D51] text-white'
                     : 'text-[#68625B] hover:text-[#2D2A26]'
                 }`}
               >
@@ -933,10 +933,10 @@ export const WhatsAppTab: React.FC<WhatsAppTabProps> = ({
             </div>
 
             {/* Sent Status */}
-            <div className="flex items-center gap-1 bg-white p-1 rounded-xl border border-[#DDE7D5]">
+            <div className="flex items-center gap-1 bg-white p-1 rounded-xl border border-[#EADBCE]">
               <span className="text-[10px] font-semibold text-[#7D756C] px-2 uppercase flex items-center gap-1">
                 <span>Envio</span>
-                <span className="text-[9px] font-mono font-medium text-[#315B8A] bg-[#E7EEF6] px-1.5 py-0.5 rounded border border-[#DDE7D5]">
+                <span className="text-[9px] font-mono font-medium text-[#C86D51] bg-[#FAF3F0] px-1.5 py-0.5 rounded border border-[#EADBCE]">
                   {TEMPLATES_CONFIG[selectedTemplate].shortLabel}
                 </span>
                 :
@@ -945,7 +945,7 @@ export const WhatsAppTab: React.FC<WhatsAppTabProps> = ({
                 onClick={() => setSendStatusFilter('all')}
                 className={`h-7 px-2.5 rounded-lg text-xs font-medium transition-colors cursor-pointer ${
                   sendStatusFilter === 'all'
-                    ? 'bg-[#315B8A] text-white'
+                    ? 'bg-[#C86D51] text-white'
                     : 'text-[#68625B] hover:text-[#2D2A26]'
                 }`}
               >
@@ -955,7 +955,7 @@ export const WhatsAppTab: React.FC<WhatsAppTabProps> = ({
                 onClick={() => setSendStatusFilter('not_sent')}
                 className={`h-7 px-2.5 rounded-lg text-xs font-medium transition-colors cursor-pointer ${
                   sendStatusFilter === 'not_sent'
-                    ? 'bg-[#315B8A] text-white'
+                    ? 'bg-[#C86D51] text-white'
                     : 'text-[#68625B] hover:text-[#2D2A26]'
                 }`}
               >
@@ -965,7 +965,7 @@ export const WhatsAppTab: React.FC<WhatsAppTabProps> = ({
                 onClick={() => setSendStatusFilter('sent')}
                 className={`h-7 px-2.5 rounded-lg text-xs font-medium transition-colors cursor-pointer ${
                   sendStatusFilter === 'sent'
-                    ? 'bg-[#315B8A] text-white'
+                    ? 'bg-[#C86D51] text-white'
                     : 'text-[#68625B] hover:text-[#2D2A26]'
                 }`}
               >
@@ -987,7 +987,7 @@ export const WhatsAppTab: React.FC<WhatsAppTabProps> = ({
             <>
               <table className="w-full text-left text-xs border-collapse">
                 <thead>
-                  <tr className="border-b border-[#DDE7D5] bg-[#F7F9F4] text-[11px] font-semibold uppercase tracking-wider text-[#7D756C]">
+                  <tr className="border-b border-[#EADBCE] bg-[#FAF8F5] text-[11px] font-semibold uppercase tracking-wider text-[#7D756C]">
                     <th className="py-3 px-3 text-center min-w-[210px]">Status dos Modelos</th>
                     <th className="py-3 px-4">Convidado</th>
                     <th className="py-3 px-4">WhatsApp</th>
@@ -996,7 +996,7 @@ export const WhatsAppTab: React.FC<WhatsAppTabProps> = ({
                     <th className="py-3 px-4 text-right">Ações de Envio</th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-[#DDE7D5]/60">
+                <tbody className="divide-y divide-[#EADBCE]/60">
                   {filteredGuests.map((g) => {
                     const hasValidPhone = isValidWhatsappNumber(g.whatsapp);
                     const isSentForCurrent = isGuestSentForTemplate(g.id, selectedTemplate);
@@ -1005,7 +1005,7 @@ export const WhatsAppTab: React.FC<WhatsAppTabProps> = ({
                     return (
                       <tr
                         key={g.id}
-                        className={`hover:bg-[#F7F9F4]/80 transition-colors ${
+                        className={`hover:bg-[#FAF8F5]/80 transition-colors ${
                           isSentForCurrent ? 'bg-emerald-50/20' : ''
                         }`}
                       >
@@ -1023,12 +1023,12 @@ export const WhatsAppTab: React.FC<WhatsAppTabProps> = ({
                                   onClick={() => toggleSentForTemplate(g.id, tKey)}
                                   className={`h-5 px-1.5 rounded-md text-[10px] font-medium flex items-center gap-0.5 transition-all cursor-pointer select-none ${
                                     isCurrent
-                                      ? 'ring-2 ring-[#315B8A] ring-offset-1 font-semibold'
+                                      ? 'ring-2 ring-[#C86D51] ring-offset-1 font-semibold'
                                       : ''
                                   } ${
                                     isSent
                                       ? 'bg-emerald-600 text-white shadow-2xs hover:bg-emerald-700'
-                                      : 'bg-[#EEF2EA] text-[#7D756C] hover:bg-[#DDE7D5] hover:text-[#2D2A26]'
+                                      : 'bg-[#F4EFEB] text-[#7D756C] hover:bg-[#EADBCE] hover:text-[#2D2A26]'
                                   }`}
                                   title={`${cfg.title}: ${
                                     isSent ? 'Já enviado (clique para desmarcar)' : 'Não enviado (clique para marcar)'
@@ -1067,7 +1067,7 @@ export const WhatsAppTab: React.FC<WhatsAppTabProps> = ({
                                   setEditingGuestPhone(g);
                                   setPhoneInputValue(g.whatsapp || '');
                                 }}
-                                className="text-[#A59E95] hover:text-[#315B8A] p-0.5 cursor-pointer"
+                                className="text-[#A59E95] hover:text-[#C86D51] p-0.5 cursor-pointer"
                                 title="Editar número"
                               >
                                 <Edit2 className="w-3 h-3" />
@@ -1084,7 +1084,7 @@ export const WhatsAppTab: React.FC<WhatsAppTabProps> = ({
                                   setEditingGuestPhone(g);
                                   setPhoneInputValue('');
                                 }}
-                                className="text-[11px] font-semibold text-[#315B8A] hover:underline cursor-pointer"
+                                className="text-[11px] font-semibold text-[#C86D51] hover:underline cursor-pointer"
                               >
                                 + Adicionar
                               </button>
@@ -1122,7 +1122,7 @@ export const WhatsAppTab: React.FC<WhatsAppTabProps> = ({
                                   title={`${r.giftName}${r.quantity > 1 ? ` (${r.quantity} cotas)` : ''}`}
                                 >
                                   <span className="font-medium text-[#2D2A26] flex items-center gap-1 truncate max-w-[170px]">
-                                    <GiftIcon className="w-3 h-3 text-[#315B8A] shrink-0" />
+                                    <GiftIcon className="w-3 h-3 text-[#C86D51] shrink-0" />
                                     {r.giftName}
                                   </span>
                                   {r.quantity > 1 && (
@@ -1149,7 +1149,7 @@ export const WhatsAppTab: React.FC<WhatsAppTabProps> = ({
                             <button
                               type="button"
                               onClick={() => handleCopyMessage(g)}
-                              className="h-8 px-2.5 rounded-lg border border-[#DDE7D5] bg-white hover:bg-[#F7F9F4] text-xs font-semibold text-[#68625B] hover:text-[#2D2A26] flex items-center gap-1 transition-colors cursor-pointer"
+                              className="h-8 px-2.5 rounded-lg border border-[#EADBCE] bg-white hover:bg-[#FAF8F5] text-xs font-semibold text-[#68625B] hover:text-[#2D2A26] flex items-center gap-1 transition-colors cursor-pointer"
                               title="Copiar texto da mensagem deste convidado"
                             >
                               <Copy className="w-3 h-3" />
@@ -1174,7 +1174,7 @@ export const WhatsAppTab: React.FC<WhatsAppTabProps> = ({
                               <button
                                 type="button"
                                 disabled
-                                className="h-8 px-3 rounded-lg text-xs font-semibold bg-[#EEF2EA] text-[#A59E95] border border-[#DCE5D4] cursor-not-allowed"
+                                className="h-8 px-3 rounded-lg text-xs font-semibold bg-[#F4EFEB] text-[#A59E95] border border-[#DDD6CE] cursor-not-allowed"
                                 title="Cadastre um telefone válido primeiro"
                               >
                                 Sem Número
@@ -1189,7 +1189,7 @@ export const WhatsAppTab: React.FC<WhatsAppTabProps> = ({
               </table>
 
               {/* Status Chips Legend & Helper */}
-              <div className="px-4 py-2.5 bg-[#F7F9F4] border-t border-[#DDE7D5] flex flex-wrap items-center justify-between gap-3 text-[11px] text-[#7D756C]">
+              <div className="px-4 py-2.5 bg-[#FAF8F5] border-t border-[#EADBCE] flex flex-wrap items-center justify-between gap-3 text-[11px] text-[#7D756C]">
                 <div className="flex items-center gap-3 flex-wrap">
                   <span className="font-semibold text-[#2D2A26]">Legenda dos chips de status:</span>
                   <span className="inline-flex items-center gap-1">
@@ -1199,13 +1199,13 @@ export const WhatsAppTab: React.FC<WhatsAppTabProps> = ({
                     <span>= Mensagem enviada</span>
                   </span>
                   <span className="inline-flex items-center gap-1">
-                    <span className="h-4 px-1 rounded bg-[#EEF2EA] text-[#7D756C] text-[9px] font-medium inline-flex items-center">
+                    <span className="h-4 px-1 rounded bg-[#F4EFEB] text-[#7D756C] text-[9px] font-medium inline-flex items-center">
                       Pendente
                     </span>
                     <span>= Não enviado</span>
                   </span>
                   <span className="inline-flex items-center gap-1">
-                    <span className="h-4 px-1 rounded bg-[#E7EEF6] text-[#2D2A26] ring-2 ring-[#315B8A] text-[9px] font-bold inline-flex items-center">
+                    <span className="h-4 px-1 rounded bg-[#FAF3F0] text-[#2D2A26] ring-2 ring-[#C86D51] text-[9px] font-bold inline-flex items-center">
                       Ativo
                     </span>
                     <span>= Modelo selecionado para envio</span>
@@ -1223,10 +1223,10 @@ export const WhatsAppTab: React.FC<WhatsAppTabProps> = ({
       {/* Modal: Quick Edit Phone Number */}
       {editingGuestPhone && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-xs">
-          <div className="relative w-full max-w-sm bg-[#F7F9F4] border border-[#DDE7D5] rounded-3xl p-6 shadow-2xl">
+          <div className="relative w-full max-w-sm bg-[#FAF8F5] border border-[#EADBCE] rounded-3xl p-6 shadow-2xl">
             <button
               onClick={() => setEditingGuestPhone(null)}
-              className="absolute top-5 right-5 h-8 w-8 rounded-full bg-[#EEF2EA] text-[#68625B] hover:text-[#2D2A26] flex items-center justify-center cursor-pointer"
+              className="absolute top-5 right-5 h-8 w-8 rounded-full bg-[#F4EFEB] text-[#68625B] hover:text-[#2D2A26] flex items-center justify-center cursor-pointer"
             >
               <X className="w-4 h-4" />
             </button>
@@ -1255,7 +1255,7 @@ export const WhatsAppTab: React.FC<WhatsAppTabProps> = ({
                   value={phoneInputValue}
                   onChange={(e) => setPhoneInputValue(e.target.value)}
                   placeholder="Ex: (11) 98765-4321"
-                  className="w-full h-11 px-3 rounded-xl border border-[#DDE7D5] bg-white text-xs text-[#2D2A26] outline-none font-mono"
+                  className="w-full h-11 px-3 rounded-xl border border-[#EADBCE] bg-white text-xs text-[#2D2A26] outline-none font-mono"
                 />
                 <span className="text-[10px] text-[#A59E95] mt-1 block">
                   Não utilize '00000000' ou sequências repetidas.
@@ -1266,7 +1266,7 @@ export const WhatsAppTab: React.FC<WhatsAppTabProps> = ({
                 <button
                   type="button"
                   onClick={() => setEditingGuestPhone(null)}
-                  className="flex-1 h-10 rounded-xl border border-[#DDE7D5] bg-white text-xs font-semibold text-[#68625B] hover:bg-[#F7F9F4] cursor-pointer"
+                  className="flex-1 h-10 rounded-xl border border-[#EADBCE] bg-white text-xs font-semibold text-[#68625B] hover:bg-[#FAF8F5] cursor-pointer"
                 >
                   Cancelar
                 </button>
