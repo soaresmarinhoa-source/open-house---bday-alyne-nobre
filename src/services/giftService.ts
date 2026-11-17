@@ -297,7 +297,7 @@ export async function reserveGiftWithTransaction(params: {
     throw new Error('A quantidade precisa ser de pelo menos 1.');
   }
   if (!guestName.trim()) {
-    throw new Error('Por favor, informe seu nome para a Alyne saber quem é!');
+    throw new Error('Por favor, informe seu nome para a Amanda saber quem é!');
   }
   if (!guestWhatsapp.trim()) {
     throw new Error('Por favor, informe seu WhatsApp para contato.');

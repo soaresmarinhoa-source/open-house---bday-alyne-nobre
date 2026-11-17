@@ -466,7 +466,7 @@ export async function createGuestRsvp(params: {
         throw new Error('Não foi possível enviar sua confirmação. Verifique sua conexão e tente novamente.');
       }
       throw new Error(
-        `Não foi possível salvar sua confirmação agora${code ? ` (${code})` : ''}. Tente novamente em instantes ou avise a Alyne pelo WhatsApp.`
+        `Não foi possível salvar sua confirmação agora${code ? ` (${code})` : ''}. Tente novamente em instantes ou avise a Amanda pelo WhatsApp.`
       );
     }
   }

@@ -312,7 +312,7 @@ export const WhatsAppTab: React.FC<WhatsAppTabProps> = ({
     if (typeof window !== 'undefined' && window.location.origin) {
       return window.location.origin;
     }
-    return 'https://open-house-bday-alyne-nobre.vercel.app';
+    return 'https://open-house-bday-amanda-marinho.vercel.app';
   }, []);
 
   // Formatted date string
@@ -345,7 +345,7 @@ export const WhatsAppTab: React.FC<WhatsAppTabProps> = ({
     msg = msg.replace(/\{nome\}/gi, firstName);
     msg = msg.replace(/\{nome_completo\}/gi, rawName);
     msg = msg.replace(/\{evento\}/gi, settings.eventName || 'Open House & Aniversário');
-    msg = msg.replace(/\{anfitriã\}|\{anfitria\}/gi, settings.hostName || 'Alyne');
+    msg = msg.replace(/\{anfitriã\}|\{anfitria\}/gi, settings.hostName || 'Amanda');
     msg = msg.replace(/\{data\}/gi, formattedEventDate);
     msg = msg.replace(/\{horario\}/gi, settings.eventTime || '17:00');
     msg = msg.replace(/\{local\}/gi, settings.locationName || 'Nosso Novo Lar');

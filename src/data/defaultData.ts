@@ -11,7 +11,7 @@ export const DEFAULT_SETTINGS: EventSettings = {
   eventDate: "2026-11-21",
   eventTime: "17:00",
   eventEndTime: "23:30",
-  locationName: "Novo Apê da Alyne",
+  locationName: "Novo Apê da Amanda",
   locationAddress: "Rua das Figueiras, 450 - Apto 82",
   locationCity: "São Paulo, SP",
   locationNotes: "Interfone 82. Vagas para visitantes na rua ao lado ou portaria para descer.",
@@ -284,7 +284,7 @@ export const INITIAL_GUESTS: Omit<Guest, 'id'>[] = [
     attendees: 0,
     companions: [],
     status: "declined",
-    notes: "Vou estar viajando a trabalho, mas mandei presentinho! Parabéns Alyne! ❤️",
+    notes: "Vou estar viajando a trabalho, mas mandei presentinho! Parabéns Amanda! ❤️",
   },
   {
     name: "Rafael Alcantara",
@@ -293,7 +293,7 @@ export const INITIAL_GUESTS: Omit<Guest, 'id'>[] = [
     attendees: 0,
     companions: [],
     status: "declined",
-    notes: "Vou estar viajando a trabalho, mas mandei presentinho! Parabéns Alyne! ❤️",
+    notes: "Vou estar viajando a trabalho, mas mandei presentinho! Parabéns Amanda! ❤️",
   }
 ];
 
@@ -325,7 +325,7 @@ export const INITIAL_RESERVATIONS: GiftReservation[] = [
     guestName: "Rodrigo Costa",
     guestWhatsapp: "11965432109",
     quantity: 1,
-    message: "Parabéns Alyne! Muito sucesso na casa nova!",
+    message: "Parabéns Amanda! Muito sucesso na casa nova!",
     createdAt: "2026-09-29T16:40:00.000Z",
   },
   {
@@ -345,7 +345,7 @@ export const INITIAL_RESERVATIONS: GiftReservation[] = [
     guestName: "Rafael Alcantara",
     guestWhatsapp: "11943210987",
     quantity: 1,
-    message: "Presentinho pro novo apê! Parabéns, Alyne! ❤️",
+    message: "Presentinho pro novo apê! Parabéns, Amanda! ❤️",
     createdAt: "2026-09-30T18:05:00.000Z",
   },
   {

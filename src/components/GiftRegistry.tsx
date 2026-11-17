@@ -145,7 +145,7 @@ export const GiftRegistry: React.FC<GiftRegistryProps> = ({ gifts, onSelectGift 
                   aria-label="Ordenar presentes por"
                   className="w-full sm:w-auto h-11 pl-9 pr-8 rounded-xl border border-[#D5E1CB] bg-[#F2F6EE] text-xs font-semibold text-[#1B2F4E] focus:bg-white focus:border-[#315B8A] outline-none cursor-pointer shadow-2xs"
                 >
-                  <option value="default">Destaques da Alyne ✨</option>
+                  <option value="default">Destaques da Amanda ✨</option>
                   <option value="price-asc">Menor Valor (R$)</option>
                   <option value="price-desc">Maior Valor (R$)</option>
                   <option value="name">Nome (A - Z)</option>

@@ -11,7 +11,7 @@ export const ShareBar: React.FC<ShareBarProps> = ({ settings }) => {
   const [copied, setCopied] = useState(false);
 
   const hostName = settings?.hostName || 'Amanda Marinho';
-  const hostFirstName = hostName.split(' ')[0] || 'Alyne';
+  const hostFirstName = hostName.split(' ')[0] || 'Amanda';
   const hostPhone = settings?.hostWhatsapp || settings?.shippingPhone || '11987654321';
 
   const shareText = "Quero comemorar meu aniversário e essa fase nova com você! 🏡❤️";

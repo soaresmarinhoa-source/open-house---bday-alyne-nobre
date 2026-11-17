@@ -310,7 +310,7 @@ export const GiftReserveModal: React.FC<GiftReserveModalProps> = ({
               Aeeee! Obrigada ❤️
             </h3>
             <p className="text-base text-[#4B5A72] leading-relaxed mb-6">
-              Seu carinho com o presente <strong>“{gift.name}”</strong> foi registrado com sucesso! A Alyne já vai ficar sabendo.
+              Seu carinho com o presente <strong>“{gift.name}”</strong> foi registrado com sucesso! A Amanda já vai ficar sabendo.
             </p>
 
             {(gift.type === 'pix' || gift.type === 'shares' || gift.pixKey) && (
@@ -645,7 +645,7 @@ export const GiftReserveModal: React.FC<GiftReserveModalProps> = ({
                     required
                     value={guestName}
                     onChange={(e) => setGuestName(e.target.value)}
-                    placeholder="Como você quer aparecer na lista da Alyne?"
+                    placeholder="Como você quer aparecer na lista da Amanda?"
                     className="w-full h-11 px-4 rounded-xl border border-[#D5E1CB] bg-white focus:border-[#315B8A] focus:ring-2 focus:ring-[#315B8A]/15 outline-none transition-all text-sm text-[#1B2F4E]"
                   />
                 </div>
@@ -702,7 +702,7 @@ export const GiftReserveModal: React.FC<GiftReserveModalProps> = ({
                     )}
                   </button>
                   <p className="text-[11px] text-[#5B6B82] text-center mt-2.5">
-                    Não cobramos nada no site! A reserva só ajuda a organizar a lista. O pagamento é feito diretamente pelo seu banco para o da Alyne, se você escolher uma opção via Pix.
+                    Não cobramos nada no site! A reserva só ajuda a organizar a lista. O pagamento é feito diretamente pelo seu banco para a Amanda, se você escolher uma opção via Pix.
                   </p>
                 </div>
               </form>

@@ -137,7 +137,7 @@ export const RsvpSection: React.FC<RsvpSectionProps> = ({ settings, guests }) =>
   const hostPhoneLink = useMemo(() => {
     const hostNumber = settings?.hostWhatsapp || settings?.shippingPhone || '(11) 98765-4321';
     const guestLabel = name.trim() || 'Convidado';
-    const message = `Oi Alyne! Sou ${guestLabel} (${whatsapp || 'meu telefone'}). Gostaria de saber se é possível levar acompanhante no seu evento!`;
+    const message = `Oi Amanda! Sou ${guestLabel} (${whatsapp || 'meu telefone'}). Gostaria de saber se é possível levar acompanhante no seu evento!`;
     return formatWhatsappUrl(hostNumber, message);
   }, [settings?.hostWhatsapp, settings?.shippingPhone, name, whatsapp]);
 
@@ -249,7 +249,7 @@ export const RsvpSection: React.FC<RsvpSectionProps> = ({ settings, guests }) =>
   const hostPhone = settings?.hostWhatsapp || settings?.pixKey?.replace(/\D/g, '') || '';
   const hostWhatsappLink = formatWhatsappUrl(
     hostPhone,
-    `Oi Alyne! Acabei de preencher a confirmação de presença no seu site do Open House! ${
+    `Oi Amanda! Acabei de preencher a confirmação de presença no seu site do Open House! ${
       submitted === 'confirmed' ? 'Com certeza estarei lá comemorando com você! 🎉' : 'Infelizmente não poderei ir, mas deixei meu carinho registrado! ❤️'
     }`
   );
@@ -489,7 +489,7 @@ export const RsvpSection: React.FC<RsvpSectionProps> = ({ settings, guests }) =>
                         {hostPhoneLink && (
                           <div className="mt-2.5 pt-2 border-t border-amber-200/70">
                             <p className="text-[11px] text-[#6F5B46] mb-1.5">
-                              Deseja levar algum acompanhante? Peça para a Alyne liberar na lista:
+                              Deseja levar algum acompanhante? Peça para a Amanda liberar na lista:
                             </p>
                             <a
                               href={hostPhoneLink}
@@ -498,7 +498,7 @@ export const RsvpSection: React.FC<RsvpSectionProps> = ({ settings, guests }) =>
                               className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-[#25D366] hover:bg-[#1EBE5D] text-white text-[11px] font-medium transition-colors shadow-xs"
                             >
                               <MessageCircle className="w-3.5 h-3.5" />
-                              <span>Falar com a Alyne no WhatsApp</span>
+                              <span>Falar com a Amanda no WhatsApp</span>
                             </a>
                           </div>
                         )}

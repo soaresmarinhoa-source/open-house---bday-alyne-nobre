@@ -1,4 +1,4 @@
-# Carga inicial — Open House da Alyne
+# Carga inicial — Open House da Amanda
 
 Arquivos:
 - `presentes.json`  → 12 presentes (cotas zeradas, sem fotos; edite à vontade)
